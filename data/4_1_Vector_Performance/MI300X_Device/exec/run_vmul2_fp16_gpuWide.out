@@ -1,0 +1,635 @@
+[INFO] GPU Roofline Tools 
+[INFO] Version 1.0.0 (C)2024 Bagus Hanindhito 
+[INFO] Built for AMD Instinct MI300X (gfx942) GPUs
+[INFO] Detected 8 HIP-capable device(s)
+[INFO] +---+------------------------+----+----+-----------+--------------+--------------+
+[INFO] |#  |Device Name             |CC  |#CU |Freq. (MHz)|Mem. Size (MB)|Mem. BW (GB/s)|
+[INFO] +---+------------------------+----+----+-----------+--------------+--------------+
+[INFO] |0  |AMD Instinct MI300X     |9.4 |304 |2100       |196592        |2662.4        |
+[INFO] +---+------------------------+----+----+-----------+--------------+--------------+
+[INFO] |1  |AMD Instinct MI300X     |9.4 |304 |2100       |196592        |2662.4        |
+[INFO] +---+------------------------+----+----+-----------+--------------+--------------+
+[INFO] |2  |AMD Instinct MI300X     |9.4 |304 |2100       |196592        |2662.4        |
+[INFO] +---+------------------------+----+----+-----------+--------------+--------------+
+[INFO] |3  |AMD Instinct MI300X     |9.4 |304 |2100       |196592        |2662.4        |
+[INFO] +---+------------------------+----+----+-----------+--------------+--------------+
+[INFO] |4  |AMD Instinct MI300X     |9.4 |304 |2100       |196592        |2662.4        |
+[INFO] +---+------------------------+----+----+-----------+--------------+--------------+
+[INFO] |5  |AMD Instinct MI300X     |9.4 |304 |2100       |196592        |2662.4        |
+[INFO] +---+------------------------+----+----+-----------+--------------+--------------+
+[INFO] |6  |AMD Instinct MI300X     |9.4 |304 |2100       |196592        |2662.4        |
+[INFO] +---+------------------------+----+----+-----------+--------------+--------------+
+[INFO] |7  |AMD Instinct MI300X     |9.4 |304 |2100       |196592        |2662.4        |
+[INFO] +---+------------------------+----+----+-----------+--------------+--------------+
+[WARN] This program does not currently support Multi-GPU run.
+[INFO] Set default GPU to GPU index 0
+[INFO] (1743263828) Running with 16 wavefront(s) per workgroup and 1 workgroup(s)
+[INFO] (1743263832) Running with 16 wavefront(s) per workgroup and 2 workgroup(s)
+[INFO] (1743263836) Running with 16 wavefront(s) per workgroup and 3 workgroup(s)
+[INFO] (1743263840) Running with 16 wavefront(s) per workgroup and 4 workgroup(s)
+[INFO] (1743263845) Running with 16 wavefront(s) per workgroup and 5 workgroup(s)
+[INFO] (1743263849) Running with 16 wavefront(s) per workgroup and 6 workgroup(s)
+[INFO] (1743263853) Running with 16 wavefront(s) per workgroup and 7 workgroup(s)
+[INFO] (1743263857) Running with 16 wavefront(s) per workgroup and 8 workgroup(s)
+[INFO] (1743263861) Running with 16 wavefront(s) per workgroup and 9 workgroup(s)
+[INFO] (1743263865) Running with 16 wavefront(s) per workgroup and 10 workgroup(s)
+[INFO] (1743263869) Running with 16 wavefront(s) per workgroup and 11 workgroup(s)
+[INFO] (1743263873) Running with 16 wavefront(s) per workgroup and 12 workgroup(s)
+[INFO] (1743263878) Running with 16 wavefront(s) per workgroup and 13 workgroup(s)
+[INFO] (1743263882) Running with 16 wavefront(s) per workgroup and 14 workgroup(s)
+[INFO] (1743263886) Running with 16 wavefront(s) per workgroup and 15 workgroup(s)
+[INFO] (1743263890) Running with 16 wavefront(s) per workgroup and 16 workgroup(s)
+[INFO] (1743263894) Running with 16 wavefront(s) per workgroup and 17 workgroup(s)
+[INFO] (1743263898) Running with 16 wavefront(s) per workgroup and 18 workgroup(s)
+[INFO] (1743263902) Running with 16 wavefront(s) per workgroup and 19 workgroup(s)
+[INFO] (1743263906) Running with 16 wavefront(s) per workgroup and 20 workgroup(s)
+[INFO] (1743263911) Running with 16 wavefront(s) per workgroup and 21 workgroup(s)
+[INFO] (1743263915) Running with 16 wavefront(s) per workgroup and 22 workgroup(s)
+[INFO] (1743263919) Running with 16 wavefront(s) per workgroup and 23 workgroup(s)
+[INFO] (1743263923) Running with 16 wavefront(s) per workgroup and 24 workgroup(s)
+[INFO] (1743263927) Running with 16 wavefront(s) per workgroup and 25 workgroup(s)
+[INFO] (1743263931) Running with 16 wavefront(s) per workgroup and 26 workgroup(s)
+[INFO] (1743263935) Running with 16 wavefront(s) per workgroup and 27 workgroup(s)
+[INFO] (1743263939) Running with 16 wavefront(s) per workgroup and 28 workgroup(s)
+[INFO] (1743263944) Running with 16 wavefront(s) per workgroup and 29 workgroup(s)
+[INFO] (1743263948) Running with 16 wavefront(s) per workgroup and 30 workgroup(s)
+[INFO] (1743263952) Running with 16 wavefront(s) per workgroup and 31 workgroup(s)
+[INFO] (1743263956) Running with 16 wavefront(s) per workgroup and 32 workgroup(s)
+[INFO] (1743263960) Running with 16 wavefront(s) per workgroup and 33 workgroup(s)
+[INFO] (1743263964) Running with 16 wavefront(s) per workgroup and 34 workgroup(s)
+[INFO] (1743263968) Running with 16 wavefront(s) per workgroup and 35 workgroup(s)
+[INFO] (1743263973) Running with 16 wavefront(s) per workgroup and 36 workgroup(s)
+[INFO] (1743263977) Running with 16 wavefront(s) per workgroup and 37 workgroup(s)
+[INFO] (1743263981) Running with 16 wavefront(s) per workgroup and 38 workgroup(s)
+[INFO] (1743263985) Running with 16 wavefront(s) per workgroup and 39 workgroup(s)
+[INFO] (1743263989) Running with 16 wavefront(s) per workgroup and 40 workgroup(s)
+[INFO] (1743263993) Running with 16 wavefront(s) per workgroup and 41 workgroup(s)
+[INFO] (1743263997) Running with 16 wavefront(s) per workgroup and 42 workgroup(s)
+[INFO] (1743264001) Running with 16 wavefront(s) per workgroup and 43 workgroup(s)
+[INFO] (1743264006) Running with 16 wavefront(s) per workgroup and 44 workgroup(s)
+[INFO] (1743264010) Running with 16 wavefront(s) per workgroup and 45 workgroup(s)
+[INFO] (1743264014) Running with 16 wavefront(s) per workgroup and 46 workgroup(s)
+[INFO] (1743264018) Running with 16 wavefront(s) per workgroup and 47 workgroup(s)
+[INFO] (1743264022) Running with 16 wavefront(s) per workgroup and 48 workgroup(s)
+[INFO] (1743264026) Running with 16 wavefront(s) per workgroup and 49 workgroup(s)
+[INFO] (1743264030) Running with 16 wavefront(s) per workgroup and 50 workgroup(s)
+[INFO] (1743264035) Running with 16 wavefront(s) per workgroup and 51 workgroup(s)
+[INFO] (1743264039) Running with 16 wavefront(s) per workgroup and 52 workgroup(s)
+[INFO] (1743264043) Running with 16 wavefront(s) per workgroup and 53 workgroup(s)
+[INFO] (1743264047) Running with 16 wavefront(s) per workgroup and 54 workgroup(s)
+[INFO] (1743264051) Running with 16 wavefront(s) per workgroup and 55 workgroup(s)
+[INFO] (1743264055) Running with 16 wavefront(s) per workgroup and 56 workgroup(s)
+[INFO] (1743264059) Running with 16 wavefront(s) per workgroup and 57 workgroup(s)
+[INFO] (1743264064) Running with 16 wavefront(s) per workgroup and 58 workgroup(s)
+[INFO] (1743264068) Running with 16 wavefront(s) per workgroup and 59 workgroup(s)
+[INFO] (1743264072) Running with 16 wavefront(s) per workgroup and 60 workgroup(s)
+[INFO] (1743264076) Running with 16 wavefront(s) per workgroup and 61 workgroup(s)
+[INFO] (1743264080) Running with 16 wavefront(s) per workgroup and 62 workgroup(s)
+[INFO] (1743264084) Running with 16 wavefront(s) per workgroup and 63 workgroup(s)
+[INFO] (1743264088) Running with 16 wavefront(s) per workgroup and 64 workgroup(s)
+[INFO] (1743264093) Running with 16 wavefront(s) per workgroup and 65 workgroup(s)
+[INFO] (1743264097) Running with 16 wavefront(s) per workgroup and 66 workgroup(s)
+[INFO] (1743264101) Running with 16 wavefront(s) per workgroup and 67 workgroup(s)
+[INFO] (1743264105) Running with 16 wavefront(s) per workgroup and 68 workgroup(s)
+[INFO] (1743264109) Running with 16 wavefront(s) per workgroup and 69 workgroup(s)
+[INFO] (1743264113) Running with 16 wavefront(s) per workgroup and 70 workgroup(s)
+[INFO] (1743264117) Running with 16 wavefront(s) per workgroup and 71 workgroup(s)
+[INFO] (1743264122) Running with 16 wavefront(s) per workgroup and 72 workgroup(s)
+[INFO] (1743264126) Running with 16 wavefront(s) per workgroup and 73 workgroup(s)
+[INFO] (1743264130) Running with 16 wavefront(s) per workgroup and 74 workgroup(s)
+[INFO] (1743264134) Running with 16 wavefront(s) per workgroup and 75 workgroup(s)
+[INFO] (1743264138) Running with 16 wavefront(s) per workgroup and 76 workgroup(s)
+[INFO] (1743264142) Running with 16 wavefront(s) per workgroup and 77 workgroup(s)
+[INFO] (1743264146) Running with 16 wavefront(s) per workgroup and 78 workgroup(s)
+[INFO] (1743264151) Running with 16 wavefront(s) per workgroup and 79 workgroup(s)
+[INFO] (1743264155) Running with 16 wavefront(s) per workgroup and 80 workgroup(s)
+[INFO] (1743264159) Running with 16 wavefront(s) per workgroup and 81 workgroup(s)
+[INFO] (1743264163) Running with 16 wavefront(s) per workgroup and 82 workgroup(s)
+[INFO] (1743264167) Running with 16 wavefront(s) per workgroup and 83 workgroup(s)
+[INFO] (1743264171) Running with 16 wavefront(s) per workgroup and 84 workgroup(s)
+[INFO] (1743264176) Running with 16 wavefront(s) per workgroup and 85 workgroup(s)
+[INFO] (1743264180) Running with 16 wavefront(s) per workgroup and 86 workgroup(s)
+[INFO] (1743264184) Running with 16 wavefront(s) per workgroup and 87 workgroup(s)
+[INFO] (1743264188) Running with 16 wavefront(s) per workgroup and 88 workgroup(s)
+[INFO] (1743264192) Running with 16 wavefront(s) per workgroup and 89 workgroup(s)
+[INFO] (1743264196) Running with 16 wavefront(s) per workgroup and 90 workgroup(s)
+[INFO] (1743264201) Running with 16 wavefront(s) per workgroup and 91 workgroup(s)
+[INFO] (1743264205) Running with 16 wavefront(s) per workgroup and 92 workgroup(s)
+[INFO] (1743264209) Running with 16 wavefront(s) per workgroup and 93 workgroup(s)
+[INFO] (1743264213) Running with 16 wavefront(s) per workgroup and 94 workgroup(s)
+[INFO] (1743264217) Running with 16 wavefront(s) per workgroup and 95 workgroup(s)
+[INFO] (1743264221) Running with 16 wavefront(s) per workgroup and 96 workgroup(s)
+[INFO] (1743264225) Running with 16 wavefront(s) per workgroup and 97 workgroup(s)
+[INFO] (1743264230) Running with 16 wavefront(s) per workgroup and 98 workgroup(s)
+[INFO] (1743264234) Running with 16 wavefront(s) per workgroup and 99 workgroup(s)
+[INFO] (1743264238) Running with 16 wavefront(s) per workgroup and 100 workgroup(s)
+[INFO] (1743264242) Running with 16 wavefront(s) per workgroup and 101 workgroup(s)
+[INFO] (1743264246) Running with 16 wavefront(s) per workgroup and 102 workgroup(s)
+[INFO] (1743264250) Running with 16 wavefront(s) per workgroup and 103 workgroup(s)
+[INFO] (1743264255) Running with 16 wavefront(s) per workgroup and 104 workgroup(s)
+[INFO] (1743264259) Running with 16 wavefront(s) per workgroup and 105 workgroup(s)
+[INFO] (1743264263) Running with 16 wavefront(s) per workgroup and 106 workgroup(s)
+[INFO] (1743264267) Running with 16 wavefront(s) per workgroup and 107 workgroup(s)
+[INFO] (1743264271) Running with 16 wavefront(s) per workgroup and 108 workgroup(s)
+[INFO] (1743264275) Running with 16 wavefront(s) per workgroup and 109 workgroup(s)
+[INFO] (1743264280) Running with 16 wavefront(s) per workgroup and 110 workgroup(s)
+[INFO] (1743264284) Running with 16 wavefront(s) per workgroup and 111 workgroup(s)
+[INFO] (1743264288) Running with 16 wavefront(s) per workgroup and 112 workgroup(s)
+[INFO] (1743264292) Running with 16 wavefront(s) per workgroup and 113 workgroup(s)
+[INFO] (1743264296) Running with 16 wavefront(s) per workgroup and 114 workgroup(s)
+[INFO] (1743264300) Running with 16 wavefront(s) per workgroup and 115 workgroup(s)
+[INFO] (1743264305) Running with 16 wavefront(s) per workgroup and 116 workgroup(s)
+[INFO] (1743264309) Running with 16 wavefront(s) per workgroup and 117 workgroup(s)
+[INFO] (1743264313) Running with 16 wavefront(s) per workgroup and 118 workgroup(s)
+[INFO] (1743264317) Running with 16 wavefront(s) per workgroup and 119 workgroup(s)
+[INFO] (1743264321) Running with 16 wavefront(s) per workgroup and 120 workgroup(s)
+[INFO] (1743264326) Running with 16 wavefront(s) per workgroup and 121 workgroup(s)
+[INFO] (1743264330) Running with 16 wavefront(s) per workgroup and 122 workgroup(s)
+[INFO] (1743264334) Running with 16 wavefront(s) per workgroup and 123 workgroup(s)
+[INFO] (1743264338) Running with 16 wavefront(s) per workgroup and 124 workgroup(s)
+[INFO] (1743264342) Running with 16 wavefront(s) per workgroup and 125 workgroup(s)
+[INFO] (1743264346) Running with 16 wavefront(s) per workgroup and 126 workgroup(s)
+[INFO] (1743264351) Running with 16 wavefront(s) per workgroup and 127 workgroup(s)
+[INFO] (1743264355) Running with 16 wavefront(s) per workgroup and 128 workgroup(s)
+[INFO] (1743264359) Running with 16 wavefront(s) per workgroup and 129 workgroup(s)
+[INFO] (1743264363) Running with 16 wavefront(s) per workgroup and 130 workgroup(s)
+[INFO] (1743264367) Running with 16 wavefront(s) per workgroup and 131 workgroup(s)
+[INFO] (1743264372) Running with 16 wavefront(s) per workgroup and 132 workgroup(s)
+[INFO] (1743264376) Running with 16 wavefront(s) per workgroup and 133 workgroup(s)
+[INFO] (1743264380) Running with 16 wavefront(s) per workgroup and 134 workgroup(s)
+[INFO] (1743264384) Running with 16 wavefront(s) per workgroup and 135 workgroup(s)
+[INFO] (1743264388) Running with 16 wavefront(s) per workgroup and 136 workgroup(s)
+[INFO] (1743264392) Running with 16 wavefront(s) per workgroup and 137 workgroup(s)
+[INFO] (1743264397) Running with 16 wavefront(s) per workgroup and 138 workgroup(s)
+[INFO] (1743264401) Running with 16 wavefront(s) per workgroup and 139 workgroup(s)
+[INFO] (1743264405) Running with 16 wavefront(s) per workgroup and 140 workgroup(s)
+[INFO] (1743264409) Running with 16 wavefront(s) per workgroup and 141 workgroup(s)
+[INFO] (1743264413) Running with 16 wavefront(s) per workgroup and 142 workgroup(s)
+[INFO] (1743264418) Running with 16 wavefront(s) per workgroup and 143 workgroup(s)
+[INFO] (1743264422) Running with 16 wavefront(s) per workgroup and 144 workgroup(s)
+[INFO] (1743264426) Running with 16 wavefront(s) per workgroup and 145 workgroup(s)
+[INFO] (1743264430) Running with 16 wavefront(s) per workgroup and 146 workgroup(s)
+[INFO] (1743264434) Running with 16 wavefront(s) per workgroup and 147 workgroup(s)
+[INFO] (1743264439) Running with 16 wavefront(s) per workgroup and 148 workgroup(s)
+[INFO] (1743264443) Running with 16 wavefront(s) per workgroup and 149 workgroup(s)
+[INFO] (1743264447) Running with 16 wavefront(s) per workgroup and 150 workgroup(s)
+[INFO] (1743264451) Running with 16 wavefront(s) per workgroup and 151 workgroup(s)
+[INFO] (1743264455) Running with 16 wavefront(s) per workgroup and 152 workgroup(s)
+[INFO] (1743264459) Running with 16 wavefront(s) per workgroup and 153 workgroup(s)
+[INFO] (1743264464) Running with 16 wavefront(s) per workgroup and 154 workgroup(s)
+[INFO] (1743264468) Running with 16 wavefront(s) per workgroup and 155 workgroup(s)
+[INFO] (1743264472) Running with 16 wavefront(s) per workgroup and 156 workgroup(s)
+[INFO] (1743264476) Running with 16 wavefront(s) per workgroup and 157 workgroup(s)
+[INFO] (1743264480) Running with 16 wavefront(s) per workgroup and 158 workgroup(s)
+[INFO] (1743264485) Running with 16 wavefront(s) per workgroup and 159 workgroup(s)
+[INFO] (1743264489) Running with 16 wavefront(s) per workgroup and 160 workgroup(s)
+[INFO] (1743264493) Running with 16 wavefront(s) per workgroup and 161 workgroup(s)
+[INFO] (1743264497) Running with 16 wavefront(s) per workgroup and 162 workgroup(s)
+[INFO] (1743264501) Running with 16 wavefront(s) per workgroup and 163 workgroup(s)
+[INFO] (1743264506) Running with 16 wavefront(s) per workgroup and 164 workgroup(s)
+[INFO] (1743264510) Running with 16 wavefront(s) per workgroup and 165 workgroup(s)
+[INFO] (1743264514) Running with 16 wavefront(s) per workgroup and 166 workgroup(s)
+[INFO] (1743264518) Running with 16 wavefront(s) per workgroup and 167 workgroup(s)
+[INFO] (1743264522) Running with 16 wavefront(s) per workgroup and 168 workgroup(s)
+[INFO] (1743264527) Running with 16 wavefront(s) per workgroup and 169 workgroup(s)
+[INFO] (1743264531) Running with 16 wavefront(s) per workgroup and 170 workgroup(s)
+[INFO] (1743264535) Running with 16 wavefront(s) per workgroup and 171 workgroup(s)
+[INFO] (1743264539) Running with 16 wavefront(s) per workgroup and 172 workgroup(s)
+[INFO] (1743264543) Running with 16 wavefront(s) per workgroup and 173 workgroup(s)
+[INFO] (1743264548) Running with 16 wavefront(s) per workgroup and 174 workgroup(s)
+[INFO] (1743264552) Running with 16 wavefront(s) per workgroup and 175 workgroup(s)
+[INFO] (1743264556) Running with 16 wavefront(s) per workgroup and 176 workgroup(s)
+[INFO] (1743264560) Running with 16 wavefront(s) per workgroup and 177 workgroup(s)
+[INFO] (1743264565) Running with 16 wavefront(s) per workgroup and 178 workgroup(s)
+[INFO] (1743264569) Running with 16 wavefront(s) per workgroup and 179 workgroup(s)
+[INFO] (1743264573) Running with 16 wavefront(s) per workgroup and 180 workgroup(s)
+[INFO] (1743264577) Running with 16 wavefront(s) per workgroup and 181 workgroup(s)
+[INFO] (1743264581) Running with 16 wavefront(s) per workgroup and 182 workgroup(s)
+[INFO] (1743264586) Running with 16 wavefront(s) per workgroup and 183 workgroup(s)
+[INFO] (1743264590) Running with 16 wavefront(s) per workgroup and 184 workgroup(s)
+[INFO] (1743264594) Running with 16 wavefront(s) per workgroup and 185 workgroup(s)
+[INFO] (1743264598) Running with 16 wavefront(s) per workgroup and 186 workgroup(s)
+[INFO] (1743264602) Running with 16 wavefront(s) per workgroup and 187 workgroup(s)
+[INFO] (1743264607) Running with 16 wavefront(s) per workgroup and 188 workgroup(s)
+[INFO] (1743264611) Running with 16 wavefront(s) per workgroup and 189 workgroup(s)
+[INFO] (1743264615) Running with 16 wavefront(s) per workgroup and 190 workgroup(s)
+[INFO] (1743264619) Running with 16 wavefront(s) per workgroup and 191 workgroup(s)
+[INFO] (1743264624) Running with 16 wavefront(s) per workgroup and 192 workgroup(s)
+[INFO] (1743264628) Running with 16 wavefront(s) per workgroup and 193 workgroup(s)
+[INFO] (1743264632) Running with 16 wavefront(s) per workgroup and 194 workgroup(s)
+[INFO] (1743264636) Running with 16 wavefront(s) per workgroup and 195 workgroup(s)
+[INFO] (1743264640) Running with 16 wavefront(s) per workgroup and 196 workgroup(s)
+[INFO] (1743264645) Running with 16 wavefront(s) per workgroup and 197 workgroup(s)
+[INFO] (1743264649) Running with 16 wavefront(s) per workgroup and 198 workgroup(s)
+[INFO] (1743264653) Running with 16 wavefront(s) per workgroup and 199 workgroup(s)
+[INFO] (1743264657) Running with 16 wavefront(s) per workgroup and 200 workgroup(s)
+[INFO] (1743264662) Running with 16 wavefront(s) per workgroup and 201 workgroup(s)
+[INFO] (1743264666) Running with 16 wavefront(s) per workgroup and 202 workgroup(s)
+[INFO] (1743264670) Running with 16 wavefront(s) per workgroup and 203 workgroup(s)
+[INFO] (1743264674) Running with 16 wavefront(s) per workgroup and 204 workgroup(s)
+[INFO] (1743264678) Running with 16 wavefront(s) per workgroup and 205 workgroup(s)
+[INFO] (1743264683) Running with 16 wavefront(s) per workgroup and 206 workgroup(s)
+[INFO] (1743264687) Running with 16 wavefront(s) per workgroup and 207 workgroup(s)
+[INFO] (1743264691) Running with 16 wavefront(s) per workgroup and 208 workgroup(s)
+[INFO] (1743264695) Running with 16 wavefront(s) per workgroup and 209 workgroup(s)
+[INFO] (1743264700) Running with 16 wavefront(s) per workgroup and 210 workgroup(s)
+[INFO] (1743264704) Running with 16 wavefront(s) per workgroup and 211 workgroup(s)
+[INFO] (1743264708) Running with 16 wavefront(s) per workgroup and 212 workgroup(s)
+[INFO] (1743264712) Running with 16 wavefront(s) per workgroup and 213 workgroup(s)
+[INFO] (1743264716) Running with 16 wavefront(s) per workgroup and 214 workgroup(s)
+[INFO] (1743264721) Running with 16 wavefront(s) per workgroup and 215 workgroup(s)
+[INFO] (1743264725) Running with 16 wavefront(s) per workgroup and 216 workgroup(s)
+[INFO] (1743264729) Running with 16 wavefront(s) per workgroup and 217 workgroup(s)
+[INFO] (1743264733) Running with 16 wavefront(s) per workgroup and 218 workgroup(s)
+[INFO] (1743264738) Running with 16 wavefront(s) per workgroup and 219 workgroup(s)
+[INFO] (1743264742) Running with 16 wavefront(s) per workgroup and 220 workgroup(s)
+[INFO] (1743264746) Running with 16 wavefront(s) per workgroup and 221 workgroup(s)
+[INFO] (1743264750) Running with 16 wavefront(s) per workgroup and 222 workgroup(s)
+[INFO] (1743264755) Running with 16 wavefront(s) per workgroup and 223 workgroup(s)
+[INFO] (1743264759) Running with 16 wavefront(s) per workgroup and 224 workgroup(s)
+[INFO] (1743264763) Running with 16 wavefront(s) per workgroup and 225 workgroup(s)
+[INFO] (1743264767) Running with 16 wavefront(s) per workgroup and 226 workgroup(s)
+[INFO] (1743264772) Running with 16 wavefront(s) per workgroup and 227 workgroup(s)
+[INFO] (1743264776) Running with 16 wavefront(s) per workgroup and 228 workgroup(s)
+[INFO] (1743264780) Running with 16 wavefront(s) per workgroup and 229 workgroup(s)
+[INFO] (1743264784) Running with 16 wavefront(s) per workgroup and 230 workgroup(s)
+[INFO] (1743264789) Running with 16 wavefront(s) per workgroup and 231 workgroup(s)
+[INFO] (1743264793) Running with 16 wavefront(s) per workgroup and 232 workgroup(s)
+[INFO] (1743264797) Running with 16 wavefront(s) per workgroup and 233 workgroup(s)
+[INFO] (1743264801) Running with 16 wavefront(s) per workgroup and 234 workgroup(s)
+[INFO] (1743264806) Running with 16 wavefront(s) per workgroup and 235 workgroup(s)
+[INFO] (1743264810) Running with 16 wavefront(s) per workgroup and 236 workgroup(s)
+[INFO] (1743264814) Running with 16 wavefront(s) per workgroup and 237 workgroup(s)
+[INFO] (1743264818) Running with 16 wavefront(s) per workgroup and 238 workgroup(s)
+[INFO] (1743264823) Running with 16 wavefront(s) per workgroup and 239 workgroup(s)
+[INFO] (1743264827) Running with 16 wavefront(s) per workgroup and 240 workgroup(s)
+[INFO] (1743264831) Running with 16 wavefront(s) per workgroup and 241 workgroup(s)
+[INFO] (1743264835) Running with 16 wavefront(s) per workgroup and 242 workgroup(s)
+[INFO] (1743264840) Running with 16 wavefront(s) per workgroup and 243 workgroup(s)
+[INFO] (1743264844) Running with 16 wavefront(s) per workgroup and 244 workgroup(s)
+[INFO] (1743264848) Running with 16 wavefront(s) per workgroup and 245 workgroup(s)
+[INFO] (1743264852) Running with 16 wavefront(s) per workgroup and 246 workgroup(s)
+[INFO] (1743264857) Running with 16 wavefront(s) per workgroup and 247 workgroup(s)
+[INFO] (1743264861) Running with 16 wavefront(s) per workgroup and 248 workgroup(s)
+[INFO] (1743264865) Running with 16 wavefront(s) per workgroup and 249 workgroup(s)
+[INFO] (1743264869) Running with 16 wavefront(s) per workgroup and 250 workgroup(s)
+[INFO] (1743264874) Running with 16 wavefront(s) per workgroup and 251 workgroup(s)
+[INFO] (1743264878) Running with 16 wavefront(s) per workgroup and 252 workgroup(s)
+[INFO] (1743264882) Running with 16 wavefront(s) per workgroup and 253 workgroup(s)
+[INFO] (1743264886) Running with 16 wavefront(s) per workgroup and 254 workgroup(s)
+[INFO] (1743264891) Running with 16 wavefront(s) per workgroup and 255 workgroup(s)
+[INFO] (1743264895) Running with 16 wavefront(s) per workgroup and 256 workgroup(s)
+[INFO] (1743264899) Running with 16 wavefront(s) per workgroup and 257 workgroup(s)
+[INFO] (1743264903) Running with 16 wavefront(s) per workgroup and 258 workgroup(s)
+[INFO] (1743264908) Running with 16 wavefront(s) per workgroup and 259 workgroup(s)
+[INFO] (1743264912) Running with 16 wavefront(s) per workgroup and 260 workgroup(s)
+[INFO] (1743264916) Running with 16 wavefront(s) per workgroup and 261 workgroup(s)
+[INFO] (1743264920) Running with 16 wavefront(s) per workgroup and 262 workgroup(s)
+[INFO] (1743264925) Running with 16 wavefront(s) per workgroup and 263 workgroup(s)
+[INFO] (1743264929) Running with 16 wavefront(s) per workgroup and 264 workgroup(s)
+[INFO] (1743264933) Running with 16 wavefront(s) per workgroup and 265 workgroup(s)
+[INFO] (1743264938) Running with 16 wavefront(s) per workgroup and 266 workgroup(s)
+[INFO] (1743264942) Running with 16 wavefront(s) per workgroup and 267 workgroup(s)
+[INFO] (1743264946) Running with 16 wavefront(s) per workgroup and 268 workgroup(s)
+[INFO] (1743264950) Running with 16 wavefront(s) per workgroup and 269 workgroup(s)
+[INFO] (1743264955) Running with 16 wavefront(s) per workgroup and 270 workgroup(s)
+[INFO] (1743264959) Running with 16 wavefront(s) per workgroup and 271 workgroup(s)
+[INFO] (1743264963) Running with 16 wavefront(s) per workgroup and 272 workgroup(s)
+[INFO] (1743264967) Running with 16 wavefront(s) per workgroup and 273 workgroup(s)
+[INFO] (1743264972) Running with 16 wavefront(s) per workgroup and 274 workgroup(s)
+[INFO] (1743264976) Running with 16 wavefront(s) per workgroup and 275 workgroup(s)
+[INFO] (1743264980) Running with 16 wavefront(s) per workgroup and 276 workgroup(s)
+[INFO] (1743264985) Running with 16 wavefront(s) per workgroup and 277 workgroup(s)
+[INFO] (1743264989) Running with 16 wavefront(s) per workgroup and 278 workgroup(s)
+[INFO] (1743264993) Running with 16 wavefront(s) per workgroup and 279 workgroup(s)
+[INFO] (1743264997) Running with 16 wavefront(s) per workgroup and 280 workgroup(s)
+[INFO] (1743265002) Running with 16 wavefront(s) per workgroup and 281 workgroup(s)
+[INFO] (1743265006) Running with 16 wavefront(s) per workgroup and 282 workgroup(s)
+[INFO] (1743265010) Running with 16 wavefront(s) per workgroup and 283 workgroup(s)
+[INFO] (1743265015) Running with 16 wavefront(s) per workgroup and 284 workgroup(s)
+[INFO] (1743265019) Running with 16 wavefront(s) per workgroup and 285 workgroup(s)
+[INFO] (1743265023) Running with 16 wavefront(s) per workgroup and 286 workgroup(s)
+[INFO] (1743265027) Running with 16 wavefront(s) per workgroup and 287 workgroup(s)
+[INFO] (1743265032) Running with 16 wavefront(s) per workgroup and 288 workgroup(s)
+[INFO] (1743265036) Running with 16 wavefront(s) per workgroup and 289 workgroup(s)
+[INFO] (1743265040) Running with 16 wavefront(s) per workgroup and 290 workgroup(s)
+[INFO] (1743265045) Running with 16 wavefront(s) per workgroup and 291 workgroup(s)
+[INFO] (1743265049) Running with 16 wavefront(s) per workgroup and 292 workgroup(s)
+[INFO] (1743265053) Running with 16 wavefront(s) per workgroup and 293 workgroup(s)
+[INFO] (1743265058) Running with 16 wavefront(s) per workgroup and 294 workgroup(s)
+[INFO] (1743265062) Running with 16 wavefront(s) per workgroup and 295 workgroup(s)
+[INFO] (1743265066) Running with 16 wavefront(s) per workgroup and 296 workgroup(s)
+[INFO] (1743265071) Running with 16 wavefront(s) per workgroup and 297 workgroup(s)
+[INFO] (1743265075) Running with 16 wavefront(s) per workgroup and 298 workgroup(s)
+[INFO] (1743265079) Running with 16 wavefront(s) per workgroup and 299 workgroup(s)
+[INFO] (1743265084) Running with 16 wavefront(s) per workgroup and 300 workgroup(s)
+[INFO] (1743265088) Running with 16 wavefront(s) per workgroup and 301 workgroup(s)
+[INFO] (1743265093) Running with 16 wavefront(s) per workgroup and 302 workgroup(s)
+[INFO] (1743265097) Running with 16 wavefront(s) per workgroup and 303 workgroup(s)
+[INFO] (1743265101) Running with 16 wavefront(s) per workgroup and 304 workgroup(s)
+Result V_MUL2 with fp16
+n_iter, n_thread, n_wg, n_wf, wf_size, wg_size, n_flops, n_bytes, time_ms, gflop/s, avg_clock, max_clock, min_clock, stdev_clock 
+1073741824, 1024, 1, 16, 64, 1024, 1099511627776, 4096, 4140.67, 265.539, 6.45824e+09, 8614788485, 4308374834, 1.05395 
+1073741824, 2048, 2, 16, 64, 1024, 2199023255552, 8192, 4117.45, 534.074, 6.45381e+09, 8607123559, 4305993469, 1.05392 
+1073741824, 3072, 3, 16, 64, 1024, 3298534883328, 12288, 4130.96, 798.49, 6.45319e+09, 8605892241, 4304331672, 1.05398 
+1073741824, 4096, 4, 16, 64, 1024, 4398046511104, 16384, 4122.95, 1066.72, 6.45256e+09, 8609844864, 4304554213, 1.05393 
+1073741824, 5120, 5, 16, 64, 1024, 5497558138880, 20480, 4128.16, 1331.72, 6.45193e+09, 8607011269, 4303890388, 1.05394 
+1073741824, 6144, 6, 16, 64, 1024, 6597069766656, 24576, 4129.09, 1597.71, 6.45167e+09, 8608276916, 4303356744, 1.05398 
+1073741824, 7168, 7, 16, 64, 1024, 7696581394432, 28672, 4122.03, 1867.18, 6.45083e+09, 8606691224, 4303356804, 1.05396 
+1073741824, 8192, 8, 16, 64, 1024, 8796093022208, 32768, 4131.9, 2128.83, 6.45377e+09, 8608603780, 4305090357, 1.05391 
+1073741824, 9216, 9, 16, 64, 1024, 9895604649984, 36864, 4121.6, 2400.91, 6.45083e+09, 8606691504, 4303356852, 1.05396 
+1073741824, 10240, 10, 16, 64, 1024, 10995116277760, 40960, 4131.76, 2661.12, 6.45156e+09, 8609362012, 4303356340, 1.05398 
+1073741824, 11264, 11, 16, 64, 1024, 12094627905536, 45056, 4123.49, 2933.11, 6.45083e+09, 8606697012, 4303356904, 1.05396 
+1073741824, 12288, 12, 16, 64, 1024, 13194139533312, 49152, 4120.39, 3202.16, 6.45083e+09, 8606696036, 4303356336, 1.05396 
+1073741824, 13312, 13, 16, 64, 1024, 14293651161088, 53248, 4132.22, 3459.07, 6.45259e+09, 8607821379, 4304964300, 1.05393 
+1073741824, 14336, 14, 16, 64, 1024, 15393162788864, 57344, 4124.5, 3732.13, 6.45083e+09, 8606691180, 4303356768, 1.05396 
+1073741824, 15360, 15, 16, 64, 1024, 16492674416640, 61440, 4126.03, 3997.23, 6.45083e+09, 8606697272, 4303356396, 1.05396 
+1073741824, 16384, 16, 16, 64, 1024, 17592186044416, 65536, 4125.12, 4264.64, 6.45083e+09, 8606696468, 4303356380, 1.05396 
+1073741824, 17408, 17, 16, 64, 1024, 18691697672192, 69632, 4133.78, 4521.7, 6.4536e+09, 8609856675, 4305605468, 1.05391 
+1073741824, 18432, 18, 16, 64, 1024, 19791209299968, 73728, 4124.31, 4798.67, 6.45084e+09, 8606691080, 4303356780, 1.05396 
+1073741824, 19456, 19, 16, 64, 1024, 20890720927744, 77824, 4122.04, 5068.05, 6.45083e+09, 8606696540, 4303356612, 1.05396 
+1073741824, 20480, 20, 16, 64, 1024, 21990232555520, 81920, 4135.39, 5317.57, 6.45133e+09, 8608444670, 4303356336, 1.05397 
+1073741824, 21504, 21, 16, 64, 1024, 23089744183296, 86016, 4125.78, 5596.45, 6.45083e+09, 8606696132, 4303356424, 1.05396 
+1073741824, 22528, 22, 16, 64, 1024, 24189255811072, 90112, 4127.99, 5859.81, 6.45083e+09, 8606696588, 4303356384, 1.05396 
+1073741824, 23552, 23, 16, 64, 1024, 25288767438848, 94208, 4128.36, 6125.62, 6.45083e+09, 8606697012, 4303356384, 1.05396 
+1073741824, 24576, 24, 16, 64, 1024, 26388279066624, 98304, 4136.15, 6379.92, 6.45352e+09, 8609595868, 4304326494, 1.05391 
+1073741824, 25600, 25, 16, 64, 1024, 27487790694400, 102400, 4128.65, 6657.82, 6.45083e+09, 8606697852, 4303356476, 1.05396 
+1073741824, 26624, 26, 16, 64, 1024, 28587302322176, 106496, 4126.79, 6927.25, 6.45083e+09, 8606696268, 4303356324, 1.05396 
+1073741824, 27648, 27, 16, 64, 1024, 29686813949952, 110592, 4139.74, 7171.18, 6.45175e+09, 8609738435, 4303356572, 1.05399 
+1073741824, 28672, 28, 16, 64, 1024, 30786325577728, 114688, 4129.63, 7454.99, 6.45083e+09, 8606696504, 4303356528, 1.05396 
+1073741824, 29696, 29, 16, 64, 1024, 31885837205504, 118784, 4131.98, 7716.84, 6.45083e+09, 8606697196, 4303356456, 1.05396 
+1073741824, 30720, 30, 16, 64, 1024, 32985348833280, 122880, 4126.82, 7992.93, 6.45083e+09, 8606696348, 4303356316, 1.05396 
+1073741824, 31744, 31, 16, 64, 1024, 34084860461056, 126976, 4141.43, 8230.22, 6.45242e+09, 8610494739, 4303356420, 1.05401 
+1073741824, 32768, 32, 16, 64, 1024, 35184372088832, 131072, 4130.76, 8517.64, 6.45083e+09, 8606696260, 4303356352, 1.05396 
+1073741824, 33792, 33, 16, 64, 1024, 36283883716608, 135168, 4129.79, 8785.88, 6.45083e+09, 8606697192, 4303356472, 1.05396 
+1073741824, 34816, 34, 16, 64, 1024, 37383395344384, 139264, 4129.07, 9053.7, 6.45083e+09, 8606696608, 4303356448, 1.05396 
+1073741824, 35840, 35, 16, 64, 1024, 38482906972160, 143360, 4135.91, 9304.58, 6.45204e+09, 8609411100, 4303839143, 1.05394 
+1073741824, 36864, 36, 16, 64, 1024, 39582418599936, 147456, 4132.91, 9577.38, 6.45083e+09, 8606696296, 4303356548, 1.05396 
+1073741824, 37888, 37, 16, 64, 1024, 40681930227712, 151552, 4131.52, 9846.73, 6.45083e+09, 8606697172, 4303356456, 1.05396 
+1073741824, 38912, 38, 16, 64, 1024, 41781441855488, 155648, 4140.66, 10090.5, 6.4523e+09, 8610323800, 4303356396, 1.054 
+1073741824, 39936, 39, 16, 64, 1024, 42880953483264, 159744, 4135.03, 10370.2, 6.45083e+09, 8606696540, 4303356380, 1.05396 
+1073741824, 40960, 40, 16, 64, 1024, 43980465111040, 163840, 4132.63, 10642.2, 6.45083e+09, 8606696512, 4303356328, 1.05396 
+1073741824, 41984, 41, 16, 64, 1024, 45079976738816, 167936, 4132.64, 10908.3, 6.45083e+09, 8606696436, 4303356508, 1.05396 
+1073741824, 43008, 42, 16, 64, 1024, 46179488366592, 172032, 4141.05, 11151.6, 6.45239e+09, 8610471652, 4304076462, 1.05393 
+1073741824, 44032, 43, 16, 64, 1024, 47278999994368, 176128, 4135.8, 11431.6, 6.45083e+09, 8606696612, 4303356568, 1.05396 
+1073741824, 45056, 44, 16, 64, 1024, 48378511622144, 180224, 4133.59, 11703.8, 6.45083e+09, 8606696572, 4303356312, 1.05396 
+1073741824, 46080, 45, 16, 64, 1024, 49478023249920, 184320, 4134.76, 11966.4, 6.45083e+09, 8606697152, 4303356432, 1.05396 
+1073741824, 47104, 46, 16, 64, 1024, 50577534877696, 188416, 4146.08, 12198.9, 6.45368e+09, 8609986802, 4304052730, 1.05391 
+1073741824, 48128, 47, 16, 64, 1024, 51677046505472, 192512, 4134.13, 12500.1, 6.45083e+09, 8606696716, 4303356372, 1.05396 
+1073741824, 49152, 48, 16, 64, 1024, 52776558133248, 196608, 4135.3, 12762.5, 6.45083e+09, 8606696552, 4303356312, 1.05396 
+1073741824, 50176, 49, 16, 64, 1024, 53876069761024, 200704, 4145.1, 12997.5, 6.45173e+09, 8609591560, 4303356468, 1.05398 
+1073741824, 51200, 50, 16, 64, 1024, 54975581388800, 204800, 4137.78, 13286.2, 6.45083e+09, 8606696520, 4303356476, 1.05396 
+1073741824, 52224, 51, 16, 64, 1024, 56075093016576, 208896, 4137.12, 13554.1, 6.45083e+09, 8606696588, 4303356544, 1.05396 
+1073741824, 53248, 52, 16, 64, 1024, 57174604644352, 212992, 4135.64, 13824.8, 6.45083e+09, 8606696448, 4303356340, 1.05396 
+1073741824, 54272, 53, 16, 64, 1024, 58274116272128, 217088, 4146.54, 14053.7, 6.45212e+09, 8608363721, 4304184738, 1.05393 
+1073741824, 55296, 54, 16, 64, 1024, 59373627899904, 221184, 4139.29, 14343.9, 6.45083e+09, 8606696616, 4303356500, 1.05396 
+1073741824, 56320, 55, 16, 64, 1024, 60473139527680, 225280, 4144.52, 14591.1, 6.45083e+09, 8606696656, 4303356348, 1.05396 
+1073741824, 57344, 56, 16, 64, 1024, 61572651155456, 229376, 4149.8, 14837.5, 6.45213e+09, 8609761804, 4303356396, 1.054 
+1073741824, 58368, 57, 16, 64, 1024, 62672162783232, 233472, 4141.08, 15134.3, 6.45083e+09, 8606696500, 4303356484, 1.05396 
+1073741824, 59392, 58, 16, 64, 1024, 63771674411008, 237568, 4138.32, 15410, 6.45083e+09, 8606696768, 4303356336, 1.05396 
+1073741824, 60416, 59, 16, 64, 1024, 64871186038784, 241664, 4143.17, 15657.4, 6.45083e+09, 8606696608, 4303356568, 1.05396 
+1073741824, 61440, 60, 16, 64, 1024, 65970697666560, 245760, 4152.5, 15887, 6.45139e+09, 8608249824, 4303356332, 1.05397 
+1073741824, 62464, 61, 16, 64, 1024, 67070209294336, 249856, 4141.13, 16196.1, 6.45083e+09, 8606697052, 4303356480, 1.05396 
+1073741824, 63488, 62, 16, 64, 1024, 68169720922112, 253952, 4143.07, 16453.9, 6.45083e+09, 8606697208, 4303356336, 1.05396 
+1073741824, 64512, 63, 16, 64, 1024, 69269232549888, 258048, 4142.82, 16720.3, 6.45083e+09, 8606696532, 4303356392, 1.05396 
+1073741824, 65536, 64, 16, 64, 1024, 70368744177664, 262144, 4154.32, 16938.7, 6.45364e+09, 8609807890, 4303748669, 1.05391 
+1073741824, 66560, 65, 16, 64, 1024, 71468255805440, 266240, 4144.07, 17245.9, 6.45083e+09, 8606696576, 4303356440, 1.05396 
+1073741824, 67584, 66, 16, 64, 1024, 72567767433216, 270336, 4142.64, 17517.3, 6.45083e+09, 8606697168, 4303356364, 1.05396 
+1073741824, 68608, 67, 16, 64, 1024, 73667279060992, 274432, 4151.35, 17745.4, 6.45147e+09, 8609572346, 4303356540, 1.05398 
+1073741824, 69632, 68, 16, 64, 1024, 74766790688768, 278528, 4142.4, 18049.1, 6.45083e+09, 8606696640, 4303356536, 1.05396 
+1073741824, 70656, 69, 16, 64, 1024, 75866302316544, 282624, 4144.82, 18303.9, 6.45083e+09, 8606697164, 4303356472, 1.05396 
+1073741824, 71680, 70, 16, 64, 1024, 76965813944320, 286720, 4147.07, 18559.1, 6.45083e+09, 8606697108, 4303356316, 1.05396 
+1073741824, 72704, 71, 16, 64, 1024, 78065325572096, 290816, 4156.99, 18779.3, 6.45375e+09, 8610137625, 4304222378, 1.05391 
+1073741824, 73728, 72, 16, 64, 1024, 79164837199872, 294912, 4147.45, 19087.6, 6.45083e+09, 8606696592, 4303356384, 1.05396 
+1073741824, 74752, 73, 16, 64, 1024, 80264348827648, 299008, 4146.75, 19356, 6.45083e+09, 8606696632, 4303356504, 1.05396 
+1073741824, 75776, 74, 16, 64, 1024, 81363860455424, 303104, 4145.73, 19625.9, 6.45083e+09, 8606696664, 4303356324, 1.05396 
+1073741824, 76800, 75, 16, 64, 1024, 82463372083200, 307200, 4157.12, 19836.7, 6.45212e+09, 8610277654, 4303853111, 1.05393 
+1073741824, 77824, 76, 16, 64, 1024, 83562883710976, 311296, 4146.5, 20152.6, 6.45083e+09, 8606696672, 4303356572, 1.05396 
+1073741824, 78848, 77, 16, 64, 1024, 84662395338752, 315392, 4147.8, 20411.4, 6.45083e+09, 8606697084, 4303356460, 1.05396 
+1073741824, 79872, 78, 16, 64, 1024, 85761906966528, 319488, 4161.5, 20608.4, 6.45231e+09, 8610309981, 4303356308, 1.054 
+1073741824, 80896, 79, 16, 64, 1024, 86861418594304, 323584, 4150.52, 20927.8, 6.45083e+09, 8606696652, 4303356348, 1.05396 
+1073741824, 81920, 80, 16, 64, 1024, 87960930222080, 327680, 4150.43, 21193.2, 6.45083e+09, 8606696660, 4303356304, 1.05396 
+1073741824, 82944, 81, 16, 64, 1024, 89060441849856, 331776, 4151.22, 21454, 6.45083e+09, 8606696908, 4303356468, 1.05396 
+1073741824, 83968, 82, 16, 64, 1024, 90159953477632, 335872, 4160.61, 21669.9, 6.45211e+09, 8609727547, 4303834127, 1.05393 
+1073741824, 84992, 83, 16, 64, 1024, 91259465105408, 339968, 4151.62, 21981.7, 6.45083e+09, 8606696672, 4303356560, 1.05396 
+1073741824, 86016, 84, 16, 64, 1024, 92358976733184, 344064, 4151.03, 22249.6, 6.45083e+09, 8606696672, 4303356320, 1.05396 
+1073741824, 87040, 85, 16, 64, 1024, 93458488360960, 348160, 4161.52, 22457.8, 6.45145e+09, 8608408845, 4303356452, 1.05398 
+1073741824, 88064, 86, 16, 64, 1024, 94557999988736, 352256, 4155.95, 22752.4, 6.45083e+09, 8606696740, 4303356476, 1.05396 
+1073741824, 89088, 87, 16, 64, 1024, 95657511616512, 356352, 4153.89, 23028.4, 6.45083e+09, 8606697292, 4303356324, 1.05396 
+1073741824, 90112, 88, 16, 64, 1024, 96757023244288, 360448, 4153.73, 23294, 6.45083e+09, 8606696652, 4303356352, 1.05396 
+1073741824, 91136, 89, 16, 64, 1024, 97856534872064, 364544, 4165.87, 23490, 6.45238e+09, 8610338837, 4303356348, 1.05401 
+1073741824, 92160, 90, 16, 64, 1024, 98956046499840, 368640, 4152.11, 23832.7, 6.45083e+09, 8606696716, 4303356436, 1.05396 
+1073741824, 93184, 91, 16, 64, 1024, 100055558127616, 372736, 4156.94, 24069.5, 6.45083e+09, 8606696600, 4303356544, 1.05396 
+1073741824, 94208, 92, 16, 64, 1024, 101155069755392, 376832, 4155.31, 24343.6, 6.45083e+09, 8606696516, 4303356320, 1.05396 
+1073741824, 95232, 93, 16, 64, 1024, 102254581383168, 380928, 4167.64, 24535.4, 6.45375e+09, 8610097690, 4305751516, 1.05391 
+1073741824, 96256, 94, 16, 64, 1024, 103354093010944, 385024, 4160.97, 24838.9, 6.45083e+09, 8606696608, 4303356452, 1.05396 
+1073741824, 97280, 95, 16, 64, 1024, 104453604638720, 389120, 4159.37, 25112.9, 6.45083e+09, 8606697152, 4303356384, 1.05396 
+1073741824, 98304, 96, 16, 64, 1024, 105553116266496, 393216, 4170.14, 25311.7, 6.45155e+09, 8608640736, 4303356300, 1.05398 
+1073741824, 99328, 97, 16, 64, 1024, 106652627894272, 397312, 4158.8, 25645, 6.45083e+09, 8606696668, 4303356448, 1.05396 
+1073741824, 100352, 98, 16, 64, 1024, 107752139522048, 401408, 4159.9, 25902.6, 6.45083e+09, 8606696668, 4303356332, 1.05396 
+1073741824, 101376, 99, 16, 64, 1024, 108851651149824, 405504, 4160.24, 26164.7, 6.45083e+09, 8606697168, 4303356480, 1.05396 
+1073741824, 102400, 100, 16, 64, 1024, 109951162777600, 409600, 4169.69, 26369.1, 6.45206e+09, 8608656203, 4304044250, 1.05394 
+1073741824, 103424, 101, 16, 64, 1024, 111050674405376, 413696, 4161.88, 26682.8, 6.45083e+09, 8606696664, 4303356440, 1.05396 
+1073741824, 104448, 102, 16, 64, 1024, 112150186033152, 417792, 4164.49, 26930.1, 6.45083e+09, 8606697020, 4303356344, 1.05396 
+1073741824, 105472, 103, 16, 64, 1024, 113249697660928, 421888, 4176.21, 27117.8, 6.45245e+09, 8611086920, 4303356308, 1.05401 
+1073741824, 106496, 104, 16, 64, 1024, 114349209288704, 425984, 4162.88, 27468.8, 6.45083e+09, 8606696704, 4303356344, 1.05396 
+1073741824, 107520, 105, 16, 64, 1024, 115448720916480, 430080, 4166.56, 27708.4, 6.45083e+09, 8606696780, 4303356460, 1.05396 
+1073741824, 108544, 106, 16, 64, 1024, 116548232544256, 434176, 4162.38, 28000.4, 6.45083e+09, 8606696604, 4303356252, 1.05396 
+1073741824, 109568, 107, 16, 64, 1024, 117647744172032, 438272, 4173.21, 28191.2, 6.45167e+09, 8609127188, 4303356440, 1.05398 
+1073741824, 110592, 108, 16, 64, 1024, 118747255799808, 442368, 4161.84, 28532.4, 6.45083e+09, 8606696644, 4303356532, 1.05396 
+1073741824, 111616, 109, 16, 64, 1024, 119846767427584, 446464, 4166.91, 28761.6, 6.45083e+09, 8606696692, 4303356432, 1.05396 
+1073741824, 112640, 110, 16, 64, 1024, 120946279055360, 450560, 4170.49, 29000.5, 6.45083e+09, 8606696872, 4303356260, 1.05396 
+1073741824, 113664, 111, 16, 64, 1024, 122045790683136, 454656, 4178.86, 29205.5, 6.4539e+09, 8610166293, 4305617975, 1.05391 
+1073741824, 114688, 112, 16, 64, 1024, 123145302310912, 458752, 4169.91, 29531.9, 6.45083e+09, 8606696708, 4303356356, 1.05396 
+1073741824, 115712, 113, 16, 64, 1024, 124244813938688, 462848, 4166.96, 29816.6, 6.45083e+09, 8606696704, 4303356396, 1.05396 
+1073741824, 116736, 114, 16, 64, 1024, 125344325566464, 466944, 4180.17, 29985.5, 6.45227e+09, 8610358463, 4303356192, 1.054 
+1073741824, 117760, 115, 16, 64, 1024, 126443837194240, 471040, 4167.74, 30338.7, 6.45083e+09, 8606696684, 4303356532, 1.05396 
+1073741824, 118784, 116, 16, 64, 1024, 127543348822016, 475136, 4170.27, 30584, 6.45083e+09, 8606696712, 4303356288, 1.05396 
+1073741824, 119808, 117, 16, 64, 1024, 128642860449792, 479232, 4170.46, 30846.2, 6.45083e+09, 8606697112, 4303356340, 1.05396 
+1073741824, 120832, 118, 16, 64, 1024, 129742372077568, 483328, 4184.73, 31003.7, 6.45226e+09, 8608848830, 4304273216, 1.05393 
+1073741824, 121856, 119, 16, 64, 1024, 130841883705344, 487424, 4173.42, 31351.2, 6.45083e+09, 8606697344, 4303356332, 1.05396 
+1073741824, 122880, 120, 16, 64, 1024, 131941395333120, 491520, 4174.55, 31606.2, 6.45083e+09, 8606696676, 4303356336, 1.05396 
+1073741824, 123904, 121, 16, 64, 1024, 133040906960896, 495616, 4184.01, 31797.5, 6.45144e+09, 8608453186, 4303356332, 1.05398 
+1073741824, 124928, 122, 16, 64, 1024, 134140418588672, 499712, 4173.41, 32141.7, 6.45083e+09, 8606696728, 4303356448, 1.05396 
+1073741824, 125952, 123, 16, 64, 1024, 135239930216448, 503808, 4173.76, 32402.4, 6.45083e+09, 8606696688, 4303356496, 1.05396 
+1073741824, 126976, 124, 16, 64, 1024, 136339441844224, 507904, 4171.39, 32684.4, 6.45083e+09, 8606696776, 4303356240, 1.05396 
+1073741824, 128000, 125, 16, 64, 1024, 137438953472000, 512000, 4186.91, 32825.9, 6.45241e+09, 8610389697, 4303356336, 1.05401 
+1073741824, 129024, 126, 16, 64, 1024, 138538465099776, 516096, 4177.09, 33166.3, 6.45083e+09, 8606697188, 4303356456, 1.05396 
+1073741824, 130048, 127, 16, 64, 1024, 139637976727552, 520192, 4180.07, 33405.7, 6.45083e+09, 8606696720, 4303356324, 1.05396 
+1073741824, 131072, 128, 16, 64, 1024, 140737488355328, 524288, 4176.09, 33700.8, 6.45083e+09, 8606696640, 4303356212, 1.05396 
+1073741824, 132096, 129, 16, 64, 1024, 141836999983104, 528384, 4187.65, 33870.3, 6.4518e+09, 8608161626, 4303561507, 1.05394 
+1073741824, 133120, 130, 16, 64, 1024, 142936511610880, 532480, 4177.79, 34213.5, 6.45083e+09, 8606696668, 4303356436, 1.05396 
+1073741824, 134144, 131, 16, 64, 1024, 144036023238656, 536576, 4178.99, 34466.7, 6.45083e+09, 8606696584, 4303356456, 1.05396 
+1073741824, 135168, 132, 16, 64, 1024, 145135534866432, 540672, 4186.7, 34665.8, 6.45134e+09, 8608245679, 4303356324, 1.05397 
+1073741824, 136192, 133, 16, 64, 1024, 146235046494208, 544768, 4179.57, 34988, 6.45083e+09, 8606697540, 4303356424, 1.05396 
+1073741824, 137216, 134, 16, 64, 1024, 147334558121984, 548864, 4185.66, 35199.8, 6.45083e+09, 8606696912, 4303356400, 1.05396 
+1073741824, 138240, 135, 16, 64, 1024, 148434069749760, 552960, 4182.36, 35490.5, 6.45083e+09, 8606697172, 4303356376, 1.05396 
+1073741824, 139264, 136, 16, 64, 1024, 149533581377536, 557056, 4195.33, 35642.8, 6.4535e+09, 8609568067, 4305259658, 1.05391 
+1073741824, 140288, 137, 16, 64, 1024, 150633093005312, 561152, 4182.39, 36016.1, 6.45083e+09, 8606696728, 4303356416, 1.05396 
+1073741824, 141312, 138, 16, 64, 1024, 151732604633088, 565248, 4184.43, 36261.2, 6.45083e+09, 8606697320, 4303356416, 1.05396 
+1073741824, 142336, 139, 16, 64, 1024, 152832116260864, 569344, 4193.37, 36446.1, 6.45137e+09, 8608483064, 4303356320, 1.05397 
+1073741824, 143360, 140, 16, 64, 1024, 153931627888640, 573440, 4183.14, 36798.1, 6.45083e+09, 8606697184, 4303356448, 1.05396 
+1073741824, 144384, 141, 16, 64, 1024, 155031139516416, 577536, 4184.98, 37044.7, 6.45083e+09, 8606696856, 4303356424, 1.05396 
+1073741824, 145408, 142, 16, 64, 1024, 156130651144192, 581632, 4189.69, 37265.5, 6.45083e+09, 8606696616, 4303356324, 1.05396 
+1073741824, 146432, 143, 16, 64, 1024, 157230162771968, 585728, 4197.89, 37454.6, 6.45227e+09, 8610135310, 4303356340, 1.054 
+1073741824, 147456, 144, 16, 64, 1024, 158329674399744, 589824, 4186.62, 37818, 6.45083e+09, 8606696688, 4303356496, 1.05396 
+1073741824, 148480, 145, 16, 64, 1024, 159429186027520, 593920, 4188.21, 38066.2, 6.45083e+09, 8606697168, 4303356428, 1.05396 
+1073741824, 149504, 146, 16, 64, 1024, 160528697655296, 598016, 4186.41, 38345.2, 6.45083e+09, 8606696440, 4303356284, 1.05396 
+1073741824, 150528, 147, 16, 64, 1024, 161628209283072, 602112, 4197.88, 38502.3, 6.4518e+09, 8607959447, 4303549553, 1.05394 
+1073741824, 151552, 148, 16, 64, 1024, 162727720910848, 606208, 4186.58, 38868.8, 6.45083e+09, 8606696784, 4303356456, 1.05396 
+1073741824, 152576, 149, 16, 64, 1024, 163827232538624, 610304, 4191.42, 39086.4, 6.45083e+09, 8606697596, 4303356420, 1.05396 
+1073741824, 153600, 150, 16, 64, 1024, 164926744166400, 614400, 4201.8, 39251.5, 6.45237e+09, 8610097743, 4303356328, 1.05401 
+1073741824, 154624, 151, 16, 64, 1024, 166026255794176, 618496, 4190.38, 39620.8, 6.45083e+09, 8606696768, 4303356424, 1.05396 
+1073741824, 155648, 152, 16, 64, 1024, 167125767421952, 622592, 4193.5, 39853.5, 6.45083e+09, 8606697276, 4303356412, 1.05396 
+1073741824, 156672, 153, 16, 64, 1024, 168225279049728, 626688, 4190.54, 40144, 6.45083e+09, 8606697072, 4303356332, 1.05396 
+1073741824, 157696, 154, 16, 64, 1024, 169324790677504, 630784, 4200.82, 40307.6, 6.45188e+09, 8608462727, 4303850542, 1.05394 
+1073741824, 158720, 155, 16, 64, 1024, 170424302305280, 634880, 4194.83, 40627.2, 6.45083e+09, 8606696596, 4303356456, 1.05396 
+1073741824, 159744, 156, 16, 64, 1024, 171523813933056, 638976, 4191.94, 40917.6, 6.45083e+09, 8606696416, 4303356340, 1.05396 
+1073741824, 160768, 157, 16, 64, 1024, 172623325560832, 643072, 4205.7, 41045.1, 6.45136e+09, 8608493189, 4303356336, 1.05397 
+1073741824, 161792, 158, 16, 64, 1024, 173722837188608, 647168, 4198.09, 41381.4, 6.45083e+09, 8606697028, 4303356416, 1.05396 
+1073741824, 162816, 159, 16, 64, 1024, 174822348816384, 651264, 4195.93, 41664.8, 6.45083e+09, 8606696492, 4303356404, 1.05396 
+1073741824, 163840, 160, 16, 64, 1024, 175921860444160, 655360, 4196.26, 41923.5, 6.45083e+09, 8606696292, 4303356304, 1.05396 
+1073741824, 164864, 161, 16, 64, 1024, 177021372071936, 659456, 4205.8, 42089.8, 6.45374e+09, 8610136985, 4305486598, 1.05391 
+1073741824, 165888, 162, 16, 64, 1024, 178120883699712, 663552, 4196.07, 42449.4, 6.45083e+09, 8606696788, 4303356444, 1.05396 
+1073741824, 166912, 163, 16, 64, 1024, 179220395327488, 667648, 4196.96, 42702.5, 6.45083e+09, 8606697168, 4303356436, 1.05396 
+1073741824, 167936, 164, 16, 64, 1024, 180319906955264, 671744, 4206.34, 42868.6, 6.4513e+09, 8608269097, 4303356192, 1.05397 
+1073741824, 168960, 165, 16, 64, 1024, 181419418583040, 675840, 4198.48, 43210.8, 6.45083e+09, 8606697264, 4303356448, 1.05396 
+1073741824, 169984, 166, 16, 64, 1024, 182518930210816, 679936, 4204.37, 43411.7, 6.45083e+09, 8606696772, 4303356232, 1.05396 
+1073741824, 171008, 167, 16, 64, 1024, 183618441838592, 684032, 4199.94, 43719.3, 6.45083e+09, 8606697836, 4303356224, 1.05396 
+1073741824, 172032, 168, 16, 64, 1024, 184717953466368, 688128, 4211.48, 43860.5, 6.45242e+09, 8610624443, 4303356212, 1.05401 
+1073741824, 173056, 169, 16, 64, 1024, 185817465094144, 692224, 4202.27, 44218.4, 6.45083e+09, 8606697332, 4303356464, 1.05396 
+1073741824, 174080, 170, 16, 64, 1024, 186916976721920, 696320, 4200.98, 44493.6, 6.45083e+09, 8606696476, 4303356224, 1.05396 
+1073741824, 175104, 171, 16, 64, 1024, 188016488349696, 700416, 4201.22, 44752.8, 6.45083e+09, 8606697196, 4303356408, 1.05396 
+1073741824, 176128, 172, 16, 64, 1024, 189115999977472, 704512, 4211.55, 44904.2, 6.45249e+09, 8609128323, 4304482314, 1.05393 
+1073741824, 177152, 173, 16, 64, 1024, 190215511605248, 708608, 4202.69, 45260.4, 6.45083e+09, 8606697260, 4303356420, 1.05396 
+1073741824, 178176, 174, 16, 64, 1024, 191315023233024, 712704, 4206.87, 45476.8, 6.45083e+09, 8606696684, 4303356196, 1.05396 
+1073741824, 179200, 175, 16, 64, 1024, 192414534860800, 716800, 4217.02, 45628.1, 6.45233e+09, 8610417187, 4303356236, 1.054 
+1073741824, 180224, 176, 16, 64, 1024, 193514046488576, 720896, 4207.59, 45991.7, 6.45083e+09, 8606696780, 4303356368, 1.05396 
+1073741824, 181248, 177, 16, 64, 1024, 194613558116352, 724992, 4204.72, 46284.6, 6.45083e+09, 8606696472, 4303356344, 1.05396 
+1073741824, 182272, 178, 16, 64, 1024, 195713069744128, 729088, 4207.08, 46520, 6.45083e+09, 8606697040, 4303356192, 1.05396 
+1073741824, 183296, 179, 16, 64, 1024, 196812581371904, 733184, 4216.72, 46674.3, 6.45186e+09, 8608444930, 4303841578, 1.05394 
+1073741824, 184320, 180, 16, 64, 1024, 197912092999680, 737280, 4205.21, 47063.5, 6.45083e+09, 8606697420, 4303356524, 1.05396 
+1073741824, 185344, 181, 16, 64, 1024, 199011604627456, 741376, 4209.21, 47280, 6.45083e+09, 8606696888, 4303356364, 1.05396 
+1073741824, 186368, 182, 16, 64, 1024, 200111116255232, 745472, 4223.74, 47377.7, 6.45243e+09, 8610637964, 4303356180, 1.05401 
+1073741824, 187392, 183, 16, 64, 1024, 201210627883008, 749568, 4211.17, 47780.2, 6.45083e+09, 8606697436, 4303356332, 1.05396 
+1073741824, 188416, 184, 16, 64, 1024, 202310139510784, 753664, 4211.79, 48034.3, 6.45083e+09, 8606696456, 4303356184, 1.05396 
+1073741824, 189440, 185, 16, 64, 1024, 203409651138560, 757760, 4210.47, 48310.4, 6.45083e+09, 8606696424, 4303356296, 1.05396 
+1073741824, 190464, 186, 16, 64, 1024, 204509162766336, 761856, 4222.63, 48431.7, 6.45189e+09, 8608478006, 4303596568, 1.05394 
+1073741824, 191488, 187, 16, 64, 1024, 205608674394112, 765952, 4212.08, 48814, 6.45083e+09, 8606697088, 4303356524, 1.05396 
+1073741824, 192512, 188, 16, 64, 1024, 206708186021888, 770048, 4212.46, 49070.6, 6.45083e+09, 8606696524, 4303356196, 1.05396 
+1073741824, 193536, 189, 16, 64, 1024, 207807697649664, 774144, 4224.39, 49192.3, 6.45241e+09, 8610362557, 4303356304, 1.05401 
+1073741824, 194560, 190, 16, 64, 1024, 208907209277440, 778240, 4218.78, 49518.4, 6.45083e+09, 8606696744, 4303356416, 1.05396 
+1073741824, 195584, 191, 16, 64, 1024, 210006720905216, 782336, 4216.86, 49801.6, 6.45083e+09, 8606697416, 4303356244, 1.05396 
+1073741824, 196608, 192, 16, 64, 1024, 211106232532992, 786432, 4214.78, 50087.2, 6.45083e+09, 8606696432, 4303356188, 1.05396 
+1073741824, 197632, 193, 16, 64, 1024, 212205744160768, 790528, 4226.74, 50205.5, 6.45158e+09, 8608954234, 4303356324, 1.05398 
+1073741824, 198656, 194, 16, 64, 1024, 213305255788544, 794624, 4215.52, 50600, 6.45083e+09, 8606696720, 4303356412, 1.05396 
+1073741824, 199680, 195, 16, 64, 1024, 214404767416320, 798720, 4218.35, 50826.7, 6.45083e+09, 8606696464, 4303356328, 1.05396 
+1073741824, 200704, 196, 16, 64, 1024, 215504279044096, 802816, 4216.78, 51106.3, 6.45083e+09, 8606696240, 4303356320, 1.05396 
+1073741824, 201728, 197, 16, 64, 1024, 216603790671872, 806912, 4230.6, 51199.3, 6.45213e+09, 8608748482, 4304111501, 1.05393 
+1073741824, 202752, 198, 16, 64, 1024, 217703302299648, 811008, 4224.07, 51538.7, 6.45083e+09, 8606696736, 4303356404, 1.05396 
+1073741824, 203776, 199, 16, 64, 1024, 218802813927424, 815104, 4222.79, 51814.8, 6.45083e+09, 8606697200, 4303356352, 1.05396 
+1073741824, 204800, 200, 16, 64, 1024, 219902325555200, 819200, 4233.07, 51948.6, 6.45243e+09, 8610643373, 4303356276, 1.05401 
+1073741824, 205824, 201, 16, 64, 1024, 221001837182976, 823296, 4221.27, 52354.3, 6.45083e+09, 8606696904, 4303356404, 1.05396 
+1073741824, 206848, 202, 16, 64, 1024, 222101348810752, 827392, 4221.3, 52614.4, 6.45083e+09, 8606696340, 4303356288, 1.05396 
+1073741824, 207872, 203, 16, 64, 1024, 223200860438528, 831488, 4221.8, 52868.7, 6.45083e+09, 8606696460, 4303356324, 1.05396 
+1073741824, 208896, 204, 16, 64, 1024, 224300372066304, 835584, 4231.58, 53006.3, 6.45252e+09, 8608992502, 4304223979, 1.05393 
+1073741824, 209920, 205, 16, 64, 1024, 225399883694080, 839680, 4225.02, 53348.8, 6.45083e+09, 8606697024, 4303356416, 1.05396 
+1073741824, 210944, 206, 16, 64, 1024, 226499395321856, 843776, 4226.19, 53594.2, 6.45083e+09, 8606696356, 4303356300, 1.05396 
+1073741824, 211968, 207, 16, 64, 1024, 227598906949632, 847872, 4235.4, 53737.3, 6.45241e+09, 8610635730, 4303356336, 1.05401 
+1073741824, 212992, 208, 16, 64, 1024, 228698418577408, 851968, 4227.88, 54092.9, 6.45083e+09, 8606697240, 4303356428, 1.05396 
+1073741824, 214016, 209, 16, 64, 1024, 229797930205184, 856064, 4226.09, 54376, 6.45083e+09, 8606696940, 4303356296, 1.05396 
+1073741824, 215040, 210, 16, 64, 1024, 230897441832960, 860160, 4225.14, 54648.5, 6.45083e+09, 8606696268, 4303356280, 1.05396 
+1073741824, 216064, 211, 16, 64, 1024, 231996953460736, 864256, 4238.52, 54735.3, 6.45193e+09, 8608307734, 4303624988, 1.05394 
+1073741824, 217088, 212, 16, 64, 1024, 233096465088512, 868352, 4224.63, 55175.5, 6.45083e+09, 8606696524, 4303356376, 1.05396 
+1073741824, 218112, 213, 16, 64, 1024, 234195976716288, 872448, 4229.68, 55369.7, 6.45083e+09, 8606696928, 4303356292, 1.05396 
+1073741824, 219136, 214, 16, 64, 1024, 235295488344064, 876544, 4242.83, 55457.2, 6.45237e+09, 8610547510, 4303356280, 1.05401 
+1073741824, 220160, 215, 16, 64, 1024, 236394999971840, 880640, 4231.68, 55863.1, 6.45083e+09, 8606696656, 4303356436, 1.05396 
+1073741824, 221184, 216, 16, 64, 1024, 237494511599616, 884736, 4231.89, 56120.2, 6.45083e+09, 8606696364, 4303356288, 1.05396 
+1073741824, 222208, 217, 16, 64, 1024, 238594023227392, 888832, 4232.23, 56375.5, 6.45083e+09, 8606696536, 4303356308, 1.05396 
+1073741824, 223232, 218, 16, 64, 1024, 239693534855168, 892928, 4242.7, 56495.5, 6.4519e+09, 8608304612, 4303603986, 1.05394 
+1073741824, 224256, 219, 16, 64, 1024, 240793046482944, 897024, 4231.59, 56903.7, 6.45083e+09, 8606696612, 4303356444, 1.05396 
+1073741824, 225280, 220, 16, 64, 1024, 241892558110720, 901120, 4232.42, 57152.3, 6.45083e+09, 8606696500, 4303356284, 1.05396 
+1073741824, 226304, 221, 16, 64, 1024, 242992069738496, 905216, 4244.8, 57244.7, 6.45255e+09, 8610893180, 4303356308, 1.05401 
+1073741824, 227328, 222, 16, 64, 1024, 244091581366272, 909312, 4234.7, 57640.9, 6.45083e+09, 8606696680, 4303356400, 1.05396 
+1073741824, 228352, 223, 16, 64, 1024, 245191092994048, 913408, 4237.15, 57867, 6.45083e+09, 8606697272, 4303356304, 1.05396 
+1073741824, 229376, 224, 16, 64, 1024, 246290604621824, 917504, 4236.68, 58132.9, 6.45083e+09, 8606697196, 4303356284, 1.05396 
+1073741824, 230400, 225, 16, 64, 1024, 247390116249600, 921600, 4248.35, 58232.1, 6.45193e+09, 8608327300, 4303918124, 1.05394 
+1073741824, 231424, 226, 16, 64, 1024, 248489627877376, 925696, 4237.85, 58635.7, 6.45083e+09, 8606697340, 4303356364, 1.05396 
+1073741824, 232448, 227, 16, 64, 1024, 249589139505152, 929792, 4237.23, 58903.8, 6.45083e+09, 8606696628, 4303356396, 1.05396 
+1073741824, 233472, 228, 16, 64, 1024, 250688651132928, 933888, 4236.92, 59167.7, 6.45083e+09, 8606696420, 4303356188, 1.05396 
+1073741824, 234496, 229, 16, 64, 1024, 251788162760704, 937984, 4248.84, 59260.5, 6.45383e+09, 8610237241, 4305529108, 1.05391 
+1073741824, 235520, 230, 16, 64, 1024, 252887674388480, 942080, 4243.62, 59592.4, 6.45083e+09, 8606697216, 4303356432, 1.05396 
+1073741824, 236544, 231, 16, 64, 1024, 253987186016256, 946176, 4242.51, 59867.2, 6.45083e+09, 8606697340, 4303356236, 1.05396 
+1073741824, 237568, 232, 16, 64, 1024, 255086697644032, 950272, 4251.45, 59999.9, 6.45138e+09, 8608547720, 4303356168, 1.05397 
+1073741824, 238592, 233, 16, 64, 1024, 256186209271808, 954368, 4242.55, 60384.9, 6.45083e+09, 8606697324, 4303356424, 1.05396 
+1073741824, 239616, 234, 16, 64, 1024, 257285720899584, 958464, 4244.36, 60618.2, 6.45083e+09, 8606697136, 4303356188, 1.05396 
+1073741824, 240640, 235, 16, 64, 1024, 258385232527360, 962560, 4242.43, 60905, 6.45083e+09, 8606696460, 4303356424, 1.05396 
+1073741824, 241664, 236, 16, 64, 1024, 259484744155136, 966656, 4254.31, 60993.4, 6.45405e+09, 8610554224, 4305993420, 1.0539 
+1073741824, 242688, 237, 16, 64, 1024, 260584255782912, 970752, 4246.92, 61358.5, 6.45083e+09, 8606696652, 4303356408, 1.05396 
+1073741824, 243712, 238, 16, 64, 1024, 261683767410688, 974848, 4248.85, 61589.3, 6.45083e+09, 8606696968, 4303356180, 1.05396 
+1073741824, 244736, 239, 16, 64, 1024, 262783279038464, 978944, 4259.4, 61694.9, 6.45171e+09, 8609210329, 4303356212, 1.05398 
+1073741824, 245760, 240, 16, 64, 1024, 263882790666240, 983040, 4247.62, 62124.8, 6.45083e+09, 8606696900, 4303356332, 1.05396 
+1073741824, 246784, 241, 16, 64, 1024, 264982302294016, 987136, 4246.61, 62398.5, 6.45083e+09, 8606696700, 4303356308, 1.05396 
+1073741824, 247808, 242, 16, 64, 1024, 266081813921792, 991232, 4248.84, 62624.6, 6.45083e+09, 8606697916, 4303356208, 1.05396 
+1073741824, 248832, 243, 16, 64, 1024, 267181325549568, 995328, 4258.48, 62741, 6.45397e+09, 8610323939, 4305665166, 1.0539 
+1073741824, 249856, 244, 16, 64, 1024, 268280837177344, 999424, 4247.45, 63162.8, 6.45083e+09, 8606697184, 4303356508, 1.05396 
+1073741824, 250880, 245, 16, 64, 1024, 269380348805120, 1003520, 4251.08, 63367.4, 6.45083e+09, 8606698836, 4303357048, 1.05396 
+1073741824, 251904, 246, 16, 64, 1024, 270479860432896, 1007616, 4263.14, 63446.2, 6.45244e+09, 8610685301, 4303356196, 1.05401 
+1073741824, 252928, 247, 16, 64, 1024, 271579372060672, 1011712, 4254.36, 63835.6, 6.45083e+09, 8606696932, 4303356516, 1.05396 
+1073741824, 253952, 248, 16, 64, 1024, 272678883688448, 1015808, 4254.67, 64089.3, 6.45083e+09, 8606696500, 4303356168, 1.05396 
+1073741824, 254976, 249, 16, 64, 1024, 273778395316224, 1019904, 4254.88, 64344.5, 6.45083e+09, 8606696652, 4303356216, 1.05396 
+1073741824, 256000, 250, 16, 64, 1024, 274877906944000, 1024000, 4264.82, 64452.4, 6.45236e+09, 8608988713, 4304085492, 1.05393 
+1073741824, 257024, 251, 16, 64, 1024, 275977418571776, 1028096, 4253.19, 64887.1, 6.45083e+09, 8606697044, 4303356508, 1.05396 
+1073741824, 258048, 252, 16, 64, 1024, 277076930199552, 1032192, 4255.97, 65103.1, 6.45083e+09, 8606696976, 4303356184, 1.05396 
+1073741824, 259072, 253, 16, 64, 1024, 278176441827328, 1036288, 4268.22, 65173.9, 6.4515e+09, 8608789638, 4303356188, 1.05398 
+1073741824, 260096, 254, 16, 64, 1024, 279275953455104, 1040384, 4259.24, 65569.4, 6.45083e+09, 8606697000, 4303356500, 1.05396 
+1073741824, 261120, 255, 16, 64, 1024, 280375465082880, 1044480, 4259.46, 65824.2, 6.45083e+09, 8606696820, 4303356172, 1.05396 
+1073741824, 262144, 256, 16, 64, 1024, 281474976710656, 1048576, 4260.41, 66067.6, 6.45083e+09, 8606697308, 4303356180, 1.05396 
+1073741824, 263168, 257, 16, 64, 1024, 282574488338432, 1052672, 4271.12, 66159.4, 6.45384e+09, 8610459688, 4305543839, 1.05391 
+1073741824, 264192, 258, 16, 64, 1024, 283673999966208, 1056768, 4259.44, 66598.9, 6.45083e+09, 8606696824, 4303356512, 1.05396 
+1073741824, 265216, 259, 16, 64, 1024, 284773511593984, 1060864, 4260.53, 66840, 6.45083e+09, 8606696996, 4303356300, 1.05396 
+1073741824, 266240, 260, 16, 64, 1024, 285873023221760, 1064960, 4272.14, 66915.6, 6.45138e+09, 8608328930, 4303356276, 1.05397 
+1073741824, 267264, 261, 16, 64, 1024, 286972534849536, 1069056, 4263.33, 67311.7, 6.45083e+09, 8606696844, 4303356484, 1.05396 
+1073741824, 268288, 262, 16, 64, 1024, 288072046477312, 1073152, 4265.31, 67538.4, 6.45083e+09, 8606696864, 4303356316, 1.05396 
+1073741824, 269312, 263, 16, 64, 1024, 289171558105088, 1077248, 4266.68, 67774.4, 6.45083e+09, 8606696340, 4303356292, 1.05396 
+1073741824, 270336, 264, 16, 64, 1024, 290271069732864, 1081344, 4278.15, 67849.7, 6.45406e+09, 8610424847, 4305808869, 1.0539 
+1073741824, 271360, 265, 16, 64, 1024, 291370581360640, 1085440, 4266.95, 68285.5, 6.45083e+09, 8606696840, 4303356504, 1.05396 
+1073741824, 272384, 266, 16, 64, 1024, 292470092988416, 1089536, 4264.97, 68574.9, 6.45083e+09, 8606696984, 4303356332, 1.05396 
+1073741824, 273408, 267, 16, 64, 1024, 293569604616192, 1093632, 4275.23, 68667.6, 6.4515e+09, 8608652984, 4303356292, 1.05398 
+1073741824, 274432, 268, 16, 64, 1024, 294669116243968, 1097728, 4266.76, 69061.6, 6.45083e+09, 8606697228, 4303356532, 1.05396 
+1073741824, 275456, 269, 16, 64, 1024, 295768627871744, 1101824, 4270.56, 69257.6, 6.45083e+09, 8606697100, 4303356288, 1.05396 
+1073741824, 276480, 270, 16, 64, 1024, 296868139499520, 1105920, 4271.47, 69500.2, 6.45083e+09, 8606696932, 4303356300, 1.05396 
+1073741824, 277504, 271, 16, 64, 1024, 297967651127296, 1110016, 4283.79, 69557, 6.45365e+09, 8610138168, 4305363588, 1.05391 
+1073741824, 278528, 272, 16, 64, 1024, 299067162755072, 1114112, 4271.88, 70008.3, 6.45083e+09, 8606697324, 4303356524, 1.05396 
+1073741824, 279552, 273, 16, 64, 1024, 300166674382848, 1118208, 4272.74, 70251.6, 6.45083e+09, 8606696712, 4303356304, 1.05396 
+1073741824, 280576, 274, 16, 64, 1024, 301266186010624, 1122304, 4282.56, 70347.2, 6.45149e+09, 8608746373, 4303356284, 1.05398 
+1073741824, 281600, 275, 16, 64, 1024, 302365697638400, 1126400, 4272.08, 70777.2, 6.45083e+09, 8606696840, 4303356492, 1.05396 
+1073741824, 282624, 276, 16, 64, 1024, 303465209266176, 1130496, 4271.72, 71040.6, 6.45083e+09, 8606696452, 4303356284, 1.05396 
+1073741824, 283648, 277, 16, 64, 1024, 304564720893952, 1134592, 4273.68, 71265.2, 6.45083e+09, 8606697116, 4303356292, 1.05396 
+1073741824, 284672, 278, 16, 64, 1024, 305664232521728, 1138688, 4290.05, 71249.5, 6.45394e+09, 8610319291, 4305671084, 1.0539 
+1073741824, 285696, 279, 16, 64, 1024, 306763744149504, 1142784, 4281.3, 71652.1, 6.45083e+09, 8606697368, 4303356520, 1.05396 
+1073741824, 286720, 280, 16, 64, 1024, 307863255777280, 1146880, 4279.87, 71932.9, 6.45083e+09, 8606697228, 4303356292, 1.05396 
+1073741824, 287744, 281, 16, 64, 1024, 308962767405056, 1150976, 4289.88, 72021.3, 6.45171e+09, 8609078761, 4303356284, 1.05398 
+1073741824, 288768, 282, 16, 64, 1024, 310062279032832, 1155072, 4281.88, 72412.7, 6.45083e+09, 8606697488, 4303356508, 1.05396 
+1073741824, 289792, 283, 16, 64, 1024, 311161790660608, 1159168, 4283.69, 72638.6, 6.45083e+09, 8606697260, 4303356284, 1.05396 
+1073741824, 290816, 284, 16, 64, 1024, 312261302288384, 1163264, 4286.33, 72850.6, 6.45083e+09, 8606696372, 4303356256, 1.05396 
+1073741824, 291840, 285, 16, 64, 1024, 313360813916160, 1167360, 4303.91, 72808.4, 6.45367e+09, 8610299837, 4305375464, 1.05391 
+1073741824, 292864, 286, 16, 64, 1024, 314460325543936, 1171456, 4296.91, 73182.8, 6.45083e+09, 8606697300, 4303356520, 1.05396 
+1073741824, 293888, 287, 16, 64, 1024, 315559837171712, 1175552, 4298.34, 73414.4, 6.45083e+09, 8606697152, 4303356288, 1.05396 
+1073741824, 294912, 288, 16, 64, 1024, 316659348799488, 1179648, 4313, 73419.8, 6.4515e+09, 8608791987, 4303356288, 1.05398 
+1073741824, 295936, 289, 16, 64, 1024, 317758860427264, 1183744, 4308.1, 73758.5, 6.45083e+09, 8606697468, 4303356476, 1.05396 
+1073741824, 296960, 290, 16, 64, 1024, 318858372055040, 1187840, 4314.69, 73900.6, 6.45083e+09, 8606696876, 4303356188, 1.05396 
+1073741824, 297984, 291, 16, 64, 1024, 319957883682816, 1191936, 4319.13, 74079.2, 6.45083e+09, 8606696464, 4303356176, 1.05396 
+1073741824, 299008, 292, 16, 64, 1024, 321057395310592, 1196032, 4338.57, 74000.7, 6.45385e+09, 8610474809, 4305549785, 1.05391 
+1073741824, 300032, 293, 16, 64, 1024, 322156906938368, 1200128, 4333.7, 74337.5, 6.45083e+09, 8606697396, 4303356496, 1.05396 
+1073741824, 301056, 294, 16, 64, 1024, 323256418566144, 1204224, 4339.38, 74493.8, 6.45083e+09, 8606696564, 4303356184, 1.05396 
+1073741824, 302080, 295, 16, 64, 1024, 324355930193920, 1208320, 4354.87, 74481.2, 6.45235e+09, 8610491173, 4303356168, 1.05401 
+1073741824, 303104, 296, 16, 64, 1024, 325455441821696, 1212416, 4351.95, 74783.8, 6.45083e+09, 8606697184, 4303356492, 1.05396 
+1073741824, 304128, 297, 16, 64, 1024, 326554953449472, 1216512, 4360.29, 74893, 6.45083e+09, 8606697116, 4303356168, 1.05396 
+1073741824, 305152, 298, 16, 64, 1024, 327654465077248, 1220608, 4362.82, 75101.5, 6.45083e+09, 8606697112, 4303356160, 1.05396 
+1073741824, 306176, 299, 16, 64, 1024, 328753976705024, 1224704, 4381.69, 75029, 6.45258e+09, 8608971810, 4304584880, 1.05393 
+1073741824, 307200, 300, 16, 64, 1024, 329853488332800, 1228800, 4377.94, 75344.4, 6.45083e+09, 8606697120, 4303356480, 1.05396 
+1073741824, 308224, 301, 16, 64, 1024, 330952999960576, 1232896, 4382.03, 75525.1, 6.45083e+09, 8606696484, 4303356172, 1.05396 
+1073741824, 309248, 302, 16, 64, 1024, 332052511588352, 1236992, 4396.74, 75522.4, 6.45141e+09, 8608313731, 4303356160, 1.05397 
+1073741824, 310272, 303, 16, 64, 1024, 333152023216128, 1241088, 4391.36, 75865.4, 6.45083e+09, 8606697304, 4303356484, 1.05396 
+1073741824, 311296, 304, 16, 64, 1024, 334251534843904, 1245184, 4396.7, 76023.4, 6.45083e+09, 8606696476, 4303356172, 1.05396 
