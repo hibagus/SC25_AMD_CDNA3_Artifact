@@ -1,0 +1,99 @@
+TransferBench v1.61.00
+===============================================================
+[Common]                              (Suppress by setting HIDE_ENV=1)
+ALWAYS_VALIDATE      =            0 : Validating after all iterations
+BLOCK_BYTES          =          256 : Each CU gets a mulitple of 256 bytes to copy
+BYTE_OFFSET          =            0 : Using byte offset of 0
+CU_MASK              =            0 : All
+FILL_PATTERN         =            0 : Element i = ((i * 517) modulo 383 + 31) * (srcBufferIdx + 1)
+GFX_BLOCK_ORDER      =            0 : Thread block ordering: Sequential
+GFX_BLOCK_SIZE       =          256 : Threadblock size of 256
+GFX_SINGLE_TEAM      =            1 : Combining CUs to work across entire data array
+GFX_UNROLL           =            4 : Using GFX unroll factor of 4
+GFX_WAVE_ORDER       =            0 : Using GFX wave ordering of Unroll,Wavefront,CU
+GFX_WORD_SIZE        =            4 : Using GFX word size of 4 (DWORDx4)
+MIN_VAR_SUBEXEC      =            1 : Using at least 1 subexecutor(s) for variable subExec tranfers
+MAX_VAR_SUBEXEC      =            0 : Using up to all available subexecutors for variable subExec transfers
+NUM_ITERATIONS       =           10 : Running 10  timed iteration(s)
+NUM_SUBITERATIONS    =            1 : Running 1 subiterations
+NUM_WARMUPS          =            3 : Running 3 warmup iteration(s) per Test
+SHOW_ITERATIONS      =            0 : Hiding per-iteration timing
+USE_HIP_EVENTS       =            1 : Using HIP events for GFX/DMA Executor timing
+USE_HSA_DMA          =            0 : Using hipMemcpyAsync for DMA execution
+USE_INTERACTIVE      =            0 : Running in non-interactive mode
+USE_SINGLE_STREAM    =            1 : Using single stream per GFX device
+VALIDATE_DIRECT      =            0 : Validate GPU destination memory via CPU staging buffer
+VALIDATE_SOURCE      =            0 : Do not perform source validation after prep
+
+[P2P Related]
+NUM_CPU_DEVICES      =            2 : Using 2 CPUs
+NUM_CPU_SE           =            4 : Using 4 CPU threads per Transfer
+NUM_GPU_DEVICES      =            8 : Using 8 GPUs
+NUM_GPU_SE           =          304 : Using 304 GPU subexecutors/CUs per Transfer
+P2P_MODE             =            0 : Running Uni + Bi transfers
+USE_FINE_GRAIN       =            0 : Using coarse-grained memory
+USE_GPU_DMA          =            0 : Using GPU-GFX as GPU executor
+USE_REMOTE_READ      =            0 : Using SRC as executor
+
+Bytes Per Direction 68719476736
+Unidirectional copy peak bandwidth GB/s [Local read / Remote write] (GPU-Executor: GFX)
+ SRC+EXE\DST    CPU 00    CPU 01       GPU 00    GPU 01    GPU 02    GPU 03    GPU 04    GPU 05    GPU 06    GPU 07
+  CPU 00  ->     48.56     50.94        44.48     44.45     44.53     44.35     33.78     33.84     33.78     33.72
+  CPU 01  ->     52.04     50.20        33.92     33.90     33.84     33.86     44.55     44.46     44.79     43.72
+
+  GPU 00  ->     55.20     55.17      1919.91     49.11     49.03     48.88     48.12     47.96     48.51     48.09
+  GPU 01  ->     55.18     55.18        49.06   1922.09     49.10     48.88     48.11     48.00     48.68     48.39
+  GPU 02  ->     55.20     55.17        48.77     49.17   1922.60     49.09     48.88     48.68     48.71     49.07
+  GPU 03  ->     55.20     55.17        49.12     48.94     49.08   1917.72     48.48     47.90     48.73     48.72
+  GPU 04  ->     55.18     55.20        47.93     48.04     48.70     48.57   1919.58     49.08     49.10     48.56
+  GPU 05  ->     55.18     55.22        47.98     48.05     48.59     48.30     48.70   1921.98     48.88     49.16
+  GPU 06  ->     55.24     55.27        48.46     48.69     48.54     48.97     49.02     48.91   1880.31     49.15
+  GPU 07  ->     55.19     55.22        48.52     48.55     48.77     48.76     48.74     49.14     49.12   1919.93
+                           CPU->CPU  CPU->GPU  GPU->CPU  GPU->GPU
+Averages (During UniDir):     51.49     39.12     55.20     48.68
+
+Bidirectional copy peak bandwidth GB/s [Local read / Remote write] (GPU-Executor: GFX)
+     SRC\DST    CPU 00    CPU 01       GPU 00    GPU 01    GPU 02    GPU 03    GPU 04    GPU 05    GPU 06    GPU 07
+  CPU 00  ->       N/A     47.42        41.63     41.32     41.56     41.34     33.03     33.07     33.08     32.99
+  CPU 00 <-        N/A     47.57        54.67     54.71     54.19     54.27     27.76     27.70     27.79     27.77
+  CPU 00 <->       N/A     95.00        96.30     96.02     95.75     95.61     60.79     60.77     60.87     60.76
+
+  CPU 01  ->     47.78       N/A        33.30     33.22     33.19     33.23     41.62     41.78     41.76     41.64
+  CPU 01 <-      47.67       N/A        27.85     27.71     27.87     27.67     54.69     54.70     54.16     54.38
+  CPU 01 <->     95.46       N/A        61.16     60.93     61.06     60.90     96.31     96.48     95.92     96.02
+
+
+  GPU 00  ->     54.70     27.84          N/A     46.46     46.31     46.34     46.06     46.13     46.33     46.21
+  GPU 00 <-      41.44     33.26          N/A     46.36     46.31     46.30     46.17     46.09     46.19     46.19
+  GPU 00 <->     96.13     61.10          N/A     92.82     92.63     92.65     92.23     92.22     92.51     92.40
+
+  GPU 01  ->     54.70     27.76        46.37       N/A     46.40     46.31     46.22     46.18     46.34     46.25
+  GPU 01 <-      41.33     33.11        46.44       N/A     46.46     46.20     46.15     46.17     46.19     46.22
+  GPU 01 <->     96.03     60.87        92.81       N/A     92.86     92.50     92.37     92.34     92.53     92.47
+
+  GPU 02  ->     54.30     27.87        46.32     46.46       N/A     46.45     46.29     46.29     46.30     46.38
+  GPU 02 <-      41.87     33.23        46.31     46.38       N/A     46.34     46.37     46.31     46.16     46.46
+  GPU 02 <->     96.17     61.10        92.63     92.84       N/A     92.79     92.66     92.60     92.46     92.84
+
+  GPU 03  ->     54.35     27.72        46.31     46.22     46.32       N/A     46.31     46.20     46.34     46.15
+  GPU 03 <-      41.68     33.16        46.35     46.31     46.46       N/A     46.23     46.26     46.22     46.17
+  GPU 03 <->     96.03     60.88        92.66     92.53     92.77       N/A     92.54     92.45     92.57     92.31
+
+  GPU 04  ->     27.76     54.71        46.16     46.08     46.37     46.23       N/A     46.24     46.33     46.31
+  GPU 04 <-      33.22     41.61        46.15     46.19     46.27     46.31       N/A     46.35     46.26     46.29
+  GPU 04 <->     60.97     96.31        92.31     92.27     92.64     92.54       N/A     92.59     92.59     92.61
+
+  GPU 05  ->     27.67     54.71        46.10     46.18     46.29     46.22     46.36       N/A     46.27     46.39
+  GPU 05 <-      33.18     41.72        46.17     46.19     46.29     46.13     46.22       N/A     46.13     46.33
+  GPU 05 <->     60.85     96.43        92.27     92.37     92.59     92.34     92.57       N/A     92.40     92.73
+
+  GPU 06  ->     27.76     54.13        46.16     46.21     46.13     46.20     46.27     46.15       N/A     46.31
+  GPU 06 <-      33.30     41.74        46.27     46.35     46.28     46.32     46.33     46.30       N/A     46.34
+  GPU 06 <->     61.06     95.87        92.43     92.56     92.41     92.52     92.60     92.45       N/A     92.65
+
+  GPU 07  ->     27.76     54.37        46.21     46.30     46.42     46.27     46.26     46.36     46.35       N/A
+  GPU 07 <-      33.01     41.70        46.24     46.31     46.38     46.17     46.33     46.38     46.28       N/A
+  GPU 07 <->     60.77     96.07        92.45     92.61     92.80     92.44     92.59     92.74     92.64       N/A
+                           CPU->CPU  CPU->GPU  GPU->CPU  GPU->GPU
+Averages (During  BiDir):     47.61     39.24     39.27     46.27
+
