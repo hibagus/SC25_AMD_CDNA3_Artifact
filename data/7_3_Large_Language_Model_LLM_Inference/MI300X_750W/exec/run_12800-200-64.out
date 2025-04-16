@@ -1,0 +1,37 @@
+benchmark_args=Namespace(backend='sglang', base_url=None, host='0.0.0.0', port=None, dataset_name='random', dataset_path='', model=None, tokenizer=None, num_prompts=256, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=12800, random_output_len=200, random_range_ratio=1.0, request_rate=inf, max_concurrency=64, output_file=None, disable_tqdm=False, disable_stream=False, return_logprob=False, seed=1, disable_ignore_eos=False, extra_request_body=None, apply_chat_template=False, profile=False, lora_name=None, prompt_suffix='', pd_seperated=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256)
+Namespace(backend='sglang', base_url=None, host='0.0.0.0', port=30000, dataset_name='random', dataset_path='', model='deepseek-ai/DeepSeek-R1', tokenizer=None, num_prompts=256, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=12800, random_output_len=200, random_range_ratio=1.0, request_rate=inf, max_concurrency=64, output_file=None, disable_tqdm=False, disable_stream=False, return_logprob=False, seed=1, disable_ignore_eos=False, extra_request_body=None, apply_chat_template=False, profile=False, lora_name=None, prompt_suffix='', pd_seperated=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256)
+
+#Input tokens: 3276800
+#Output tokens: 51200
+Starting initial single prompt test run...
+Initial test run completed. Starting main benchmark run...
+  0%|          | 0/256 [00:00<?, ?it/s]  0%|          | 1/256 [01:57<8:17:46, 117.12s/it]  1%|          | 2/256 [01:57<3:24:28, 48.30s/it]  25%|██▌       | 65/256 [03:55<08:42,  2.74s/it]  26%|██▌       | 66/256 [03:55<08:28,  2.68s/it] 50%|█████     | 129/256 [05:53<04:32,  2.15s/it] 51%|█████     | 130/256 [05:53<04:26,  2.12s/it] 75%|███████▌  | 193/256 [07:54<02:06,  2.00s/it]100%|██████████| 256/256 [07:54<00:00,  1.85s/it]
+
+============ Serving Benchmark Result ============
+Backend:                                 sglang    
+Traffic request rate:                    inf       
+Max reqeuest concurrency:                64        
+Successful requests:                     256       
+Benchmark duration (s):                  474.53    
+Total input tokens:                      3276800   
+Total generated tokens:                  51200     
+Total generated tokens (retokenized):    50877     
+Request throughput (req/s):              0.54      
+Input token throughput (tok/s):          6905.36   
+Output token throughput (tok/s):         107.90    
+Total token throughput (tok/s):          7013.25   
+Concurrency:                             63.99     
+----------------End-to-End Latency----------------
+Mean E2E Latency (ms):                   118617.06 
+Median E2E Latency (ms):                 118262.26 
+---------------Time to First Token----------------
+Mean TTFT (ms):                          57148.41  
+Median TTFT (ms):                        57377.88  
+P99 TTFT (ms):                           109520.17 
+---------------Inter-Token Latency----------------
+Mean ITL (ms):                           308.90    
+Median ITL (ms):                         49.17     
+P95 ITL (ms):                            49.86     
+P99 ITL (ms):                            53.97     
+Max ITL (ms):                            109254.39 
+==================================================
