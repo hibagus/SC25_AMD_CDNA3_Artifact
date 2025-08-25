@@ -1,0 +1,37 @@
+benchmark_args=Namespace(backend='sglang', base_url=None, host='0.0.0.0', port=None, dataset_name='random', dataset_path='', model=None, tokenizer=None, num_prompts=1024, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=12800, random_output_len=800, random_range_ratio=1.0, request_rate=inf, max_concurrency=256, output_file=None, disable_tqdm=False, disable_stream=False, return_logprob=False, seed=1, disable_ignore_eos=False, extra_request_body=None, apply_chat_template=False, profile=False, lora_name=None, prompt_suffix='', pd_seperated=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256)
+Namespace(backend='sglang', base_url=None, host='0.0.0.0', port=30000, dataset_name='random', dataset_path='', model='deepseek-ai/DeepSeek-R1', tokenizer=None, num_prompts=1024, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=12800, random_output_len=800, random_range_ratio=1.0, request_rate=inf, max_concurrency=256, output_file=None, disable_tqdm=False, disable_stream=False, return_logprob=False, seed=1, disable_ignore_eos=False, extra_request_body=None, apply_chat_template=False, profile=False, lora_name=None, prompt_suffix='', pd_seperated=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256)
+
+#Input tokens: 13107200
+#Output tokens: 819200
+Starting initial single prompt test run...
+Initial test run completed. Starting main benchmark run...
+  0%|          | 0/1024 [00:00<?, ?it/s]  0%|          | 1/1024 [03:02<51:55:40, 182.74s/it]  0%|          | 2/1024 [03:02<21:22:56, 75.32s/it]   8%|▊         | 80/1024 [06:01<53:22,  3.39s/it]   16%|█▌        | 159/1024 [09:11<40:31,  2.81s/it] 23%|██▎       | 239/1024 [11:30<30:19,  2.32s/it] 23%|██▎       | 240/1024 [11:43<31:25,  2.40s/it] 24%|██▎       | 241/1024 [12:22<36:46,  2.82s/it] 31%|███       | 319/1024 [14:36<25:50,  2.20s/it] 31%|███▏      | 321/1024 [15:24<30:58,  2.64s/it] 39%|███▉      | 399/1024 [17:40<22:33,  2.17s/it] 39%|███▉      | 400/1024 [17:42<22:31,  2.17s/it] 39%|███▉      | 401/1024 [17:53<23:43,  2.28s/it] 39%|███▉      | 402/1024 [18:04<25:20,  2.45s/it] 39%|███▉      | 403/1024 [18:14<27:32,  2.66s/it] 39%|███▉      | 404/1024 [18:33<33:35,  3.25s/it] 47%|████▋     | 479/1024 [20:46<18:47,  2.07s/it] 47%|████▋     | 480/1024 [20:48<18:47,  2.07s/it] 47%|████▋     | 481/1024 [20:59<20:30,  2.27s/it] 47%|████▋     | 482/1024 [21:01<20:24,  2.26s/it] 47%|████▋     | 483/1024 [21:12<23:26,  2.60s/it] 47%|████▋     | 484/1024 [21:21<26:37,  2.96s/it] 47%|████▋     | 485/1024 [21:40<36:57,  4.11s/it] 55%|█████▍    | 562/1024 [23:51<15:11,  1.97s/it] 55%|█████▍    | 563/1024 [23:55<15:22,  2.00s/it] 55%|█████▌    | 564/1024 [23:57<15:19,  2.00s/it] 55%|█████▌    | 565/1024 [24:43<25:50,  3.38s/it] 63%|██████▎   | 641/1024 [26:54<13:22,  2.10s/it] 63%|██████▎   | 643/1024 [26:57<13:15,  2.09s/it] 63%|██████▎   | 644/1024 [27:44<18:47,  2.97s/it] 70%|███████   | 721/1024 [29:56<10:40,  2.11s/it] 71%|███████   | 723/1024 [30:10<11:10,  2.23s/it] 71%|███████   | 724/1024 [30:38<13:26,  2.69s/it] 71%|███████   | 725/1024 [30:42<13:26,  2.70s/it] 71%|███████   | 726/1024 [30:50<14:17,  2.88s/it] 78%|███████▊  | 801/1024 [33:02<07:28,  2.01s/it] 78%|███████▊  | 803/1024 [33:07<07:25,  2.02s/it] 79%|███████▊  | 804/1024 [33:18<08:04,  2.20s/it] 79%|███████▊  | 805/1024 [33:48<10:51,  2.98s/it] 79%|███████▊  | 806/1024 [33:51<10:49,  2.98s/it] 79%|███████▉  | 807/1024 [33:59<11:44,  3.25s/it] 86%|████████▋ | 884/1024 [36:12<04:33,  1.95s/it] 86%|████████▋ | 885/1024 [36:14<04:31,  1.96s/it] 87%|████████▋ | 886/1024 [36:54<06:23,  2.78s/it] 87%|████████▋ | 887/1024 [36:57<06:21,  2.78s/it] 87%|████████▋ | 888/1024 [37:05<06:48,  3.01s/it] 94%|█████████▍| 965/1024 [38:44<01:34,  1.60s/it] 94%|█████████▍| 966/1024 [38:53<01:38,  1.70s/it] 94%|█████████▍| 967/1024 [38:53<01:35,  1.68s/it] 95%|█████████▍| 968/1024 [39:01<01:44,  1.87s/it] 95%|█████████▍| 969/1024 [39:16<02:11,  2.39s/it] 95%|█████████▍| 970/1024 [39:17<02:04,  2.30s/it] 95%|█████████▍| 971/1024 [39:18<01:54,  2.16s/it] 95%|█████████▍| 972/1024 [39:23<02:08,  2.46s/it]100%|██████████| 1024/1024 [39:23<00:00,  2.31s/it]
+
+============ Serving Benchmark Result ============
+Backend:                                 sglang    
+Traffic request rate:                    inf       
+Max reqeuest concurrency:                256       
+Successful requests:                     1024      
+Benchmark duration (s):                  2363.46   
+Total input tokens:                      13107200  
+Total generated tokens:                  819200    
+Total generated tokens (retokenized):    815391    
+Request throughput (req/s):              0.43      
+Input token throughput (tok/s):          5545.77   
+Output token throughput (tok/s):         346.61    
+Total token throughput (tok/s):          5892.38   
+Concurrency:                             232.72    
+----------------End-to-End Latency----------------
+Mean E2E Latency (ms):                   537127.56 
+Median E2E Latency (ms):                 558837.18 
+---------------Time to First Token----------------
+Mean TTFT (ms):                          416251.11 
+Median TTFT (ms):                        444399.40 
+P99 TTFT (ms):                           575956.61 
+---------------Inter-Token Latency----------------
+Mean ITL (ms):                           151.29    
+Median ITL (ms):                         57.33     
+P95 ITL (ms):                            59.12     
+P99 ITL (ms):                            60.38     
+Max ITL (ms):                            420737.67 
+==================================================

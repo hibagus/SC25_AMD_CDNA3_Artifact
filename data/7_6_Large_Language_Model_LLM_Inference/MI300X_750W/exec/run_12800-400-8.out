@@ -1,0 +1,37 @@
+benchmark_args=Namespace(backend='sglang', base_url=None, host='0.0.0.0', port=None, dataset_name='random', dataset_path='', model=None, tokenizer=None, num_prompts=32, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=12800, random_output_len=400, random_range_ratio=1.0, request_rate=inf, max_concurrency=8, output_file=None, disable_tqdm=False, disable_stream=False, return_logprob=False, seed=1, disable_ignore_eos=False, extra_request_body=None, apply_chat_template=False, profile=False, lora_name=None, prompt_suffix='', pd_seperated=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256)
+Namespace(backend='sglang', base_url=None, host='0.0.0.0', port=30000, dataset_name='random', dataset_path='', model='deepseek-ai/DeepSeek-R1', tokenizer=None, num_prompts=32, sharegpt_output_len=None, sharegpt_context_len=None, random_input_len=12800, random_output_len=400, random_range_ratio=1.0, request_rate=inf, max_concurrency=8, output_file=None, disable_tqdm=False, disable_stream=False, return_logprob=False, seed=1, disable_ignore_eos=False, extra_request_body=None, apply_chat_template=False, profile=False, lora_name=None, prompt_suffix='', pd_seperated=False, gsp_num_groups=64, gsp_prompts_per_group=16, gsp_system_prompt_len=2048, gsp_question_len=128, gsp_output_len=256)
+
+#Input tokens: 409600
+#Output tokens: 12800
+Starting initial single prompt test run...
+Initial test run completed. Starting main benchmark run...
+  0%|          | 0/32 [00:00<?, ?it/s]  3%|▎         | 1/32 [00:22<11:28, 22.22s/it] 28%|██▊       | 9/32 [00:45<01:42,  4.46s/it] 53%|█████▎    | 17/32 [01:08<00:53,  3.57s/it] 78%|███████▊  | 25/32 [01:31<00:22,  3.26s/it]100%|██████████| 32/32 [01:31<00:00,  2.87s/it]
+
+============ Serving Benchmark Result ============
+Backend:                                 sglang    
+Traffic request rate:                    inf       
+Max reqeuest concurrency:                8         
+Successful requests:                     32        
+Benchmark duration (s):                  91.74     
+Total input tokens:                      409600    
+Total generated tokens:                  12800     
+Total generated tokens (retokenized):    12755     
+Request throughput (req/s):              0.35      
+Input token throughput (tok/s):          4464.99   
+Output token throughput (tok/s):         139.53    
+Total token throughput (tok/s):          4604.52   
+Concurrency:                             8.00      
+----------------End-to-End Latency----------------
+Mean E2E Latency (ms):                   22926.82  
+Median E2E Latency (ms):                 23120.99  
+---------------Time to First Token----------------
+Mean TTFT (ms):                          9035.01   
+Median TTFT (ms):                        9694.01   
+P99 TTFT (ms):                           13591.17  
+---------------Inter-Token Latency----------------
+Mean ITL (ms):                           34.83     
+Median ITL (ms):                         24.07     
+P95 ITL (ms):                            24.20     
+P99 ITL (ms):                            24.36     
+Max ITL (ms):                            10228.55  
+==================================================
