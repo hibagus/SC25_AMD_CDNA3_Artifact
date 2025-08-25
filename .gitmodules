@@ -1,9 +1,9 @@
-[submodule "code/4_1_4_2_7_1_GPU_Roofline_Tools"]
-	path = code/4_1_4_2_7_1_GPU_Roofline_Tools
+[submodule "code/4_1_4_2_7_2_GPU_Roofline_Tools"]
+	path = code/4_1_4_2_7_2_GPU_Roofline_Tools
 	url = git@github.com:hibagus/GPU_Roofline_Tools.git
 	branch = SC2025
-[submodule "code/7_2_High_Performance_LINPACK"]
-	path = code/7_2_High_Performance_LINPACK
+[submodule "code/7_3_High_Performance_LINPACK"]
+	path = code/7_3_High_Performance_LINPACK
 	url = git@github.com:hibagus/SC2025_rocHPL.git
 	branch = main
 [submodule "code/5_Memory"]
