@@ -14,3 +14,9 @@
 	path = code/6_Communication_Interface
 	url = git@github.com:hibagus/SC2025_TransferBench.git
 	branch = develop
+[submodule "code/7_4_High_Performance_CG"]
+	path = code/7_4_High_Performance_CG
+	url = git@github.com:hibagus/SC2025_rocHPCG.git
+[submodule "code/7_5_GROMACS_Molecular_Dynamics_Simulation"]
+	path = code/7_5_GROMACS_Molecular_Dynamics_Simulation
+	url = git@github.com:hibagus/SC25_ROCM_GROMACS_2025.2.git
