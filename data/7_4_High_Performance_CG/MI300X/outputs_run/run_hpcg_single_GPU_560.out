@@ -1,0 +1,754 @@
+rocHPCG version: 0.8.6-0c708bb (based on hpcg-3.1)
+Using HIP device (0): AMD Instinct MI300X (196592 MB global memory)
+
+Setup Phase took 0.08 sec
+
+Copying GPU assembled data to host for reference computations
+
+Checking assembled data ...
+
+Starting Reference CG Phase ...
+
+REFERENCE Initial Residual = 1.236254e+04
+REFERENCE Iteration = 1   Scaled Residual = 1.857868e-01
+REFERENCE Iteration = 2   Scaled Residual = 1.019397e-01
+REFERENCE Iteration = 3   Scaled Residual = 7.032120e-02
+REFERENCE Iteration = 4   Scaled Residual = 5.368961e-02
+REFERENCE Iteration = 5   Scaled Residual = 4.339095e-02
+REFERENCE Iteration = 6   Scaled Residual = 3.638310e-02
+REFERENCE Iteration = 7   Scaled Residual = 3.131513e-02
+REFERENCE Iteration = 8   Scaled Residual = 2.749476e-02
+REFERENCE Iteration = 9   Scaled Residual = 2.452394e-02
+REFERENCE Iteration = 10   Scaled Residual = 2.215010e-02
+REFERENCE Iteration = 11   Scaled Residual = 2.020374e-02
+REFERENCE Iteration = 12   Scaled Residual = 1.856844e-02
+REFERENCE Iteration = 13   Scaled Residual = 1.716392e-02
+REFERENCE Iteration = 14   Scaled Residual = 1.593947e-02
+REFERENCE Iteration = 15   Scaled Residual = 1.486438e-02
+REFERENCE Iteration = 16   Scaled Residual = 1.391862e-02
+REFERENCE Iteration = 17   Scaled Residual = 1.308825e-02
+REFERENCE Iteration = 18   Scaled Residual = 1.235978e-02
+REFERENCE Iteration = 19   Scaled Residual = 1.171736e-02
+REFERENCE Iteration = 20   Scaled Residual = 1.114461e-02
+REFERENCE Iteration = 21   Scaled Residual = 1.062544e-02
+REFERENCE Iteration = 22   Scaled Residual = 1.014627e-02
+REFERENCE Iteration = 23   Scaled Residual = 9.699623e-03
+REFERENCE Iteration = 24   Scaled Residual = 9.283292e-03
+REFERENCE Iteration = 25   Scaled Residual = 8.898168e-03
+REFERENCE Iteration = 26   Scaled Residual = 8.546755e-03
+REFERENCE Iteration = 27   Scaled Residual = 8.229768e-03
+REFERENCE Iteration = 28   Scaled Residual = 7.944460e-03
+REFERENCE Iteration = 29   Scaled Residual = 7.685546e-03
+REFERENCE Iteration = 30   Scaled Residual = 7.445552e-03
+REFERENCE Iteration = 31   Scaled Residual = 7.217203e-03
+REFERENCE Iteration = 32   Scaled Residual = 6.996632e-03
+REFERENCE Iteration = 33   Scaled Residual = 6.783461e-03
+REFERENCE Iteration = 34   Scaled Residual = 6.580192e-03
+REFERENCE Iteration = 35   Scaled Residual = 6.390702e-03
+REFERENCE Iteration = 36   Scaled Residual = 6.217018e-03
+REFERENCE Iteration = 37   Scaled Residual = 6.058172e-03
+REFERENCE Iteration = 38   Scaled Residual = 5.910456e-03
+REFERENCE Iteration = 39   Scaled Residual = 5.767856e-03
+REFERENCE Iteration = 40   Scaled Residual = 5.624908e-03
+REFERENCE Iteration = 41   Scaled Residual = 5.479350e-03
+REFERENCE Iteration = 42   Scaled Residual = 5.332096e-03
+REFERENCE Iteration = 43   Scaled Residual = 5.186647e-03
+REFERENCE Iteration = 44   Scaled Residual = 5.047191e-03
+REFERENCE Iteration = 45   Scaled Residual = 4.915861e-03
+REFERENCE Iteration = 46   Scaled Residual = 4.792317e-03
+REFERENCE Iteration = 47   Scaled Residual = 4.674179e-03
+REFERENCE Iteration = 48   Scaled Residual = 4.557768e-03
+REFERENCE Iteration = 49   Scaled Residual = 4.440521e-03
+REFERENCE Iteration = 50   Scaled Residual = 4.322268e-03
+
+Optimization Phase took 0.38 sec
+
+Validation Testing Phase ...
+
+Optimized CG Setup ...
+
+HIP Initial Residual = 1.236254e+04
+HIP Iteration = 1   Scaled Residual = 2.181729e-01
+HIP Iteration = 2   Scaled Residual = 1.181288e-01
+HIP Iteration = 3   Scaled Residual = 8.052278e-02
+HIP Iteration = 4   Scaled Residual = 6.099326e-02
+HIP Iteration = 5   Scaled Residual = 4.915320e-02
+HIP Iteration = 6   Scaled Residual = 4.114917e-02
+HIP Iteration = 7   Scaled Residual = 3.540731e-02
+HIP Iteration = 8   Scaled Residual = 3.107739e-02
+HIP Iteration = 9   Scaled Residual = 2.769860e-02
+HIP Iteration = 10   Scaled Residual = 2.498809e-02
+HIP Iteration = 11   Scaled Residual = 2.277241e-02
+HIP Iteration = 12   Scaled Residual = 2.092591e-02
+HIP Iteration = 13   Scaled Residual = 1.937139e-02
+HIP Iteration = 14   Scaled Residual = 1.804807e-02
+HIP Iteration = 15   Scaled Residual = 1.691314e-02
+HIP Iteration = 16   Scaled Residual = 1.593416e-02
+HIP Iteration = 17   Scaled Residual = 1.508408e-02
+HIP Iteration = 18   Scaled Residual = 1.433927e-02
+HIP Iteration = 19   Scaled Residual = 1.367612e-02
+HIP Iteration = 20   Scaled Residual = 1.307152e-02
+HIP Iteration = 21   Scaled Residual = 1.250427e-02
+HIP Iteration = 22   Scaled Residual = 1.195725e-02
+HIP Iteration = 23   Scaled Residual = 1.142292e-02
+HIP Iteration = 24   Scaled Residual = 1.090225e-02
+HIP Iteration = 25   Scaled Residual = 1.040205e-02
+HIP Iteration = 26   Scaled Residual = 9.932134e-03
+HIP Iteration = 27   Scaled Residual = 9.499001e-03
+HIP Iteration = 28   Scaled Residual = 9.105174e-03
+HIP Iteration = 29   Scaled Residual = 8.750581e-03
+HIP Iteration = 30   Scaled Residual = 8.431906e-03
+HIP Iteration = 31   Scaled Residual = 8.145121e-03
+HIP Iteration = 32   Scaled Residual = 7.886601e-03
+HIP Iteration = 33   Scaled Residual = 7.651651e-03
+HIP Iteration = 34   Scaled Residual = 7.435765e-03
+HIP Iteration = 35   Scaled Residual = 7.234733e-03
+HIP Iteration = 36   Scaled Residual = 7.043354e-03
+HIP Iteration = 37   Scaled Residual = 6.857155e-03
+HIP Iteration = 38   Scaled Residual = 6.672975e-03
+HIP Iteration = 39   Scaled Residual = 6.488343e-03
+HIP Iteration = 40   Scaled Residual = 6.303299e-03
+HIP Iteration = 41   Scaled Residual = 6.119835e-03
+HIP Iteration = 42   Scaled Residual = 5.940082e-03
+HIP Iteration = 43   Scaled Residual = 5.766947e-03
+HIP Iteration = 44   Scaled Residual = 5.602749e-03
+HIP Iteration = 45   Scaled Residual = 5.448236e-03
+HIP Iteration = 46   Scaled Residual = 5.304100e-03
+HIP Iteration = 47   Scaled Residual = 5.170181e-03
+HIP Iteration = 48   Scaled Residual = 5.045385e-03
+HIP Iteration = 49   Scaled Residual = 4.929130e-03
+HIP Iteration = 50   Scaled Residual = 4.820292e-03
+HIP Iteration = 51   Scaled Residual = 4.717294e-03
+HIP Iteration = 52   Scaled Residual = 4.619082e-03
+HIP Iteration = 53   Scaled Residual = 4.523967e-03
+HIP Iteration = 54   Scaled Residual = 4.430143e-03
+HIP Iteration = 55   Scaled Residual = 4.336618e-03
+HIP Iteration = 56   Scaled Residual = 4.242322e-03
+
+Total device memory usage: 100996 MByte (196592 MByte)
+
+Starting Benchmarking Phase ...
+
+Performing (at least) 607 CG sets in 3600.0 seconds ...
+CG set 1 / 607    513.2465 GFlop/s     (513.2465 GFlop/s per process)    0%    3593.7 sec left
+CG set 2 / 607    520.8580 GFlop/s     (520.8580 GFlop/s per process)    0%    3587.5 sec left
+CG set 3 / 607    531.8757 GFlop/s     (531.8757 GFlop/s per process)    0%    3581.6 sec left
+CG set 4 / 607    537.0194 GFlop/s     (537.0194 GFlop/s per process)    0%    3575.7 sec left
+CG set 5 / 607    538.4221 GFlop/s     (538.4221 GFlop/s per process)    0%    3569.8 sec left
+CG set 6 / 607    540.1280 GFlop/s     (540.1280 GFlop/s per process)    0%    3563.8 sec left
+CG set 7 / 607    541.8391 GFlop/s     (541.8391 GFlop/s per process)    1%    3557.9 sec left
+CG set 8 / 607    543.1006 GFlop/s     (543.1006 GFlop/s per process)    1%    3552.0 sec left
+CG set 9 / 607    542.5879 GFlop/s     (542.5879 GFlop/s per process)    1%    3546.0 sec left
+CG set 10 / 607    542.3637 GFlop/s     (542.3637 GFlop/s per process)    1%    3540.0 sec left
+CG set 11 / 607    542.8076 GFlop/s     (542.8076 GFlop/s per process)    1%    3534.0 sec left
+CG set 12 / 607    542.6085 GFlop/s     (542.6085 GFlop/s per process)    1%    3528.0 sec left
+CG set 13 / 607    541.7229 GFlop/s     (541.7229 GFlop/s per process)    2%    3521.8 sec left
+CG set 14 / 607    540.1475 GFlop/s     (540.1475 GFlop/s per process)    2%    3515.6 sec left
+CG set 15 / 607    539.9866 GFlop/s     (539.9866 GFlop/s per process)    2%    3509.5 sec left
+CG set 16 / 607    539.7315 GFlop/s     (539.7315 GFlop/s per process)    2%    3503.5 sec left
+CG set 17 / 607    539.4848 GFlop/s     (539.4848 GFlop/s per process)    2%    3497.4 sec left
+CG set 18 / 607    539.5704 GFlop/s     (539.5704 GFlop/s per process)    2%    3491.4 sec left
+CG set 19 / 607    538.3811 GFlop/s     (538.3811 GFlop/s per process)    3%    3485.1 sec left
+CG set 20 / 607    533.3664 GFlop/s     (533.3664 GFlop/s per process)    3%    3477.9 sec left
+CG set 21 / 607    530.4265 GFlop/s     (530.4265 GFlop/s per process)    3%    3471.0 sec left
+CG set 22 / 607    529.1624 GFlop/s     (529.1624 GFlop/s per process)    3%    3464.6 sec left
+CG set 23 / 607    529.4577 GFlop/s     (529.4577 GFlop/s per process)    3%    3458.5 sec left
+CG set 24 / 607    529.7645 GFlop/s     (529.7645 GFlop/s per process)    3%    3452.4 sec left
+CG set 25 / 607    528.2250 GFlop/s     (528.2250 GFlop/s per process)    4%    3445.8 sec left
+CG set 26 / 607    528.6284 GFlop/s     (528.6284 GFlop/s per process)    4%    3439.8 sec left
+CG set 27 / 607    527.8024 GFlop/s     (527.8024 GFlop/s per process)    4%    3433.4 sec left
+CG set 28 / 607    522.8648 GFlop/s     (522.8648 GFlop/s per process)    4%    3425.6 sec left
+CG set 29 / 607    520.4122 GFlop/s     (520.4122 GFlop/s per process)    4%    3418.5 sec left
+CG set 30 / 607    516.3264 GFlop/s     (516.3264 GFlop/s per process)    4%    3410.7 sec left
+CG set 31 / 607    514.7611 GFlop/s     (514.7611 GFlop/s per process)    5%    3403.8 sec left
+CG set 32 / 607    515.5464 GFlop/s     (515.5464 GFlop/s per process)    5%    3397.8 sec left
+CG set 33 / 607    515.1127 GFlop/s     (515.1127 GFlop/s per process)    5%    3391.3 sec left
+CG set 34 / 607    513.3207 GFlop/s     (513.3207 GFlop/s per process)    5%    3384.2 sec left
+CG set 35 / 607    513.2490 GFlop/s     (513.2490 GFlop/s per process)    5%    3377.8 sec left
+CG set 36 / 607    512.4558 GFlop/s     (512.4558 GFlop/s per process)    5%    3371.1 sec left
+CG set 37 / 607    511.9958 GFlop/s     (511.9958 GFlop/s per process)    6%    3364.5 sec left
+CG set 38 / 607    511.2358 GFlop/s     (511.2358 GFlop/s per process)    6%    3357.8 sec left
+CG set 39 / 607    511.6285 GFlop/s     (511.6285 GFlop/s per process)    6%    3351.6 sec left
+CG set 40 / 607    510.4990 GFlop/s     (510.4990 GFlop/s per process)    6%    3344.7 sec left
+CG set 41 / 607    510.4672 GFlop/s     (510.4672 GFlop/s per process)    6%    3338.3 sec left
+CG set 42 / 607    510.7742 GFlop/s     (510.7742 GFlop/s per process)    6%    3332.1 sec left
+CG set 43 / 607    511.3065 GFlop/s     (511.3065 GFlop/s per process)    7%    3326.0 sec left
+CG set 44 / 607    510.2609 GFlop/s     (510.2609 GFlop/s per process)    7%    3319.0 sec left
+CG set 45 / 607    508.1567 GFlop/s     (508.1567 GFlop/s per process)    7%    3311.5 sec left
+CG set 46 / 607    506.1512 GFlop/s     (506.1512 GFlop/s per process)    7%    3303.9 sec left
+CG set 47 / 607    504.8436 GFlop/s     (504.8436 GFlop/s per process)    7%    3296.6 sec left
+CG set 48 / 607    504.6652 GFlop/s     (504.6652 GFlop/s per process)    7%    3290.1 sec left
+CG set 49 / 607    504.9962 GFlop/s     (504.9962 GFlop/s per process)    8%    3283.8 sec left
+CG set 50 / 607    505.5680 GFlop/s     (505.5680 GFlop/s per process)    8%    3277.7 sec left
+CG set 51 / 607    504.3029 GFlop/s     (504.3029 GFlop/s per process)    8%    3270.5 sec left
+CG set 52 / 607    504.2973 GFlop/s     (504.2973 GFlop/s per process)    8%    3264.0 sec left
+CG set 53 / 607    504.6484 GFlop/s     (504.6484 GFlop/s per process)    8%    3257.8 sec left
+CG set 54 / 607    505.2328 GFlop/s     (505.2328 GFlop/s per process)    8%    3251.7 sec left
+CG set 55 / 607    505.5154 GFlop/s     (505.5154 GFlop/s per process)    9%    3245.5 sec left
+CG set 56 / 607    504.7341 GFlop/s     (504.7341 GFlop/s per process)    9%    3238.5 sec left
+CG set 57 / 607    504.5923 GFlop/s     (504.5923 GFlop/s per process)    9%    3231.9 sec left
+CG set 58 / 607    504.5741 GFlop/s     (504.5741 GFlop/s per process)    9%    3225.4 sec left
+CG set 59 / 607    504.1916 GFlop/s     (504.1916 GFlop/s per process)    9%    3218.7 sec left
+CG set 60 / 607    504.2449 GFlop/s     (504.2449 GFlop/s per process)    9%    3212.3 sec left
+CG set 61 / 607    504.6915 GFlop/s     (504.6915 GFlop/s per process)    10%    3206.2 sec left
+CG set 62 / 607    504.9871 GFlop/s     (504.9871 GFlop/s per process)    10%    3199.9 sec left
+CG set 63 / 607    505.4477 GFlop/s     (505.4477 GFlop/s per process)    10%    3193.9 sec left
+CG set 64 / 607    504.8632 GFlop/s     (504.8632 GFlop/s per process)    10%    3186.9 sec left
+CG set 65 / 607    503.8141 GFlop/s     (503.8141 GFlop/s per process)    10%    3179.6 sec left
+CG set 66 / 607    502.5106 GFlop/s     (502.5106 GFlop/s per process)    10%    3172.0 sec left
+CG set 67 / 607    501.6536 GFlop/s     (501.6536 GFlop/s per process)    11%    3164.8 sec left
+CG set 68 / 607    501.7943 GFlop/s     (501.7943 GFlop/s per process)    11%    3158.4 sec left
+CG set 69 / 607    501.1674 GFlop/s     (501.1674 GFlop/s per process)    11%    3151.4 sec left
+CG set 70 / 607    500.8272 GFlop/s     (500.8272 GFlop/s per process)    11%    3144.5 sec left
+CG set 71 / 607    501.4142 GFlop/s     (501.4142 GFlop/s per process)    11%    3138.6 sec left
+CG set 72 / 607    502.0381 GFlop/s     (502.0381 GFlop/s per process)    11%    3132.7 sec left
+CG set 73 / 607    502.5864 GFlop/s     (502.5864 GFlop/s per process)    12%    3126.7 sec left
+CG set 74 / 607    503.0812 GFlop/s     (503.0812 GFlop/s per process)    12%    3120.7 sec left
+CG set 75 / 607    503.5703 GFlop/s     (503.5703 GFlop/s per process)    12%    3114.7 sec left
+CG set 76 / 607    504.0512 GFlop/s     (504.0512 GFlop/s per process)    12%    3108.7 sec left
+CG set 77 / 607    504.3762 GFlop/s     (504.3762 GFlop/s per process)    12%    3102.6 sec left
+CG set 78 / 607    504.7923 GFlop/s     (504.7923 GFlop/s per process)    12%    3096.5 sec left
+CG set 79 / 607    505.2340 GFlop/s     (505.2340 GFlop/s per process)    13%    3090.5 sec left
+CG set 80 / 607    505.6382 GFlop/s     (505.6382 GFlop/s per process)    13%    3084.5 sec left
+CG set 81 / 607    506.0300 GFlop/s     (506.0300 GFlop/s per process)    13%    3078.4 sec left
+CG set 82 / 607    506.4095 GFlop/s     (506.4095 GFlop/s per process)    13%    3072.4 sec left
+CG set 83 / 607    506.7871 GFlop/s     (506.7871 GFlop/s per process)    13%    3066.4 sec left
+CG set 84 / 607    507.1547 GFlop/s     (507.1547 GFlop/s per process)    13%    3060.3 sec left
+CG set 85 / 607    507.1475 GFlop/s     (507.1475 GFlop/s per process)    14%    3053.9 sec left
+CG set 86 / 607    507.1511 GFlop/s     (507.1511 GFlop/s per process)    14%    3047.5 sec left
+CG set 87 / 607    507.4743 GFlop/s     (507.4743 GFlop/s per process)    14%    3041.4 sec left
+CG set 88 / 607    507.8160 GFlop/s     (507.8160 GFlop/s per process)    14%    3035.4 sec left
+CG set 89 / 607    508.1554 GFlop/s     (508.1554 GFlop/s per process)    14%    3029.3 sec left
+CG set 90 / 607    508.4962 GFlop/s     (508.4962 GFlop/s per process)    14%    3023.3 sec left
+CG set 91 / 607    508.8252 GFlop/s     (508.8252 GFlop/s per process)    14%    3017.3 sec left
+CG set 92 / 607    509.1451 GFlop/s     (509.1451 GFlop/s per process)    15%    3011.3 sec left
+CG set 93 / 607    509.2891 GFlop/s     (509.2891 GFlop/s per process)    15%    3005.0 sec left
+CG set 94 / 607    509.5743 GFlop/s     (509.5743 GFlop/s per process)    15%    2999.0 sec left
+CG set 95 / 607    509.4037 GFlop/s     (509.4037 GFlop/s per process)    15%    2992.4 sec left
+CG set 96 / 607    509.5466 GFlop/s     (509.5466 GFlop/s per process)    15%    2986.1 sec left
+CG set 97 / 607    509.6778 GFlop/s     (509.6778 GFlop/s per process)    15%    2979.9 sec left
+CG set 98 / 607    509.3603 GFlop/s     (509.3603 GFlop/s per process)    16%    2973.1 sec left
+CG set 99 / 607    508.6643 GFlop/s     (508.6643 GFlop/s per process)    16%    2965.9 sec left
+CG set 100 / 607    508.1876 GFlop/s     (508.1876 GFlop/s per process)    16%    2958.8 sec left
+CG set 101 / 607    508.2072 GFlop/s     (508.2072 GFlop/s per process)    16%    2952.5 sec left
+CG set 102 / 607    508.5027 GFlop/s     (508.5027 GFlop/s per process)    16%    2946.4 sec left
+CG set 103 / 607    508.7936 GFlop/s     (508.7936 GFlop/s per process)    16%    2940.4 sec left
+CG set 104 / 607    509.0831 GFlop/s     (509.0831 GFlop/s per process)    17%    2934.4 sec left
+CG set 105 / 607    509.3842 GFlop/s     (509.3842 GFlop/s per process)    17%    2928.4 sec left
+CG set 106 / 607    509.6559 GFlop/s     (509.6559 GFlop/s per process)    17%    2922.3 sec left
+CG set 107 / 607    509.9194 GFlop/s     (509.9194 GFlop/s per process)    17%    2916.3 sec left
+CG set 108 / 607    510.0567 GFlop/s     (510.0567 GFlop/s per process)    17%    2910.1 sec left
+CG set 109 / 607    510.3168 GFlop/s     (510.3168 GFlop/s per process)    17%    2904.1 sec left
+CG set 110 / 607    510.5957 GFlop/s     (510.5957 GFlop/s per process)    18%    2898.1 sec left
+CG set 111 / 607    510.7128 GFlop/s     (510.7128 GFlop/s per process)    18%    2891.9 sec left
+CG set 112 / 607    510.7214 GFlop/s     (510.7214 GFlop/s per process)    18%    2885.5 sec left
+CG set 113 / 607    510.8553 GFlop/s     (510.8553 GFlop/s per process)    18%    2879.3 sec left
+CG set 114 / 607    511.1063 GFlop/s     (511.1063 GFlop/s per process)    18%    2873.3 sec left
+CG set 115 / 607    511.1089 GFlop/s     (511.1089 GFlop/s per process)    18%    2866.9 sec left
+CG set 116 / 607    511.3545 GFlop/s     (511.3545 GFlop/s per process)    19%    2860.9 sec left
+CG set 117 / 607    511.4748 GFlop/s     (511.4748 GFlop/s per process)    19%    2854.7 sec left
+CG set 118 / 607    511.5866 GFlop/s     (511.5866 GFlop/s per process)    19%    2848.5 sec left
+CG set 119 / 607    511.8425 GFlop/s     (511.8425 GFlop/s per process)    19%    2842.5 sec left
+CG set 120 / 607    511.9725 GFlop/s     (511.9725 GFlop/s per process)    19%    2836.3 sec left
+CG set 121 / 607    512.2081 GFlop/s     (512.2081 GFlop/s per process)    19%    2830.3 sec left
+CG set 122 / 607    512.4282 GFlop/s     (512.4282 GFlop/s per process)    20%    2824.3 sec left
+CG set 123 / 607    512.6393 GFlop/s     (512.6393 GFlop/s per process)    20%    2818.3 sec left
+CG set 124 / 607    512.5353 GFlop/s     (512.5353 GFlop/s per process)    20%    2811.8 sec left
+CG set 125 / 607    512.6584 GFlop/s     (512.6584 GFlop/s per process)    20%    2805.6 sec left
+CG set 126 / 607    512.8899 GFlop/s     (512.8899 GFlop/s per process)    20%    2799.6 sec left
+CG set 127 / 607    513.1069 GFlop/s     (513.1069 GFlop/s per process)    20%    2793.6 sec left
+CG set 128 / 607    513.3125 GFlop/s     (513.3125 GFlop/s per process)    21%    2787.6 sec left
+CG set 129 / 607    513.4192 GFlop/s     (513.4192 GFlop/s per process)    21%    2781.4 sec left
+CG set 130 / 607    513.6112 GFlop/s     (513.6112 GFlop/s per process)    21%    2775.4 sec left
+CG set 131 / 607    513.8070 GFlop/s     (513.8070 GFlop/s per process)    21%    2769.3 sec left
+CG set 132 / 607    514.0007 GFlop/s     (514.0007 GFlop/s per process)    21%    2763.3 sec left
+CG set 133 / 607    514.1357 GFlop/s     (514.1357 GFlop/s per process)    21%    2757.2 sec left
+CG set 134 / 607    514.2355 GFlop/s     (514.2355 GFlop/s per process)    22%    2751.0 sec left
+CG set 135 / 607    514.4187 GFlop/s     (514.4187 GFlop/s per process)    22%    2745.0 sec left
+CG set 136 / 607    514.5006 GFlop/s     (514.5006 GFlop/s per process)    22%    2738.8 sec left
+CG set 137 / 607    514.2668 GFlop/s     (514.2668 GFlop/s per process)    22%    2732.1 sec left
+CG set 138 / 607    514.3096 GFlop/s     (514.3096 GFlop/s per process)    22%    2725.8 sec left
+CG set 139 / 607    514.3815 GFlop/s     (514.3815 GFlop/s per process)    22%    2719.6 sec left
+CG set 140 / 607    514.4555 GFlop/s     (514.4555 GFlop/s per process)    23%    2713.4 sec left
+CG set 141 / 607    514.6184 GFlop/s     (514.6184 GFlop/s per process)    23%    2707.3 sec left
+CG set 142 / 607    514.7844 GFlop/s     (514.7844 GFlop/s per process)    23%    2701.3 sec left
+CG set 143 / 607    514.9598 GFlop/s     (514.9598 GFlop/s per process)    23%    2695.3 sec left
+CG set 144 / 607    515.1245 GFlop/s     (515.1245 GFlop/s per process)    23%    2689.3 sec left
+CG set 145 / 607    515.0920 GFlop/s     (515.0920 GFlop/s per process)    23%    2682.9 sec left
+CG set 146 / 607    515.2632 GFlop/s     (515.2632 GFlop/s per process)    24%    2676.9 sec left
+CG set 147 / 607    515.4515 GFlop/s     (515.4515 GFlop/s per process)    24%    2670.9 sec left
+CG set 148 / 607    515.6711 GFlop/s     (515.6711 GFlop/s per process)    24%    2665.0 sec left
+CG set 149 / 607    515.8906 GFlop/s     (515.8906 GFlop/s per process)    24%    2659.0 sec left
+CG set 150 / 607    515.9994 GFlop/s     (515.9994 GFlop/s per process)    24%    2652.9 sec left
+CG set 151 / 607    516.1765 GFlop/s     (516.1765 GFlop/s per process)    24%    2646.9 sec left
+CG set 152 / 607    516.3504 GFlop/s     (516.3504 GFlop/s per process)    25%    2641.0 sec left
+CG set 153 / 607    516.5230 GFlop/s     (516.5230 GFlop/s per process)    25%    2635.0 sec left
+CG set 154 / 607    516.6897 GFlop/s     (516.6897 GFlop/s per process)    25%    2629.0 sec left
+CG set 155 / 607    516.8431 GFlop/s     (516.8431 GFlop/s per process)    25%    2623.0 sec left
+CG set 156 / 607    516.9927 GFlop/s     (516.9927 GFlop/s per process)    25%    2617.0 sec left
+CG set 157 / 607    517.1478 GFlop/s     (517.1478 GFlop/s per process)    25%    2611.0 sec left
+CG set 158 / 607    517.2984 GFlop/s     (517.2984 GFlop/s per process)    26%    2604.9 sec left
+CG set 159 / 607    517.4452 GFlop/s     (517.4452 GFlop/s per process)    26%    2598.9 sec left
+CG set 160 / 607    517.5869 GFlop/s     (517.5869 GFlop/s per process)    26%    2592.9 sec left
+CG set 161 / 607    517.6508 GFlop/s     (517.6508 GFlop/s per process)    26%    2586.7 sec left
+CG set 162 / 607    517.4131 GFlop/s     (517.4131 GFlop/s per process)    26%    2580.0 sec left
+CG set 163 / 607    517.1943 GFlop/s     (517.1943 GFlop/s per process)    26%    2573.2 sec left
+CG set 164 / 607    516.9791 GFlop/s     (516.9791 GFlop/s per process)    27%    2566.5 sec left
+CG set 165 / 607    517.0279 GFlop/s     (517.0279 GFlop/s per process)    27%    2560.3 sec left
+CG set 166 / 607    517.1591 GFlop/s     (517.1591 GFlop/s per process)    27%    2554.3 sec left
+CG set 167 / 607    517.3032 GFlop/s     (517.3032 GFlop/s per process)    27%    2548.3 sec left
+CG set 168 / 607    517.3526 GFlop/s     (517.3526 GFlop/s per process)    27%    2542.1 sec left
+CG set 169 / 607    517.3232 GFlop/s     (517.3232 GFlop/s per process)    27%    2535.7 sec left
+CG set 170 / 607    517.4662 GFlop/s     (517.4662 GFlop/s per process)    28%    2529.7 sec left
+CG set 171 / 607    517.5051 GFlop/s     (517.5051 GFlop/s per process)    28%    2523.5 sec left
+CG set 172 / 607    517.1261 GFlop/s     (517.1261 GFlop/s per process)    28%    2516.4 sec left
+CG set 173 / 607    516.8364 GFlop/s     (516.8364 GFlop/s per process)    28%    2509.5 sec left
+CG set 174 / 607    516.5535 GFlop/s     (516.5535 GFlop/s per process)    28%    2502.6 sec left
+CG set 175 / 607    516.2035 GFlop/s     (516.2035 GFlop/s per process)    28%    2495.5 sec left
+CG set 176 / 607    515.8599 GFlop/s     (515.8599 GFlop/s per process)    28%    2488.5 sec left
+CG set 177 / 607    515.9954 GFlop/s     (515.9954 GFlop/s per process)    29%    2482.5 sec left
+CG set 178 / 607    516.0442 GFlop/s     (516.0442 GFlop/s per process)    29%    2476.2 sec left
+CG set 179 / 607    516.0026 GFlop/s     (516.0026 GFlop/s per process)    29%    2469.8 sec left
+CG set 180 / 607    515.8523 GFlop/s     (515.8523 GFlop/s per process)    29%    2463.2 sec left
+CG set 181 / 607    515.8238 GFlop/s     (515.8238 GFlop/s per process)    29%    2456.8 sec left
+CG set 182 / 607    515.8033 GFlop/s     (515.8033 GFlop/s per process)    29%    2450.5 sec left
+CG set 183 / 607    515.6225 GFlop/s     (515.6225 GFlop/s per process)    30%    2443.7 sec left
+CG set 184 / 607    515.6395 GFlop/s     (515.6395 GFlop/s per process)    30%    2437.4 sec left
+CG set 185 / 607    515.4410 GFlop/s     (515.4410 GFlop/s per process)    30%    2430.7 sec left
+CG set 186 / 607    515.5037 GFlop/s     (515.5037 GFlop/s per process)    30%    2424.5 sec left
+CG set 187 / 607    515.5855 GFlop/s     (515.5855 GFlop/s per process)    30%    2418.4 sec left
+CG set 188 / 607    515.4705 GFlop/s     (515.4705 GFlop/s per process)    30%    2411.8 sec left
+CG set 189 / 607    515.3220 GFlop/s     (515.3220 GFlop/s per process)    31%    2405.1 sec left
+CG set 190 / 607    515.3116 GFlop/s     (515.3116 GFlop/s per process)    31%    2398.8 sec left
+CG set 191 / 607    515.4356 GFlop/s     (515.4356 GFlop/s per process)    31%    2392.7 sec left
+CG set 192 / 607    515.5018 GFlop/s     (515.5018 GFlop/s per process)    31%    2386.6 sec left
+CG set 193 / 607    515.5455 GFlop/s     (515.5455 GFlop/s per process)    31%    2380.4 sec left
+CG set 194 / 607    515.3170 GFlop/s     (515.3170 GFlop/s per process)    31%    2373.5 sec left
+CG set 195 / 607    515.0956 GFlop/s     (515.0956 GFlop/s per process)    32%    2366.6 sec left
+CG set 196 / 607    514.8140 GFlop/s     (514.8140 GFlop/s per process)    32%    2359.6 sec left
+CG set 197 / 607    514.4799 GFlop/s     (514.4799 GFlop/s per process)    32%    2352.5 sec left
+CG set 198 / 607    514.4121 GFlop/s     (514.4121 GFlop/s per process)    32%    2346.0 sec left
+CG set 199 / 607    514.3629 GFlop/s     (514.3629 GFlop/s per process)    32%    2339.5 sec left
+CG set 200 / 607    514.5078 GFlop/s     (514.5078 GFlop/s per process)    32%    2333.6 sec left
+CG set 201 / 607    514.6287 GFlop/s     (514.6287 GFlop/s per process)    33%    2327.5 sec left
+CG set 202 / 607    514.6828 GFlop/s     (514.6828 GFlop/s per process)    33%    2321.3 sec left
+CG set 203 / 607    514.3445 GFlop/s     (514.3445 GFlop/s per process)    33%    2314.1 sec left
+CG set 204 / 607    514.2490 GFlop/s     (514.2490 GFlop/s per process)    33%    2307.6 sec left
+CG set 205 / 607    514.3748 GFlop/s     (514.3748 GFlop/s per process)    33%    2301.6 sec left
+CG set 206 / 607    514.5081 GFlop/s     (514.5081 GFlop/s per process)    33%    2295.6 sec left
+CG set 207 / 607    514.6423 GFlop/s     (514.6423 GFlop/s per process)    34%    2289.6 sec left
+CG set 208 / 607    514.7723 GFlop/s     (514.7723 GFlop/s per process)    34%    2283.6 sec left
+CG set 209 / 607    514.7365 GFlop/s     (514.7365 GFlop/s per process)    34%    2277.2 sec left
+CG set 210 / 607    514.6587 GFlop/s     (514.6587 GFlop/s per process)    34%    2270.6 sec left
+CG set 211 / 607    514.6588 GFlop/s     (514.6588 GFlop/s per process)    34%    2264.3 sec left
+CG set 212 / 607    514.6959 GFlop/s     (514.6959 GFlop/s per process)    34%    2258.1 sec left
+CG set 213 / 607    514.5293 GFlop/s     (514.5293 GFlop/s per process)    35%    2251.3 sec left
+CG set 214 / 607    514.5420 GFlop/s     (514.5420 GFlop/s per process)    35%    2245.0 sec left
+CG set 215 / 607    514.5209 GFlop/s     (514.5209 GFlop/s per process)    35%    2238.6 sec left
+CG set 216 / 607    514.6405 GFlop/s     (514.6405 GFlop/s per process)    35%    2232.6 sec left
+CG set 217 / 607    514.7547 GFlop/s     (514.7547 GFlop/s per process)    35%    2226.6 sec left
+CG set 218 / 607    514.8635 GFlop/s     (514.8635 GFlop/s per process)    35%    2220.5 sec left
+CG set 219 / 607    514.9751 GFlop/s     (514.9751 GFlop/s per process)    36%    2214.5 sec left
+CG set 220 / 607    514.7572 GFlop/s     (514.7572 GFlop/s per process)    36%    2207.6 sec left
+CG set 221 / 607    514.5764 GFlop/s     (514.5764 GFlop/s per process)    36%    2200.8 sec left
+CG set 222 / 607    514.3892 GFlop/s     (514.3892 GFlop/s per process)    36%    2193.9 sec left
+CG set 223 / 607    514.0734 GFlop/s     (514.0734 GFlop/s per process)    36%    2186.7 sec left
+CG set 224 / 607    513.9396 GFlop/s     (513.9396 GFlop/s per process)    36%    2180.0 sec left
+CG set 225 / 607    513.7054 GFlop/s     (513.7054 GFlop/s per process)    37%    2173.0 sec left
+CG set 226 / 607    513.8237 GFlop/s     (513.8237 GFlop/s per process)    37%    2167.0 sec left
+CG set 227 / 607    513.7001 GFlop/s     (513.7001 GFlop/s per process)    37%    2160.3 sec left
+CG set 228 / 607    513.4178 GFlop/s     (513.4178 GFlop/s per process)    37%    2153.2 sec left
+CG set 229 / 607    513.5594 GFlop/s     (513.5594 GFlop/s per process)    37%    2147.2 sec left
+CG set 230 / 607    513.7041 GFlop/s     (513.7041 GFlop/s per process)    37%    2141.3 sec left
+CG set 231 / 607    513.8519 GFlop/s     (513.8519 GFlop/s per process)    38%    2135.4 sec left
+CG set 232 / 607    513.9988 GFlop/s     (513.9988 GFlop/s per process)    38%    2129.5 sec left
+CG set 233 / 607    514.1210 GFlop/s     (514.1210 GFlop/s per process)    38%    2123.5 sec left
+CG set 234 / 607    514.2538 GFlop/s     (514.2538 GFlop/s per process)    38%    2117.5 sec left
+CG set 235 / 607    514.3767 GFlop/s     (514.3767 GFlop/s per process)    38%    2111.5 sec left
+CG set 236 / 607    514.5074 GFlop/s     (514.5074 GFlop/s per process)    38%    2105.6 sec left
+CG set 237 / 607    514.6253 GFlop/s     (514.6253 GFlop/s per process)    39%    2099.6 sec left
+CG set 238 / 607    514.7361 GFlop/s     (514.7361 GFlop/s per process)    39%    2093.6 sec left
+CG set 239 / 607    514.8590 GFlop/s     (514.8590 GFlop/s per process)    39%    2087.6 sec left
+CG set 240 / 607    514.9724 GFlop/s     (514.9724 GFlop/s per process)    39%    2081.6 sec left
+CG set 241 / 607    515.0880 GFlop/s     (515.0880 GFlop/s per process)    39%    2075.7 sec left
+CG set 242 / 607    515.1957 GFlop/s     (515.1957 GFlop/s per process)    39%    2069.7 sec left
+CG set 243 / 607    515.3053 GFlop/s     (515.3053 GFlop/s per process)    40%    2063.7 sec left
+CG set 244 / 607    515.4200 GFlop/s     (515.4200 GFlop/s per process)    40%    2057.7 sec left
+CG set 245 / 607    515.5291 GFlop/s     (515.5291 GFlop/s per process)    40%    2051.7 sec left
+CG set 246 / 607    515.6352 GFlop/s     (515.6352 GFlop/s per process)    40%    2045.7 sec left
+CG set 247 / 607    515.7430 GFlop/s     (515.7430 GFlop/s per process)    40%    2039.7 sec left
+CG set 248 / 607    515.8433 GFlop/s     (515.8433 GFlop/s per process)    40%    2033.7 sec left
+CG set 249 / 607    515.9440 GFlop/s     (515.9440 GFlop/s per process)    41%    2027.7 sec left
+CG set 250 / 607    516.0349 GFlop/s     (516.0349 GFlop/s per process)    41%    2021.7 sec left
+CG set 251 / 607    516.1309 GFlop/s     (516.1309 GFlop/s per process)    41%    2015.6 sec left
+CG set 252 / 607    516.1739 GFlop/s     (516.1739 GFlop/s per process)    41%    2009.5 sec left
+CG set 253 / 607    516.2700 GFlop/s     (516.2700 GFlop/s per process)    41%    2003.5 sec left
+CG set 254 / 607    516.3683 GFlop/s     (516.3683 GFlop/s per process)    41%    1997.5 sec left
+CG set 255 / 607    516.4596 GFlop/s     (516.4596 GFlop/s per process)    42%    1991.4 sec left
+CG set 256 / 607    516.4909 GFlop/s     (516.4909 GFlop/s per process)    42%    1985.2 sec left
+CG set 257 / 607    516.5870 GFlop/s     (516.5870 GFlop/s per process)    42%    1979.2 sec left
+CG set 258 / 607    516.6742 GFlop/s     (516.6742 GFlop/s per process)    42%    1973.2 sec left
+CG set 259 / 607    516.7640 GFlop/s     (516.7640 GFlop/s per process)    42%    1967.2 sec left
+CG set 260 / 607    516.8497 GFlop/s     (516.8497 GFlop/s per process)    42%    1961.1 sec left
+CG set 261 / 607    516.9414 GFlop/s     (516.9414 GFlop/s per process)    42%    1955.1 sec left
+CG set 262 / 607    517.0288 GFlop/s     (517.0288 GFlop/s per process)    43%    1949.1 sec left
+CG set 263 / 607    517.1062 GFlop/s     (517.1062 GFlop/s per process)    43%    1943.1 sec left
+CG set 264 / 607    517.1943 GFlop/s     (517.1943 GFlop/s per process)    43%    1937.0 sec left
+CG set 265 / 607    517.2772 GFlop/s     (517.2772 GFlop/s per process)    43%    1931.0 sec left
+CG set 266 / 607    517.3666 GFlop/s     (517.3666 GFlop/s per process)    43%    1925.0 sec left
+CG set 267 / 607    517.4525 GFlop/s     (517.4525 GFlop/s per process)    43%    1919.0 sec left
+CG set 268 / 607    517.5453 GFlop/s     (517.5453 GFlop/s per process)    44%    1913.0 sec left
+CG set 269 / 607    517.6351 GFlop/s     (517.6351 GFlop/s per process)    44%    1907.0 sec left
+CG set 270 / 607    517.7295 GFlop/s     (517.7295 GFlop/s per process)    44%    1901.0 sec left
+CG set 271 / 607    517.8183 GFlop/s     (517.8183 GFlop/s per process)    44%    1895.0 sec left
+CG set 272 / 607    517.9141 GFlop/s     (517.9141 GFlop/s per process)    44%    1889.0 sec left
+CG set 273 / 607    518.0037 GFlop/s     (518.0037 GFlop/s per process)    44%    1883.1 sec left
+CG set 274 / 607    518.0964 GFlop/s     (518.0964 GFlop/s per process)    45%    1877.1 sec left
+CG set 275 / 607    518.1813 GFlop/s     (518.1813 GFlop/s per process)    45%    1871.1 sec left
+CG set 276 / 607    518.2745 GFlop/s     (518.2745 GFlop/s per process)    45%    1865.1 sec left
+CG set 277 / 607    518.3702 GFlop/s     (518.3702 GFlop/s per process)    45%    1859.1 sec left
+CG set 278 / 607    518.4592 GFlop/s     (518.4592 GFlop/s per process)    45%    1853.2 sec left
+CG set 279 / 607    518.5532 GFlop/s     (518.5532 GFlop/s per process)    45%    1847.2 sec left
+CG set 280 / 607    518.6413 GFlop/s     (518.6413 GFlop/s per process)    46%    1841.2 sec left
+CG set 281 / 607    518.7360 GFlop/s     (518.7360 GFlop/s per process)    46%    1835.3 sec left
+CG set 282 / 607    518.8227 GFlop/s     (518.8227 GFlop/s per process)    46%    1829.3 sec left
+CG set 283 / 607    518.9139 GFlop/s     (518.9139 GFlop/s per process)    46%    1823.3 sec left
+CG set 284 / 607    518.9977 GFlop/s     (518.9977 GFlop/s per process)    46%    1817.3 sec left
+CG set 285 / 607    519.0876 GFlop/s     (519.0876 GFlop/s per process)    46%    1811.4 sec left
+CG set 286 / 607    519.1712 GFlop/s     (519.1712 GFlop/s per process)    47%    1805.4 sec left
+CG set 287 / 607    519.2569 GFlop/s     (519.2569 GFlop/s per process)    47%    1799.4 sec left
+CG set 288 / 607    519.3425 GFlop/s     (519.3425 GFlop/s per process)    47%    1793.4 sec left
+CG set 289 / 607    519.4227 GFlop/s     (519.4227 GFlop/s per process)    47%    1787.4 sec left
+CG set 290 / 607    519.5060 GFlop/s     (519.5060 GFlop/s per process)    47%    1781.5 sec left
+CG set 291 / 607    519.5819 GFlop/s     (519.5819 GFlop/s per process)    47%    1775.4 sec left
+CG set 292 / 607    519.6610 GFlop/s     (519.6610 GFlop/s per process)    48%    1769.5 sec left
+CG set 293 / 607    519.7350 GFlop/s     (519.7350 GFlop/s per process)    48%    1763.5 sec left
+CG set 294 / 607    519.8134 GFlop/s     (519.8134 GFlop/s per process)    48%    1757.5 sec left
+CG set 295 / 607    519.8842 GFlop/s     (519.8842 GFlop/s per process)    48%    1751.5 sec left
+CG set 296 / 607    519.8557 GFlop/s     (519.8557 GFlop/s per process)    48%    1745.1 sec left
+CG set 297 / 607    519.9254 GFlop/s     (519.9254 GFlop/s per process)    48%    1739.1 sec left
+CG set 298 / 607    519.9993 GFlop/s     (519.9993 GFlop/s per process)    49%    1733.1 sec left
+CG set 299 / 607    520.0662 GFlop/s     (520.0662 GFlop/s per process)    49%    1727.0 sec left
+CG set 300 / 607    520.1370 GFlop/s     (520.1370 GFlop/s per process)    49%    1721.0 sec left
+CG set 301 / 607    520.2012 GFlop/s     (520.2012 GFlop/s per process)    49%    1715.0 sec left
+CG set 302 / 607    520.2717 GFlop/s     (520.2717 GFlop/s per process)    49%    1709.0 sec left
+CG set 303 / 607    520.3341 GFlop/s     (520.3341 GFlop/s per process)    49%    1703.0 sec left
+CG set 304 / 607    520.4009 GFlop/s     (520.4009 GFlop/s per process)    50%    1697.0 sec left
+CG set 305 / 607    520.3554 GFlop/s     (520.3554 GFlop/s per process)    50%    1690.5 sec left
+CG set 306 / 607    520.2299 GFlop/s     (520.2299 GFlop/s per process)    50%    1683.8 sec left
+CG set 307 / 607    520.0460 GFlop/s     (520.0460 GFlop/s per process)    50%    1676.9 sec left
+CG set 308 / 607    519.9904 GFlop/s     (519.9904 GFlop/s per process)    50%    1670.4 sec left
+CG set 309 / 607    520.0558 GFlop/s     (520.0558 GFlop/s per process)    50%    1664.4 sec left
+CG set 310 / 607    520.1287 GFlop/s     (520.1287 GFlop/s per process)    51%    1658.4 sec left
+CG set 311 / 607    520.1972 GFlop/s     (520.1972 GFlop/s per process)    51%    1652.4 sec left
+CG set 312 / 607    520.2699 GFlop/s     (520.2699 GFlop/s per process)    51%    1646.4 sec left
+CG set 313 / 607    520.3407 GFlop/s     (520.3407 GFlop/s per process)    51%    1640.4 sec left
+CG set 314 / 607    520.4165 GFlop/s     (520.4165 GFlop/s per process)    51%    1634.4 sec left
+CG set 315 / 607    520.4881 GFlop/s     (520.4881 GFlop/s per process)    51%    1628.4 sec left
+CG set 316 / 607    520.5635 GFlop/s     (520.5635 GFlop/s per process)    52%    1622.5 sec left
+CG set 317 / 607    520.6347 GFlop/s     (520.6347 GFlop/s per process)    52%    1616.5 sec left
+CG set 318 / 607    520.7115 GFlop/s     (520.7115 GFlop/s per process)    52%    1610.5 sec left
+CG set 319 / 607    520.7846 GFlop/s     (520.7846 GFlop/s per process)    52%    1604.5 sec left
+CG set 320 / 607    520.8595 GFlop/s     (520.8595 GFlop/s per process)    52%    1598.6 sec left
+CG set 321 / 607    520.9338 GFlop/s     (520.9338 GFlop/s per process)    52%    1592.6 sec left
+CG set 322 / 607    521.0054 GFlop/s     (521.0054 GFlop/s per process)    53%    1586.6 sec left
+CG set 323 / 607    521.0827 GFlop/s     (521.0827 GFlop/s per process)    53%    1580.7 sec left
+CG set 324 / 607    521.1601 GFlop/s     (521.1601 GFlop/s per process)    53%    1574.7 sec left
+CG set 325 / 607    521.2447 GFlop/s     (521.2447 GFlop/s per process)    53%    1568.8 sec left
+CG set 326 / 607    521.3288 GFlop/s     (521.3288 GFlop/s per process)    53%    1562.9 sec left
+CG set 327 / 607    521.4155 GFlop/s     (521.4155 GFlop/s per process)    53%    1557.0 sec left
+CG set 328 / 607    521.4816 GFlop/s     (521.4816 GFlop/s per process)    54%    1551.0 sec left
+CG set 329 / 607    521.5523 GFlop/s     (521.5523 GFlop/s per process)    54%    1545.0 sec left
+CG set 330 / 607    521.6195 GFlop/s     (521.6195 GFlop/s per process)    54%    1539.1 sec left
+CG set 331 / 607    521.6876 GFlop/s     (521.6876 GFlop/s per process)    54%    1533.1 sec left
+CG set 332 / 607    521.7474 GFlop/s     (521.7474 GFlop/s per process)    54%    1527.1 sec left
+CG set 333 / 607    521.8086 GFlop/s     (521.8086 GFlop/s per process)    54%    1521.1 sec left
+CG set 334 / 607    521.8658 GFlop/s     (521.8658 GFlop/s per process)    55%    1515.1 sec left
+CG set 335 / 607    521.9265 GFlop/s     (521.9265 GFlop/s per process)    55%    1509.1 sec left
+CG set 336 / 607    521.9831 GFlop/s     (521.9831 GFlop/s per process)    55%    1503.1 sec left
+CG set 337 / 607    522.0320 GFlop/s     (522.0320 GFlop/s per process)    55%    1497.0 sec left
+CG set 338 / 607    522.0859 GFlop/s     (522.0859 GFlop/s per process)    55%    1491.0 sec left
+CG set 339 / 607    522.1415 GFlop/s     (522.1415 GFlop/s per process)    55%    1485.0 sec left
+CG set 340 / 607    522.1948 GFlop/s     (522.1948 GFlop/s per process)    56%    1479.0 sec left
+CG set 341 / 607    522.2441 GFlop/s     (522.2441 GFlop/s per process)    56%    1472.9 sec left
+CG set 342 / 607    522.2988 GFlop/s     (522.2988 GFlop/s per process)    56%    1466.9 sec left
+CG set 343 / 607    522.3513 GFlop/s     (522.3513 GFlop/s per process)    56%    1460.9 sec left
+CG set 344 / 607    522.4038 GFlop/s     (522.4038 GFlop/s per process)    56%    1454.9 sec left
+CG set 345 / 607    522.4464 GFlop/s     (522.4464 GFlop/s per process)    56%    1448.8 sec left
+CG set 346 / 607    522.4917 GFlop/s     (522.4917 GFlop/s per process)    57%    1442.8 sec left
+CG set 347 / 607    522.5412 GFlop/s     (522.5412 GFlop/s per process)    57%    1436.7 sec left
+CG set 348 / 607    522.5893 GFlop/s     (522.5893 GFlop/s per process)    57%    1430.7 sec left
+CG set 349 / 607    522.6363 GFlop/s     (522.6363 GFlop/s per process)    57%    1424.7 sec left
+CG set 350 / 607    522.6877 GFlop/s     (522.6877 GFlop/s per process)    57%    1418.7 sec left
+CG set 351 / 607    522.7407 GFlop/s     (522.7407 GFlop/s per process)    57%    1412.7 sec left
+CG set 352 / 607    522.7949 GFlop/s     (522.7949 GFlop/s per process)    57%    1406.6 sec left
+CG set 353 / 607    522.8460 GFlop/s     (522.8460 GFlop/s per process)    58%    1400.6 sec left
+CG set 354 / 607    522.9036 GFlop/s     (522.9036 GFlop/s per process)    58%    1394.6 sec left
+CG set 355 / 607    522.9597 GFlop/s     (522.9597 GFlop/s per process)    58%    1388.7 sec left
+CG set 356 / 607    523.0170 GFlop/s     (523.0170 GFlop/s per process)    58%    1382.7 sec left
+CG set 357 / 607    523.0755 GFlop/s     (523.0755 GFlop/s per process)    58%    1376.7 sec left
+CG set 358 / 607    523.1308 GFlop/s     (523.1308 GFlop/s per process)    58%    1370.7 sec left
+CG set 359 / 607    523.1895 GFlop/s     (523.1895 GFlop/s per process)    59%    1364.7 sec left
+CG set 360 / 607    523.2470 GFlop/s     (523.2470 GFlop/s per process)    59%    1358.8 sec left
+CG set 361 / 607    523.3077 GFlop/s     (523.3077 GFlop/s per process)    59%    1352.8 sec left
+CG set 362 / 607    523.3614 GFlop/s     (523.3614 GFlop/s per process)    59%    1346.8 sec left
+CG set 363 / 607    523.4199 GFlop/s     (523.4199 GFlop/s per process)    59%    1340.8 sec left
+CG set 364 / 607    523.4798 GFlop/s     (523.4798 GFlop/s per process)    59%    1334.9 sec left
+CG set 365 / 607    523.5389 GFlop/s     (523.5389 GFlop/s per process)    60%    1328.9 sec left
+CG set 366 / 607    523.5969 GFlop/s     (523.5969 GFlop/s per process)    60%    1322.9 sec left
+CG set 367 / 607    523.6514 GFlop/s     (523.6514 GFlop/s per process)    60%    1316.9 sec left
+CG set 368 / 607    523.7090 GFlop/s     (523.7090 GFlop/s per process)    60%    1311.0 sec left
+CG set 369 / 607    523.7659 GFlop/s     (523.7659 GFlop/s per process)    60%    1305.0 sec left
+CG set 370 / 607    523.8218 GFlop/s     (523.8218 GFlop/s per process)    60%    1299.0 sec left
+CG set 371 / 607    523.8734 GFlop/s     (523.8734 GFlop/s per process)    61%    1293.1 sec left
+CG set 372 / 607    523.9170 GFlop/s     (523.9170 GFlop/s per process)    61%    1287.0 sec left
+CG set 373 / 607    523.9688 GFlop/s     (523.9688 GFlop/s per process)    61%    1281.0 sec left
+CG set 374 / 607    524.0184 GFlop/s     (524.0184 GFlop/s per process)    61%    1275.0 sec left
+CG set 375 / 607    524.0680 GFlop/s     (524.0680 GFlop/s per process)    61%    1269.1 sec left
+CG set 376 / 607    524.1129 GFlop/s     (524.1129 GFlop/s per process)    61%    1263.0 sec left
+CG set 377 / 607    524.1616 GFlop/s     (524.1616 GFlop/s per process)    62%    1257.0 sec left
+CG set 378 / 607    524.2096 GFlop/s     (524.2096 GFlop/s per process)    62%    1251.0 sec left
+CG set 379 / 607    524.2568 GFlop/s     (524.2568 GFlop/s per process)    62%    1245.0 sec left
+CG set 380 / 607    524.3011 GFlop/s     (524.3011 GFlop/s per process)    62%    1239.0 sec left
+CG set 381 / 607    524.3431 GFlop/s     (524.3431 GFlop/s per process)    62%    1233.0 sec left
+CG set 382 / 607    524.3882 GFlop/s     (524.3882 GFlop/s per process)    62%    1227.0 sec left
+CG set 383 / 607    524.4328 GFlop/s     (524.4328 GFlop/s per process)    63%    1221.0 sec left
+CG set 384 / 607    524.4768 GFlop/s     (524.4768 GFlop/s per process)    63%    1215.0 sec left
+CG set 385 / 607    524.5174 GFlop/s     (524.5174 GFlop/s per process)    63%    1209.0 sec left
+CG set 386 / 607    524.5604 GFlop/s     (524.5604 GFlop/s per process)    63%    1202.9 sec left
+CG set 387 / 607    524.6031 GFlop/s     (524.6031 GFlop/s per process)    63%    1196.9 sec left
+CG set 388 / 607    524.6455 GFlop/s     (524.6455 GFlop/s per process)    63%    1190.9 sec left
+CG set 389 / 607    524.6834 GFlop/s     (524.6834 GFlop/s per process)    64%    1184.9 sec left
+CG set 390 / 607    524.7265 GFlop/s     (524.7265 GFlop/s per process)    64%    1178.9 sec left
+CG set 391 / 607    524.7695 GFlop/s     (524.7695 GFlop/s per process)    64%    1172.9 sec left
+CG set 392 / 607    524.8123 GFlop/s     (524.8123 GFlop/s per process)    64%    1166.9 sec left
+CG set 393 / 607    524.8528 GFlop/s     (524.8528 GFlop/s per process)    64%    1160.8 sec left
+CG set 394 / 607    524.8979 GFlop/s     (524.8979 GFlop/s per process)    64%    1154.8 sec left
+CG set 395 / 607    524.9432 GFlop/s     (524.9432 GFlop/s per process)    65%    1148.9 sec left
+CG set 396 / 607    524.9900 GFlop/s     (524.9900 GFlop/s per process)    65%    1142.9 sec left
+CG set 397 / 607    525.0378 GFlop/s     (525.0378 GFlop/s per process)    65%    1136.9 sec left
+CG set 398 / 607    525.0834 GFlop/s     (525.0834 GFlop/s per process)    65%    1130.9 sec left
+CG set 399 / 607    525.1323 GFlop/s     (525.1323 GFlop/s per process)    65%    1124.9 sec left
+CG set 400 / 607    525.1811 GFlop/s     (525.1811 GFlop/s per process)    65%    1119.0 sec left
+CG set 401 / 607    525.2305 GFlop/s     (525.2305 GFlop/s per process)    66%    1113.0 sec left
+CG set 402 / 607    525.2795 GFlop/s     (525.2795 GFlop/s per process)    66%    1107.0 sec left
+CG set 403 / 607    525.3258 GFlop/s     (525.3258 GFlop/s per process)    66%    1101.0 sec left
+CG set 404 / 607    525.3723 GFlop/s     (525.3723 GFlop/s per process)    66%    1095.1 sec left
+CG set 405 / 607    525.4144 GFlop/s     (525.4144 GFlop/s per process)    66%    1089.1 sec left
+CG set 406 / 607    525.4558 GFlop/s     (525.4558 GFlop/s per process)    66%    1083.1 sec left
+CG set 407 / 607    525.5007 GFlop/s     (525.5007 GFlop/s per process)    67%    1077.1 sec left
+CG set 408 / 607    525.5437 GFlop/s     (525.5437 GFlop/s per process)    67%    1071.1 sec left
+CG set 409 / 607    525.5859 GFlop/s     (525.5859 GFlop/s per process)    67%    1065.1 sec left
+CG set 410 / 607    525.6323 GFlop/s     (525.6323 GFlop/s per process)    67%    1059.1 sec left
+CG set 411 / 607    525.6785 GFlop/s     (525.6785 GFlop/s per process)    67%    1053.2 sec left
+CG set 412 / 607    525.7221 GFlop/s     (525.7221 GFlop/s per process)    67%    1047.2 sec left
+CG set 413 / 607    525.7665 GFlop/s     (525.7665 GFlop/s per process)    68%    1041.2 sec left
+CG set 414 / 607    525.8062 GFlop/s     (525.8062 GFlop/s per process)    68%    1035.2 sec left
+CG set 415 / 607    525.8499 GFlop/s     (525.8499 GFlop/s per process)    68%    1029.2 sec left
+CG set 416 / 607    525.8923 GFlop/s     (525.8923 GFlop/s per process)    68%    1023.2 sec left
+CG set 417 / 607    525.9338 GFlop/s     (525.9338 GFlop/s per process)    68%    1017.2 sec left
+CG set 418 / 607    525.9708 GFlop/s     (525.9708 GFlop/s per process)    68%    1011.2 sec left
+CG set 419 / 607    526.0118 GFlop/s     (526.0118 GFlop/s per process)    69%    1005.2 sec left
+CG set 420 / 607    526.0507 GFlop/s     (526.0507 GFlop/s per process)    69%    999.2 sec left
+CG set 421 / 607    526.0890 GFlop/s     (526.0890 GFlop/s per process)    69%    993.2 sec left
+CG set 422 / 607    526.1268 GFlop/s     (526.1268 GFlop/s per process)    69%    987.2 sec left
+CG set 423 / 607    526.1616 GFlop/s     (526.1616 GFlop/s per process)    69%    981.2 sec left
+CG set 424 / 607    526.2071 GFlop/s     (526.2071 GFlop/s per process)    69%    975.3 sec left
+CG set 425 / 607    526.2421 GFlop/s     (526.2421 GFlop/s per process)    70%    969.3 sec left
+CG set 426 / 607    526.2929 GFlop/s     (526.2929 GFlop/s per process)    70%    963.3 sec left
+CG set 427 / 607    526.3396 GFlop/s     (526.3396 GFlop/s per process)    70%    957.4 sec left
+CG set 428 / 607    526.3802 GFlop/s     (526.3802 GFlop/s per process)    70%    951.4 sec left
+CG set 429 / 607    526.4134 GFlop/s     (526.4134 GFlop/s per process)    70%    945.4 sec left
+CG set 430 / 607    526.4486 GFlop/s     (526.4486 GFlop/s per process)    70%    939.4 sec left
+CG set 431 / 607    526.4835 GFlop/s     (526.4835 GFlop/s per process)    71%    933.3 sec left
+CG set 432 / 607    526.5183 GFlop/s     (526.5183 GFlop/s per process)    71%    927.3 sec left
+CG set 433 / 607    526.5515 GFlop/s     (526.5515 GFlop/s per process)    71%    921.3 sec left
+CG set 434 / 607    526.5430 GFlop/s     (526.5430 GFlop/s per process)    71%    915.1 sec left
+CG set 435 / 607    526.5756 GFlop/s     (526.5756 GFlop/s per process)    71%    909.1 sec left
+CG set 436 / 607    526.6070 GFlop/s     (526.6070 GFlop/s per process)    71%    903.0 sec left
+CG set 437 / 607    526.6397 GFlop/s     (526.6397 GFlop/s per process)    71%    897.0 sec left
+CG set 438 / 607    526.6737 GFlop/s     (526.6737 GFlop/s per process)    72%    891.0 sec left
+CG set 439 / 607    526.7095 GFlop/s     (526.7095 GFlop/s per process)    72%    885.0 sec left
+CG set 440 / 607    526.7479 GFlop/s     (526.7479 GFlop/s per process)    72%    879.0 sec left
+CG set 441 / 607    526.7873 GFlop/s     (526.7873 GFlop/s per process)    72%    873.1 sec left
+CG set 442 / 607    526.8252 GFlop/s     (526.8252 GFlop/s per process)    72%    867.1 sec left
+CG set 443 / 607    526.8648 GFlop/s     (526.8648 GFlop/s per process)    72%    861.1 sec left
+CG set 444 / 607    526.9030 GFlop/s     (526.9030 GFlop/s per process)    73%    855.1 sec left
+CG set 445 / 607    526.9417 GFlop/s     (526.9417 GFlop/s per process)    73%    849.1 sec left
+CG set 446 / 607    526.9778 GFlop/s     (526.9778 GFlop/s per process)    73%    843.1 sec left
+CG set 447 / 607    527.0076 GFlop/s     (527.0076 GFlop/s per process)    73%    837.1 sec left
+CG set 448 / 607    527.0460 GFlop/s     (527.0460 GFlop/s per process)    73%    831.1 sec left
+CG set 449 / 607    527.0446 GFlop/s     (527.0446 GFlop/s per process)    73%    825.0 sec left
+CG set 450 / 607    527.0831 GFlop/s     (527.0831 GFlop/s per process)    74%    819.0 sec left
+CG set 451 / 607    527.1208 GFlop/s     (527.1208 GFlop/s per process)    74%    813.0 sec left
+CG set 452 / 607    527.1583 GFlop/s     (527.1583 GFlop/s per process)    74%    807.0 sec left
+CG set 453 / 607    527.1962 GFlop/s     (527.1962 GFlop/s per process)    74%    801.0 sec left
+CG set 454 / 607    527.2321 GFlop/s     (527.2321 GFlop/s per process)    74%    795.1 sec left
+CG set 455 / 607    527.2677 GFlop/s     (527.2677 GFlop/s per process)    74%    789.1 sec left
+CG set 456 / 607    527.3042 GFlop/s     (527.3042 GFlop/s per process)    75%    783.1 sec left
+CG set 457 / 607    527.3378 GFlop/s     (527.3378 GFlop/s per process)    75%    777.1 sec left
+CG set 458 / 607    527.3677 GFlop/s     (527.3677 GFlop/s per process)    75%    771.1 sec left
+CG set 459 / 607    527.4021 GFlop/s     (527.4021 GFlop/s per process)    75%    765.1 sec left
+CG set 460 / 607    527.4353 GFlop/s     (527.4353 GFlop/s per process)    75%    759.1 sec left
+CG set 461 / 607    527.4666 GFlop/s     (527.4666 GFlop/s per process)    75%    753.1 sec left
+CG set 462 / 607    527.4981 GFlop/s     (527.4981 GFlop/s per process)    76%    747.1 sec left
+CG set 463 / 607    527.5286 GFlop/s     (527.5286 GFlop/s per process)    76%    741.1 sec left
+CG set 464 / 607    527.5590 GFlop/s     (527.5590 GFlop/s per process)    76%    735.1 sec left
+CG set 465 / 607    527.5895 GFlop/s     (527.5895 GFlop/s per process)    76%    729.1 sec left
+CG set 466 / 607    527.6189 GFlop/s     (527.6189 GFlop/s per process)    76%    723.0 sec left
+CG set 467 / 607    527.6457 GFlop/s     (527.6457 GFlop/s per process)    76%    717.0 sec left
+CG set 468 / 607    527.6759 GFlop/s     (527.6759 GFlop/s per process)    77%    711.0 sec left
+CG set 469 / 607    527.7053 GFlop/s     (527.7053 GFlop/s per process)    77%    705.0 sec left
+CG set 470 / 607    527.7334 GFlop/s     (527.7334 GFlop/s per process)    77%    699.0 sec left
+CG set 471 / 607    527.7619 GFlop/s     (527.7619 GFlop/s per process)    77%    693.0 sec left
+CG set 472 / 607    527.7893 GFlop/s     (527.7893 GFlop/s per process)    77%    687.0 sec left
+CG set 473 / 607    527.8173 GFlop/s     (527.8173 GFlop/s per process)    77%    680.9 sec left
+CG set 474 / 607    527.8411 GFlop/s     (527.8411 GFlop/s per process)    78%    674.9 sec left
+CG set 475 / 607    527.8677 GFlop/s     (527.8677 GFlop/s per process)    78%    668.9 sec left
+CG set 476 / 607    527.8934 GFlop/s     (527.8934 GFlop/s per process)    78%    662.8 sec left
+CG set 477 / 607    527.9231 GFlop/s     (527.9231 GFlop/s per process)    78%    656.8 sec left
+CG set 478 / 607    527.9541 GFlop/s     (527.9541 GFlop/s per process)    78%    650.8 sec left
+CG set 479 / 607    527.9856 GFlop/s     (527.9856 GFlop/s per process)    78%    644.9 sec left
+CG set 480 / 607    528.0187 GFlop/s     (528.0187 GFlop/s per process)    79%    638.9 sec left
+CG set 481 / 607    528.0533 GFlop/s     (528.0533 GFlop/s per process)    79%    632.9 sec left
+CG set 482 / 607    528.0879 GFlop/s     (528.0879 GFlop/s per process)    79%    626.9 sec left
+CG set 483 / 607    528.1226 GFlop/s     (528.1226 GFlop/s per process)    79%    621.0 sec left
+CG set 484 / 607    528.1570 GFlop/s     (528.1570 GFlop/s per process)    79%    615.0 sec left
+CG set 485 / 607    528.1936 GFlop/s     (528.1936 GFlop/s per process)    79%    609.0 sec left
+CG set 486 / 607    528.2309 GFlop/s     (528.2309 GFlop/s per process)    80%    603.1 sec left
+CG set 487 / 607    528.2672 GFlop/s     (528.2672 GFlop/s per process)    80%    597.1 sec left
+CG set 488 / 607    528.2994 GFlop/s     (528.2994 GFlop/s per process)    80%    591.1 sec left
+CG set 489 / 607    528.3352 GFlop/s     (528.3352 GFlop/s per process)    80%    585.2 sec left
+CG set 490 / 607    528.3718 GFlop/s     (528.3718 GFlop/s per process)    80%    579.2 sec left
+CG set 491 / 607    528.4073 GFlop/s     (528.4073 GFlop/s per process)    80%    573.3 sec left
+CG set 492 / 607    528.4421 GFlop/s     (528.4421 GFlop/s per process)    81%    567.3 sec left
+CG set 493 / 607    528.4767 GFlop/s     (528.4767 GFlop/s per process)    81%    561.3 sec left
+CG set 494 / 607    528.5117 GFlop/s     (528.5117 GFlop/s per process)    81%    555.4 sec left
+CG set 495 / 607    528.5457 GFlop/s     (528.5457 GFlop/s per process)    81%    549.4 sec left
+CG set 496 / 607    528.5779 GFlop/s     (528.5779 GFlop/s per process)    81%    543.4 sec left
+CG set 497 / 607    528.6103 GFlop/s     (528.6103 GFlop/s per process)    81%    537.5 sec left
+CG set 498 / 607    528.6426 GFlop/s     (528.6426 GFlop/s per process)    82%    531.5 sec left
+CG set 499 / 607    528.5201 GFlop/s     (528.5201 GFlop/s per process)    82%    524.6 sec left
+CG set 500 / 607    528.3659 GFlop/s     (528.3659 GFlop/s per process)    82%    517.5 sec left
+CG set 501 / 607    528.2734 GFlop/s     (528.2734 GFlop/s per process)    82%    510.8 sec left
+CG set 502 / 607    528.2211 GFlop/s     (528.2211 GFlop/s per process)    82%    504.4 sec left
+CG set 503 / 607    528.1553 GFlop/s     (528.1553 GFlop/s per process)    82%    497.8 sec left
+CG set 504 / 607    528.0943 GFlop/s     (528.0943 GFlop/s per process)    83%    491.3 sec left
+CG set 505 / 607    528.1238 GFlop/s     (528.1238 GFlop/s per process)    83%    485.3 sec left
+CG set 506 / 607    528.0771 GFlop/s     (528.0771 GFlop/s per process)    83%    478.8 sec left
+CG set 507 / 607    528.0030 GFlop/s     (528.0030 GFlop/s per process)    83%    472.2 sec left
+CG set 508 / 607    527.8870 GFlop/s     (527.8870 GFlop/s per process)    83%    465.4 sec left
+CG set 509 / 607    527.8059 GFlop/s     (527.8059 GFlop/s per process)    83%    458.7 sec left
+CG set 510 / 607    527.8349 GFlop/s     (527.8349 GFlop/s per process)    84%    452.7 sec left
+CG set 511 / 607    527.8618 GFlop/s     (527.8618 GFlop/s per process)    84%    446.7 sec left
+CG set 512 / 607    527.8878 GFlop/s     (527.8878 GFlop/s per process)    84%    440.7 sec left
+CG set 513 / 607    527.9146 GFlop/s     (527.9146 GFlop/s per process)    84%    434.7 sec left
+CG set 514 / 607    527.9423 GFlop/s     (527.9423 GFlop/s per process)    84%    428.7 sec left
+CG set 515 / 607    527.9701 GFlop/s     (527.9701 GFlop/s per process)    84%    422.7 sec left
+CG set 516 / 607    527.9968 GFlop/s     (527.9968 GFlop/s per process)    85%    416.7 sec left
+CG set 517 / 607    528.0211 GFlop/s     (528.0211 GFlop/s per process)    85%    410.6 sec left
+CG set 518 / 607    528.0485 GFlop/s     (528.0485 GFlop/s per process)    85%    404.6 sec left
+CG set 519 / 607    528.0175 GFlop/s     (528.0175 GFlop/s per process)    85%    398.3 sec left
+CG set 520 / 607    528.0169 GFlop/s     (528.0169 GFlop/s per process)    85%    392.1 sec left
+CG set 521 / 607    528.0189 GFlop/s     (528.0189 GFlop/s per process)    85%    385.9 sec left
+CG set 522 / 607    527.8776 GFlop/s     (527.8776 GFlop/s per process)    85%    378.9 sec left
+CG set 523 / 607    527.8479 GFlop/s     (527.8479 GFlop/s per process)    86%    372.6 sec left
+CG set 524 / 607    527.8812 GFlop/s     (527.8812 GFlop/s per process)    86%    366.6 sec left
+CG set 525 / 607    527.9100 GFlop/s     (527.9100 GFlop/s per process)    86%    360.6 sec left
+CG set 526 / 607    527.8676 GFlop/s     (527.8676 GFlop/s per process)    86%    354.2 sec left
+CG set 527 / 607    527.8248 GFlop/s     (527.8248 GFlop/s per process)    86%    347.7 sec left
+CG set 528 / 607    527.8672 GFlop/s     (527.8672 GFlop/s per process)    86%    341.8 sec left
+CG set 529 / 607    527.9112 GFlop/s     (527.9112 GFlop/s per process)    87%    335.9 sec left
+CG set 530 / 607    527.9466 GFlop/s     (527.9466 GFlop/s per process)    87%    330.0 sec left
+CG set 531 / 607    527.9820 GFlop/s     (527.9820 GFlop/s per process)    87%    324.0 sec left
+CG set 532 / 607    528.0152 GFlop/s     (528.0152 GFlop/s per process)    87%    318.1 sec left
+CG set 533 / 607    528.0492 GFlop/s     (528.0492 GFlop/s per process)    87%    312.1 sec left
+CG set 534 / 607    528.0812 GFlop/s     (528.0812 GFlop/s per process)    87%    306.1 sec left
+CG set 535 / 607    528.1128 GFlop/s     (528.1128 GFlop/s per process)    88%    300.2 sec left
+CG set 536 / 607    528.1395 GFlop/s     (528.1395 GFlop/s per process)    88%    294.2 sec left
+CG set 537 / 607    528.1687 GFlop/s     (528.1687 GFlop/s per process)    88%    288.2 sec left
+CG set 538 / 607    528.1975 GFlop/s     (528.1975 GFlop/s per process)    88%    282.2 sec left
+CG set 539 / 607    528.2247 GFlop/s     (528.2247 GFlop/s per process)    88%    276.2 sec left
+CG set 540 / 607    528.2506 GFlop/s     (528.2506 GFlop/s per process)    88%    270.2 sec left
+CG set 541 / 607    528.2753 GFlop/s     (528.2753 GFlop/s per process)    89%    264.2 sec left
+CG set 542 / 607    528.2974 GFlop/s     (528.2974 GFlop/s per process)    89%    258.2 sec left
+CG set 543 / 607    528.3248 GFlop/s     (528.3248 GFlop/s per process)    89%    252.2 sec left
+CG set 544 / 607    528.3502 GFlop/s     (528.3502 GFlop/s per process)    89%    246.2 sec left
+CG set 545 / 607    528.3755 GFlop/s     (528.3755 GFlop/s per process)    89%    240.2 sec left
+CG set 546 / 607    528.3962 GFlop/s     (528.3962 GFlop/s per process)    89%    234.1 sec left
+CG set 547 / 607    528.4208 GFlop/s     (528.4208 GFlop/s per process)    90%    228.1 sec left
+CG set 548 / 607    528.4427 GFlop/s     (528.4427 GFlop/s per process)    90%    222.1 sec left
+CG set 549 / 607    528.4635 GFlop/s     (528.4635 GFlop/s per process)    90%    216.1 sec left
+CG set 550 / 607    528.4871 GFlop/s     (528.4871 GFlop/s per process)    90%    210.1 sec left
+CG set 551 / 607    528.5100 GFlop/s     (528.5100 GFlop/s per process)    90%    204.1 sec left
+CG set 552 / 607    528.5353 GFlop/s     (528.5353 GFlop/s per process)    90%    198.1 sec left
+CG set 553 / 607    528.5587 GFlop/s     (528.5587 GFlop/s per process)    91%    192.0 sec left
+CG set 554 / 607    528.5828 GFlop/s     (528.5828 GFlop/s per process)    91%    186.0 sec left
+CG set 555 / 607    528.6028 GFlop/s     (528.6028 GFlop/s per process)    91%    180.0 sec left
+CG set 556 / 607    528.6265 GFlop/s     (528.6265 GFlop/s per process)    91%    174.0 sec left
+CG set 557 / 607    528.6508 GFlop/s     (528.6508 GFlop/s per process)    91%    168.0 sec left
+CG set 558 / 607    528.6739 GFlop/s     (528.6739 GFlop/s per process)    91%    162.0 sec left
+CG set 559 / 607    528.6976 GFlop/s     (528.6976 GFlop/s per process)    92%    156.0 sec left
+CG set 560 / 607    528.7220 GFlop/s     (528.7220 GFlop/s per process)    92%    150.0 sec left
+CG set 561 / 607    528.7479 GFlop/s     (528.7479 GFlop/s per process)    92%    144.0 sec left
+CG set 562 / 607    528.7734 GFlop/s     (528.7734 GFlop/s per process)    92%    138.0 sec left
+CG set 563 / 607    528.7983 GFlop/s     (528.7983 GFlop/s per process)    92%    132.0 sec left
+CG set 564 / 607    528.8260 GFlop/s     (528.8260 GFlop/s per process)    92%    126.0 sec left
+CG set 565 / 607    528.8532 GFlop/s     (528.8532 GFlop/s per process)    93%    120.0 sec left
+CG set 566 / 607    528.8807 GFlop/s     (528.8807 GFlop/s per process)    93%    114.1 sec left
+CG set 567 / 607    528.9096 GFlop/s     (528.9096 GFlop/s per process)    93%    108.1 sec left
+CG set 568 / 607    528.9396 GFlop/s     (528.9396 GFlop/s per process)    93%    102.1 sec left
+CG set 569 / 607    528.9687 GFlop/s     (528.9687 GFlop/s per process)    93%    96.2 sec left
+CG set 570 / 607    528.9975 GFlop/s     (528.9975 GFlop/s per process)    93%    90.2 sec left
+CG set 571 / 607    529.0261 GFlop/s     (529.0261 GFlop/s per process)    94%    84.3 sec left
+CG set 572 / 607    529.0548 GFlop/s     (529.0548 GFlop/s per process)    94%    78.3 sec left
+CG set 573 / 607    529.0827 GFlop/s     (529.0827 GFlop/s per process)    94%    72.3 sec left
+CG set 574 / 607    529.1094 GFlop/s     (529.1094 GFlop/s per process)    94%    66.3 sec left
+CG set 575 / 607    529.1363 GFlop/s     (529.1363 GFlop/s per process)    94%    60.4 sec left
+CG set 576 / 607    529.1600 GFlop/s     (529.1600 GFlop/s per process)    94%    54.4 sec left
+CG set 577 / 607    529.1852 GFlop/s     (529.1852 GFlop/s per process)    95%    48.4 sec left
+CG set 578 / 607    529.2115 GFlop/s     (529.2115 GFlop/s per process)    95%    42.4 sec left
+CG set 579 / 607    529.2366 GFlop/s     (529.2366 GFlop/s per process)    95%    36.4 sec left
+CG set 580 / 607    529.2614 GFlop/s     (529.2614 GFlop/s per process)    95%    30.4 sec left
+CG set 581 / 607    529.2860 GFlop/s     (529.2860 GFlop/s per process)    95%    24.5 sec left
+CG set 582 / 607    529.3103 GFlop/s     (529.3103 GFlop/s per process)    95%    18.5 sec left
+CG set 583 / 607    529.3354 GFlop/s     (529.3354 GFlop/s per process)    96%    12.5 sec left
+CG set 584 / 607    529.3593 GFlop/s     (529.3593 GFlop/s per process)    96%    6.5 sec left
+CG set 585 / 607    529.3843 GFlop/s     (529.3843 GFlop/s per process)    96%    0.5 sec left
+CG set 586 / 607    529.4079 GFlop/s     (529.4079 GFlop/s per process)    96%    0.0 sec left
+CG set 587 / 607    529.4322 GFlop/s     (529.4322 GFlop/s per process)    96%    0.0 sec left
+CG set 588 / 607    529.4558 GFlop/s     (529.4558 GFlop/s per process)    96%    0.0 sec left
+CG set 589 / 607    529.4804 GFlop/s     (529.4804 GFlop/s per process)    97%    0.0 sec left
+CG set 590 / 607    529.5031 GFlop/s     (529.5031 GFlop/s per process)    97%    0.0 sec left
+CG set 591 / 607    529.5253 GFlop/s     (529.5253 GFlop/s per process)    97%    0.0 sec left
+CG set 592 / 607    529.5479 GFlop/s     (529.5479 GFlop/s per process)    97%    0.0 sec left
+CG set 593 / 607    529.5709 GFlop/s     (529.5709 GFlop/s per process)    97%    0.0 sec left
+CG set 594 / 607    529.5927 GFlop/s     (529.5927 GFlop/s per process)    97%    0.0 sec left
+CG set 595 / 607    529.6114 GFlop/s     (529.6114 GFlop/s per process)    98%    0.0 sec left
+CG set 596 / 607    529.6334 GFlop/s     (529.6334 GFlop/s per process)    98%    0.0 sec left
+CG set 597 / 607    529.6551 GFlop/s     (529.6551 GFlop/s per process)    98%    0.0 sec left
+CG set 598 / 607    529.6761 GFlop/s     (529.6761 GFlop/s per process)    98%    0.0 sec left
+CG set 599 / 607    529.6968 GFlop/s     (529.6968 GFlop/s per process)    98%    0.0 sec left
+CG set 600 / 607    529.7176 GFlop/s     (529.7176 GFlop/s per process)    98%    0.0 sec left
+CG set 601 / 607    529.7356 GFlop/s     (529.7356 GFlop/s per process)    99%    0.0 sec left
+CG set 602 / 607    529.7512 GFlop/s     (529.7512 GFlop/s per process)    99%    0.0 sec left
+CG set 603 / 607    529.7703 GFlop/s     (529.7703 GFlop/s per process)    99%    0.0 sec left
+CG set 604 / 607    529.7896 GFlop/s     (529.7896 GFlop/s per process)    99%    0.0 sec left
+CG set 605 / 607    529.8093 GFlop/s     (529.8093 GFlop/s per process)    99%    0.0 sec left
+CG set 606 / 607    529.8308 GFlop/s     (529.8308 GFlop/s per process)    99%    0.0 sec left
+CG set 607 / 607    529.8526 GFlop/s     (529.8526 GFlop/s per process)    100%    0.0 sec left
+
+Local domain: 560 x 560 x 560
+Global domain: 560 x 560 x 560
+Process domain: 1 x 1 x 1
+
+Total Time: 3731.53 sec
+Setup Time: 0.08 sec
+Optimization Time: 0.38 sec
+
+DDOT   =   323.6 GFlop/s ( 2589.0 GB/s)     323.6 GFlop/s per process ( 2589.0 GB/s per process)
+WAXPBY =   241.2 GFlop/s ( 2894.9 GB/s)     241.2 GFlop/s per process ( 2894.9 GB/s per process)
+SpMV   =   453.4 GFlop/s ( 3762.2 GB/s)     453.4 GFlop/s per process ( 3762.2 GB/s per process)
+MG     =   666.5 GFlop/s ( 6476.6 GB/s)     666.5 GFlop/s per process ( 6476.6 GB/s per process)
+Total  =   597.9 GFlop/s ( 5691.4 GB/s)     597.9 GFlop/s per process ( 5691.4 GB/s per process)
+Final  =   529.9 GFlop/s ( 5043.6 GB/s)     529.9 GFlop/s per process ( 5043.6 GB/s per process)
