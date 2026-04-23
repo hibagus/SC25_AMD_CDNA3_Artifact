@@ -1,214 +1,736 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+[![DOI][doi-shield]][doi-url]
+[![License][license-shield]][license-url]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/hibagus/SC25_AMD_CDNA3_Artifact">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">SC25 Artifact: Characterization of AMD Instinct MI300X and MI325X (CDNA3)</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Reproducibility artifacts for the Supercomputing 2025 (SC25) paper on comprehensive performance characterization of AMD CDNA3 GPUs.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://doi.org/10.5281/zenodo.16945427"><strong>Zenodo Archive »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/hibagus/SC25_AMD_CDNA3_Artifact">View Repository</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/issues">Report Issue</a>
   </p>
 </p>
 
-
+---
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
-  <summary>Table of Contents</summary>
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#repository-structure">Repository Structure</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#artifacts">Artifacts</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#a1--vector-alu-performance">A1 — Vector ALU Performance</a></li>
+        <li><a href="#a2--matrix-core-performance">A2 — Matrix Core Performance</a></li>
+        <li><a href="#a3--memory-latency-and-bandwidth">A3 — Memory Latency and Bandwidth</a></li>
+        <li><a href="#a4--communication-interface-bandwidth">A4 — Communication Interface Bandwidth</a></li>
+        <li><a href="#a5--gemm">A5 — GEMM</a></li>
+        <li><a href="#a6--gemv">A6 — GEMV</a></li>
+        <li><a href="#a7--high-performance-linpack-hpl">A7 — High-Performance LINPACK (HPL)</a></li>
+        <li><a href="#a8--high-performance-conjugate-gradient-hpcg">A8 — High-Performance Conjugate Gradient (HPCG)</a></li>
+        <li><a href="#a9--gromacs-molecular-dynamics-simulation">A9 — GROMACS Molecular Dynamics Simulation</a></li>
+        <li><a href="#a10--llm-inference-serving">A10 — LLM Inference Serving</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#data">Data</a></li>
+    <li><a href="#power-capping-mi325x">Power-Capping MI325X</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
-
+---
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This repository contains the **code and data artifacts** for the SC25 paper that provides a comprehensive characterization of AMD CDNA3 GPUs — specifically the **AMD Instinct MI300X** and **AMD Instinct MI325X**. The paper covers:
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+- **C1/C3** — Vector ALU performance (scalar-vector and vector-vector operations, fp16/fp32/fp64) at both the Compute Unit (CU) level and device-wide scalability.
+- **C2/C4** — Matrix core performance (fp8/bf8/fp16/bf16/tf32/fp32/fp64) at both the CU level and device-wide scalability.
+- **C5/C6** — On-chip memory (L1, L2, last-level AMD Infinity Cache) latency/bandwidth, and off-chip memory (HBM3 on MI300X, HBM3E on MI325X) bandwidth.
+- **C7** — CPU↔GPU and GPU↔GPU communication interface bandwidth.
+- **C8** — GEMM and GEMV performance comparison (MI300X vs. MI325X, including power-capped modes).
+- **C9** — High-Performance LINPACK (HPL) comparison.
+- **C10** — High-Performance Conjugate Gradient (HPCG) comparison.
+- **C11** — GROMACS molecular dynamics simulation (STMV, 1M atoms) comparison.
+- **C12** — DeepSeek R1 (671B parameters) LLM inference serving comparison.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+All MI325X experiments include three configurations: full power (1000 W), power-capped at 750 W with auto performance mode, and power-capped at 750 W with manual clock frequency limits.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
+**Top-level DOI:** [https://doi.org/10.5281/zenodo.16945427](https://doi.org/10.5281/zenodo.16945427)
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+---
 
-### Built With
+<!-- REPOSITORY STRUCTURE -->
+## Repository Structure
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+```
+SC25_AMD_CDNA3_Artifact/
+├── code/
+│   ├── 4_1_4_2_7_2_GPU_Roofline_Tools/   # Microbenchmarks for vector ALU, matrix cores, GEMM/GEMV (A1, A2, A5, A6)
+│   ├── 5_Memory/                          # GPU memory latency and bandwidth benchmarks (A3)
+│   ├── 6_Communication_Interface/         # TransferBench for CPU↔GPU and GPU↔GPU bandwidth (A4)
+│   ├── 7_3_High_Performance_LINPACK/      # rocHPL — High-Performance LINPACK (A7)
+│   ├── 7_4_High_Performance_CG/           # rocHPCG — High-Performance Conjugate Gradient (A8)
+│   ├── 7_5_GROMACS_Molecular_Dynamics_Simulation/  # GROMACS 2025.2 with AMD HIP (A9)
+│   └── 7_6_Large_Language_Model_LLM_Inference/     # SGLang inference scripts (A10)
+└── data/
+    ├── 4_1_Vector_Performance/            # Excel spreadsheets for A1 (Figures 2, 3; Table 2)
+    ├── 4_2_Matrix_Performance/            # Excel spreadsheets for A2 (Figures 4, 5; Table 2)
+    ├── 5_Memory/                          # Excel spreadsheet for A3 (Figures 6, 7)
+    ├── 7_2_GEMM/                          # Excel spreadsheet for A5 (Figure 8)
+    ├── 7_2_GEMV/                          # Excel spreadsheet for A6 (Figure 9)
+    ├── 7_3_High_Performance_LINPACK/      # Excel spreadsheet for A7 (Figures 10, 11)
+    ├── 7_4_High_Performance_CG/           # Excel spreadsheet for A8 (Figures 12, 13)
+    ├── 7_5_GROMACS_Molecular_Dynamics_Simulation/  # Excel spreadsheet for A9 (Figures 14–16)
+    └── 7_6_Large_Language_Model_LLM_Inference/     # Excel spreadsheets for A10 (Figures 17, 18)
+```
 
+Each `code/` subdirectory is a separate **Git submodule** with its own Zenodo DOI. See each artifact section below for individual DOIs.
 
+---
+
+<!-- PREREQUISITES -->
+## Prerequisites
+
+### Hardware
+
+- **AMD Instinct MI300X** and/or **AMD Instinct MI325X** GPUs (single GPU required for most experiments; 8 GPUs required for octa-GPU runs in A7, A8, A9, A10).
+- For octa-GPU experiments (A8–A9), the host CPU should have at least **1.5× the aggregate GPU memory** available as system RAM.
+- System configuration and topology may affect multi-GPU bandwidth measurements.
+
+### Software
+
+| Requirement | Version |
+|---|---|
+| OS | Ubuntu 22.04 |
+| AMD ROCm | 6.3.3 (expected at `/opt/rocm`) |
+| CMake | ≥ 3.21 |
+| Docker | Required for A10 (LLM inference) |
+| HuggingFace CLI | Required for A10 (model download) |
+
+ROCm 6.3.3 is available at: [https://rocm.docs.amd.com](https://rocm.docs.amd.com)
+
+---
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Clone the repository and initialize all Git submodules:
 
-### Prerequisites
+```bash
+git clone git@github.com:hibagus/SC25_AMD_CDNA3_Artifact.git
+cd SC25_AMD_CDNA3_Artifact
+git submodule update --init --recursive
+```
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Each artifact has its own build and run steps detailed below. Artifacts A1, A2, A5, and A6 share the same codebase (`GPU_Roofline_Tools`) and only need to be compiled once.
 
-### Installation
+---
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
+<!-- ARTIFACTS -->
+## Artifacts
 
+### A1 — Vector ALU Performance
 
+**Relation to paper:** Figure 2, Figure 3, Table 2 (contributions C1, C3)
 
-<!-- USAGE EXAMPLES -->
-## Usage
+Measures the compute throughput for vector-vector and scalar-vector operations (ADD, MUL, FMA) across all vector ALUs in a single CU, and device-wide scalability from 1 to 304 CUs. Precisions: fp16, fp32, fp64.
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+**Individual Git Submodule DOI:** [https://doi.org/10.5281/zenodo.16945445](https://doi.org/10.5281/zenodo.16945445)
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<details>
+<summary><strong>Build</strong></summary>
 
+```bash
+# From repo root (after cloning with submodules)
+cd code/4_1_4_2_7_2_GPU_Roofline_Tools/
+mkdir build && cd build
+cmake -DGPU_RUNTIME=HIP -DBUILD_MODE=Release ..
+make -j 32
+```
 
+> To adjust runtime, modify `NUM_LOOPS` in `code/4_1_4_2_7_2_GPU_Roofline_Tools/include/GPU_Roofline_Tools/utils/common/global.h`. Default is ~1 billion iterations.
 
-<!-- ROADMAP -->
-## Roadmap
+</details>
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+<details>
+<summary><strong>Run</strong></summary>
 
+```bash
+cd code/4_1_4_2_7_2_GPU_Roofline_Tools/runs/batch/
 
+# Run vector addition and multiplication benchmarks
+./batch_run_vadd_vmul.sh
 
-<!-- CONTRIBUTING -->
-## Contributing
+# Run fused-multiply-add benchmarks
+./batch_run_vfma.sh
+```
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Execution logs are stored in `outputs/` (one level above the batch scripts). GPU monitoring logs are in `outputs_smi/`.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+**Estimated runtime:** ~336 min (CU-level) + ~1596 min (device-level), assuming 1 min and 15 s per configuration respectively.
 
+</details>
 
+<details>
+<summary><strong>Output data</strong></summary>
+
+| File | Contents |
+|---|---|
+| `data/4_1_Vector_Performance/Vector_CU_Performance_MI300X_MI325X.xlsx` | CU-level analysis → Figure 2 |
+| `data/4_1_Vector_Performance/Vector_Device_Performance_MI300X_MI325X.xlsx` | Device-level analysis → Figure 3 |
+| `data/4_1_Vector_Performance/Summary_Vector_Matrix_Performance.xlsx` | Summary → Table 2 |
+
+</details>
+
+---
+
+### A2 — Matrix Core Performance
+
+**Relation to paper:** Figure 4, Figure 5, Table 2 (contributions C2, C4)
+
+Measures the compute throughput for wave-matrix-multiply-accumulate (WMMA) operations across all matrix cores in a single CU and device-wide. Precisions: fp8, bf8, fp16, bf16, tf32, fp32, fp64.
+
+**Individual Git Submodule DOI:** [https://doi.org/10.5281/zenodo.16945445](https://doi.org/10.5281/zenodo.16945445)
+
+<details>
+<summary><strong>Build</strong></summary>
+
+Same as A1. See the build instructions above.
+
+> To adjust runtime, modify `NUM_LOOPS_WMMA` in the same `global.h` file. Default is ~256 million iterations.
+>
+> **Note:** The frozen data in `data/4_2_Matrix_Performance/` has an inflated FLOP count due to a since-fixed bug (used `NUM_LOOPS` instead of `NUM_LOOPS_WMMA`). Divide the GFLOP/s values by 4 when comparing against freshly generated data.
+
+</details>
+
+<details>
+<summary><strong>Run</strong></summary>
+
+```bash
+cd code/4_1_4_2_7_2_GPU_Roofline_Tools/runs/batch/
+
+# Run wave-matrix-multiplication benchmarks
+./batch_run_wmma.sh
+```
+
+Execution logs are stored in `outputs/`. GPU monitoring logs are in `outputs_smi/`.
+
+**Estimated runtime:** ~128 min (CU-level) + ~608 min (device-level).
+
+</details>
+
+<details>
+<summary><strong>Output data</strong></summary>
+
+| File | Contents |
+|---|---|
+| `data/4_2_Matrix_Performance/Matrix_CU_Performance_MI300X_MI325X.xlsx` | CU-level analysis → Figure 4 |
+| `data/4_2_Matrix_Performance/Matrix_Device_Performance_MI300X_MI325X.xlsx` | Device-level analysis → Figure 5 |
+| `data/4_2_Matrix_Performance/Summary_Vector_Matrix_Performance.xlsx` | Summary → Table 2 |
+
+</details>
+
+---
+
+### A3 — Memory Latency and Bandwidth
+
+**Relation to paper:** Figure 6, Figure 7 (contributions C5, C6)
+
+Measures on-chip memory latency (L1/L2/LLC) and bandwidth, and off-chip HBM3/HBM3E bandwidth using `gpu-latency`, `gpu-cache`, and `gpu-stream` from the NHR@FAU GPU benchmark suite (HIP-ified for AMD).
+
+**Individual Git Submodule DOI:** [https://doi.org/10.5281/zenodo.16945392](https://doi.org/10.5281/zenodo.16945392)
+
+<details>
+<summary><strong>Build</strong></summary>
+
+```bash
+cd code/5_Memory/
+./compile.sh
+```
+
+</details>
+
+<details>
+<summary><strong>Run</strong></summary>
+
+```bash
+cd code/5_Memory/batch/
+
+# Run all memory benchmarks
+./run_batch.sh
+```
+
+Execution logs are stored in `bin/` (one level above batch scripts). GPU monitoring logs are in `outputs_smi/`.
+
+**Estimated runtime:** ~107 min total (`gpu-cache`: ~15 min, `gpu-latency`: ~90 min, `gpu-stream`: ~2 min).
+
+</details>
+
+<details>
+<summary><strong>Output data</strong></summary>
+
+| File | Contents |
+|---|---|
+| `data/5_Memory/Cache_Memory.xlsx` | On-chip and off-chip memory analysis → Figures 6, 7 |
+
+</details>
+
+---
+
+### A4 — Communication Interface Bandwidth
+
+**Relation to paper:** Table 3 (contribution C7)
+
+Measures bidirectional bandwidth between CPU↔CPU, CPU↔GPU, and GPU↔GPU using AMD TransferBench. Each run transfers 64 GB of data per direction; bidirectional bandwidth is computed by summing both directions.
+
+**Individual Git Submodule DOI:** [https://doi.org/10.5281/zenodo.16945390](https://doi.org/10.5281/zenodo.16945390)
+
+<details>
+<summary><strong>Build</strong></summary>
+
+```bash
+cd code/6_Communication_Interface/
+make
+```
+
+</details>
+
+<details>
+<summary><strong>Run</strong></summary>
+
+```bash
+cd code/6_Communication_Interface/batch/
+
+# Run communication interface benchmarks
+./batch_run.sh
+```
+
+Execution logs are stored in the same directory as the batch scripts. GPU monitoring logs are in `outputs_smi/`, xGMI utilization logs are in `outputs_xgmi/`.
+
+**Estimated runtime:** ~1000 min (all source/destination device combinations).
+
+> **Note:** System topology affects results. Use the same hardware configuration as described in the paper for comparable numbers.
+
+</details>
+
+---
+
+### A5 — GEMM
+
+**Relation to paper:** Figure 8 (contribution C8)
+
+Measures performance (GFLOP/s), power (W), energy (J), clock frequency (MHz), and memory bandwidth (TB/s) for large-scale GEMM (M=N=K=S, S ∈ {8K, 16K, 32K, 64K}) using **rocBLAS**. Precisions: fp64, fp32, fp16, int8.
+
+**Individual Git Submodule DOI:** [https://doi.org/10.5281/zenodo.16945445](https://doi.org/10.5281/zenodo.16945445)
+
+<details>
+<summary><strong>Build</strong></summary>
+
+Same as A1. See the build instructions under A1.
+
+> To adjust runtime, modify `NUM_LOOPS_BLAS` in `global.h`. To reproduce power-capped MI325X results, see [Power-Capping MI325X](#power-capping-mi325x) (requires `sudo`).
+
+</details>
+
+<details>
+<summary><strong>Run</strong></summary>
+
+```bash
+cd code/4_1_4_2_7_2_GPU_Roofline_Tools/runs/batch/
+
+# Run GEMM and GEMV benchmarks (single script covers both A5 and A6)
+./batch_run_rocblas.sh
+```
+
+Execution logs are in `outputs/`. GPU monitoring logs are in `outputs_smi/`.
+
+**Estimated runtime:** ~80 min (4 dims × 4 precisions × 5 min each). Run three times on MI325X for the three power configurations.
+
+</details>
+
+<details>
+<summary><strong>Output data</strong></summary>
+
+| File | Contents |
+|---|---|
+| `data/7_2_GEMM/GEMM_Compilation.xlsx` | GEMM performance analysis → Figure 8 |
+
+</details>
+
+---
+
+### A6 — GEMV
+
+**Relation to paper:** Figure 9 (contribution C8)
+
+Measures performance for large-scale GEMV (M=K=S, N=1, S ∈ {8K, 16K, 32K, 64K}) using **rocBLAS**. Precisions: fp64, fp32, fp16, int8.
+
+**Individual Git Submodule DOI:** [https://doi.org/10.5281/zenodo.16945445](https://doi.org/10.5281/zenodo.16945445)
+
+<details>
+<summary><strong>Build / Run</strong></summary>
+
+Same build and run steps as A5 — `batch_run_rocblas.sh` executes both GEMM and GEMV together.
+
+**Estimated runtime:** ~80 min (same as A5). Run three times on MI325X for the three power configurations.
+
+</details>
+
+<details>
+<summary><strong>Output data</strong></summary>
+
+| File | Contents |
+|---|---|
+| `data/7_2_GEMV/GEMV_Compilation.xlsx` | GEMV performance analysis → Figure 9 |
+
+</details>
+
+---
+
+### A7 — High-Performance LINPACK (HPL)
+
+**Relation to paper:** Figure 10, Figure 11 (contribution C9)
+
+Runs **rocHPL** (AMD's HPL implementation) for single-GPU and octa-GPU problem sizes that fully utilize MI300X memory. Problem parameters: `{P,Q,N,NB} = {1,1,158080,640}` (single GPU) and `{4,2,445440,640}` (octa GPU). MI325X uses the same problem size as MI300X for fair comparison.
+
+**Individual Git Submodule DOI:** [https://doi.org/10.5281/zenodo.16945381](https://doi.org/10.5281/zenodo.16945381)
+
+<details>
+<summary><strong>Build</strong></summary>
+
+```bash
+cd code/7_3_High_Performance_LINPACK/
+./install.sh
+```
+
+> For power-capped MI325X (manual mode: 900 MHz clock limit), see [Power-Capping MI325X](#power-capping-mi325x).
+
+</details>
+
+<details>
+<summary><strong>Run</strong></summary>
+
+```bash
+cd code/7_3_High_Performance_LINPACK/build/batch/
+
+# Single-GPU HPL run
+./run_batch_single.sh
+
+# Octa-GPU HPL run
+./run_batch_octal.sh
+```
+
+Execution logs are in `outputs_run/`. GPU monitoring logs are in `outputs_smi/`, xGMI logs in `outputs_xgmi/`.
+
+**Estimated runtime:** < 1 min (single GPU), ~3 min (octa GPU). Run three times on MI325X for the three power configurations.
+
+</details>
+
+<details>
+<summary><strong>Output data</strong></summary>
+
+| File | Contents |
+|---|---|
+| `data/7_3_High_Performance_LINPACK/HPL.xlsx` | HPL performance, power, energy → Figures 10, 11 |
+
+</details>
+
+---
+
+### A8 — High-Performance Conjugate Gradient (HPCG)
+
+**Relation to paper:** Figure 12, Figure 13 (contribution C10)
+
+Runs **rocHPCG** for single-GPU and octa-GPU with local dimensions nx=ny=nz=624. An additional MI325X experiment uses nx=ny=nz=680 to investigate the effect of larger memory capacity.
+
+**Individual Git Submodule DOI:** [https://doi.org/10.5281/zenodo.16945385](https://doi.org/10.5281/zenodo.16945385)
+
+<details>
+<summary><strong>Build</strong></summary>
+
+```bash
+cd code/7_4_High_Performance_CG/
+./install.sh
+```
+
+> For power-capped MI325X (manual mode: 1100 MHz clock limit), see [Power-Capping MI325X](#power-capping-mi325x).
+
+</details>
+
+<details>
+<summary><strong>Run</strong></summary>
+
+```bash
+cd code/7_4_High_Performance_CG/build/batch/
+
+# Single-GPU HPCG run
+./run_batch_single.sh
+
+# Octa-GPU HPCG run
+./run_batch_octal.sh
+```
+
+Execution logs, log files, and result files are stored in the batch script directory. GPU monitoring logs are in `outputs_smi/`, xGMI logs in `outputs_xgmi/`.
+
+**Estimated runtime:** ~6000 s per run (~2400 s CPU initialization + ~3600 s GPU benchmark). Host memory should be ≥1.5× the aggregate GPU memory for octa-GPU runs. Run three times on MI325X for the three power configurations.
+
+</details>
+
+<details>
+<summary><strong>Output data</strong></summary>
+
+| File | Contents |
+|---|---|
+| `data/7_4_High_Performance_CG/HPCG.xlsx.tar.gz` | HPCG performance, power, energy → Figures 12, 13 |
+
+</details>
+
+---
+
+### A9 — GROMACS Molecular Dynamics Simulation
+
+**Relation to paper:** Figure 14, Figure 15, Figure 16 (contribution C11)
+
+Runs **GROMACS 2025.2** (compiled with AMD HIP) on the Satellite Tobacco Mosaic Virus (STMV) dataset with 1 million atoms, using both Reaction Field (RF) and Particle Mesh Ewald (PME) for long-range electrostatics. Tests single-GPU and octa-GPU scalability.
+
+**Individual Git Submodule DOI:** [https://doi.org/10.5281/zenodo.16945374](https://doi.org/10.5281/zenodo.16945374)
+
+<details>
+<summary><strong>Build</strong></summary>
+
+```bash
+cd code/7_5_GROMACS_Molecular_Dynamics_Simulation/
+
+# Compile GROMACS with AMD HIP
+./install.sh
+
+# Download and prepare the STMV dataset
+./dataset.sh
+```
+
+> For power-capped MI325X (manual mode: 1600 MHz clock limit), see [Power-Capping MI325X](#power-capping-mi325x).
+
+</details>
+
+<details>
+<summary><strong>Run</strong></summary>
+
+```bash
+cd code/7_5_GROMACS_Molecular_Dynamics_Simulation/batch/
+
+./batch_run.sh
+```
+
+Execution logs, GROMACS log files, and EDR files are stored in the batch script directory. GPU monitoring logs are in `outputs_smi/`, xGMI logs in `outputs_xgmi/`.
+
+**Estimated runtime:** < 6 min per experiment, 10 experiments total (~60 min per GPU). Run three times on MI325X for the three power configurations.
+
+</details>
+
+<details>
+<summary><strong>Output data</strong></summary>
+
+| File | Contents |
+|---|---|
+| `data/7_5_GROMACS_Molecular_Dynamics_Simulation/GROMACS.xlsx.tar.gz` | GROMACS performance, power, energy → Figures 14, 15, 16 |
+
+</details>
+
+---
+
+### A10 — LLM Inference Serving
+
+**Relation to paper:** Figure 17, Figure 18 (contribution C12)
+
+Runs **SGLang** (AMD-optimized) to serve **DeepSeek R1** (671B parameters, tensor parallelism across 8 GPUs). Tests input sequence lengths 100–12800, output lengths 100–1600, and concurrency 1–256 (360 combinations total).
+
+**Docker Image DOI:** [https://doi.org/10.5281/zenodo.16945613](https://doi.org/10.5281/zenodo.16945613)
+
+<details>
+<summary><strong>Setup: Docker and Model Download</strong></summary>
+
+```bash
+# Pull the AMD SGLang Docker image
+# (also archived on Zenodo via the DOI above)
+docker pull ghcr.io/hibagus/sc25_amd_cdna3_artifact/sgl-dev:upstream_20250312_v1
+
+# Launch the container
+docker run -it --ipc=host --network=host --privileged \
+    --shm-size 32G --cap-add=CAP_SYS_ADMIN \
+    --device=/dev/kfd --device=/dev/dri \
+    --group-add video --group-add render \
+    --cap-add=SYS_PTRACE \
+    --security-opt seccomp=unconfined \
+    --security-opt apparmor=unconfined \
+    -v /home:/workspace \
+    rocm/sgl-dev:upstream_20250312_v1
+
+# Inside the container — clone the repo
+git clone git@github.com:hibagus/SC25_AMD_CDNA3_Artifact.git
+cd SC25_AMD_CDNA3_Artifact
+git submodule update --init --recursive
+
+# Download the DeepSeek R1 model (WARNING: requires ~700 GB storage)
+huggingface-cli download deepseek-ai/DeepSeek-R1
+
+# Start the SGLang inference server
+python3 -m sglang.launch_server \
+    --model deepseek-ai/DeepSeek-R1 \
+    --tp 8 \
+    --trust-remote-code \
+    --chunked-prefill-size 131072 \
+    --enable-torch-compile \
+    --torch-compile-max-bs 256
+```
+
+> For power-capped MI325X (manual mode: 1700 MHz clock limit), see [Power-Capping MI325X](#power-capping-mi325x).
+
+</details>
+
+<details>
+<summary><strong>Run</strong></summary>
+
+```bash
+# Execute this from inside the Docker container
+cd code/7_6_Large_Language_Model_LLM_Inference/batch/
+
+./batch_run.sh
+```
+
+Inference result JSON files are stored in the batch script directory. Output logs are in `outputs_py/` (one level up). GPU monitoring logs are in `outputs_smi/`, xGMI logs in `outputs_xgmi/`.
+
+**Estimated runtime:** < 1000 min for all 360 combinations. Run three times on MI325X for the three power configurations.
+
+</details>
+
+<details>
+<summary><strong>Output data</strong></summary>
+
+| File | Contents |
+|---|---|
+| `data/7_6_Large_Language_Model_LLM_Inference/DeepSeek_R1_Summary.xlsx` | Summary → Figures 17, 18 |
+| `data/7_6_Large_Language_Model_LLM_Inference/deepseek_mi300x_750W.xlsx` | MI300X at 750W |
+| `data/7_6_Large_Language_Model_LLM_Inference/deepseek_mi325x_1000W.xlsx` | MI325X at 1000W (full power) |
+| `data/7_6_Large_Language_Model_LLM_Inference/deepseek_mi325x_750W_Auto.xlsx` | MI325X at 750W auto mode |
+| `data/7_6_Large_Language_Model_LLM_Inference/deepseek_mi325x_750W_Manual.xlsx` | MI325X at 750W manual mode |
+
+</details>
+
+---
+
+<!-- DATA -->
+## Data
+
+The `data/` directory contains pre-collected experimental results as Excel (`.xlsx`) spreadsheets. These files can be opened directly to inspect the raw measurements and see the analyses that produced each figure and table in the paper — no code execution is required to access the data.
+
+| Directory | Artifact | Paper Elements |
+|---|---|---|
+| `data/4_1_Vector_Performance/` | A1 | Figure 2, Figure 3, Table 2 |
+| `data/4_2_Matrix_Performance/` | A2 | Figure 4, Figure 5, Table 2 |
+| `data/5_Memory/` | A3 | Figure 6, Figure 7 |
+| *(communication interface data)* | A4 | Table 3 |
+| `data/7_2_GEMM/` | A5 | Figure 8 |
+| `data/7_2_GEMV/` | A6 | Figure 9 |
+| `data/7_3_High_Performance_LINPACK/` | A7 | Figure 10, Figure 11 |
+| `data/7_4_High_Performance_CG/` | A8 | Figure 12, Figure 13 |
+| `data/7_5_GROMACS_Molecular_Dynamics_Simulation/` | A9 | Figure 14, Figure 15, Figure 16 |
+| `data/7_6_Large_Language_Model_LLM_Inference/` | A10 | Figure 17, Figure 18 |
+
+---
+
+<!-- POWER CAPPING -->
+## Power-Capping MI325X
+
+Several experiments compare MI325X at full power (1000 W) against a power-capped configuration (750 W) in two performance modes. **Requires `sudo` access.**
+
+```bash
+# Cap MI325X power to 750 W
+sudo amd-smi set --power-cap 750
+
+# Set clock frequency limit for manual mode
+# (replace FREQ_MHZ with the value for your experiment)
+sudo amd-smi set --clk-limit sclk max FREQ_MHZ
+
+# Reset to factory defaults when done
+sudo amd-smi reset -c
+sudo amd-smi reset -o
+```
+
+| Artifact | Manual Mode Clock Limit |
+|---|---|
+| A5 (GEMM), A6 (GEMV) | 1400 MHz |
+| A7 (HPL) | 900 MHz |
+| A8 (HPCG) | 1100 MHz |
+| A9 (GROMACS) | 1600 MHz |
+| A10 (LLM Inference) | 1700 MHz |
+
+---
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+See [`LICENSE.txt`](LICENSE.txt) for details.
 
-
+---
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+For questions about the artifact, please open an issue on GitHub:
+[https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/issues](https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/issues)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/hibagus/SC25_AMD_CDNA3_Artifact](https://github.com/hibagus/SC25_AMD_CDNA3_Artifact)
 
-
+---
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
 
+- [AMD ROCm](https://rocm.docs.amd.com) — GPU compute platform
+- [rocBLAS](https://github.com/ROCmSoftwarePlatform/rocBLAS) — BLAS library for GEMM/GEMV
+- [rocHPL](https://github.com/ROCmSoftwarePlatform/rocHPL) — HPL for AMD GPUs
+- [rocHPCG](https://github.com/ROCmSoftwarePlatform/rocHPCG) — HPCG for AMD GPUs
+- [GPU Benchmarks by NHR@FAU](https://github.com/nhr-fau) — Memory benchmark suite
+- [TransferBench by AMD](https://github.com/ROCmSoftwarePlatform/TransferBench) — Communication bandwidth benchmark
+- [GROMACS](https://www.gromacs.org) — Molecular dynamics simulation
+- [SGLang](https://github.com/sgl-project/sglang) — LLM inference framework
 
-
-
+---
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[doi-shield]: https://img.shields.io/badge/DOI-10.5281%2Fzenodo.16945427-blue?style=for-the-badge
+[doi-url]: https://doi.org/10.5281/zenodo.16945427
+[license-shield]: https://img.shields.io/github/license/hibagus/SC25_AMD_CDNA3_Artifact.svg?style=for-the-badge
+[license-url]: https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/hibagus/SC25_AMD_CDNA3_Artifact.svg?style=for-the-badge
+[contributors-url]: https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/hibagus/SC25_AMD_CDNA3_Artifact.svg?style=for-the-badge
+[forks-url]: https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/network/members
+[stars-shield]: https://img.shields.io/github/stars/hibagus/SC25_AMD_CDNA3_Artifact.svg?style=for-the-badge
+[stars-url]: https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/stargazers
+[issues-shield]: https://img.shields.io/github/issues/hibagus/SC25_AMD_CDNA3_Artifact.svg?style=for-the-badge
+[issues-url]: https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/issues
