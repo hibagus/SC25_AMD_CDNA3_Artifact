@@ -19,6 +19,8 @@
     Reproducibility artifacts for the Supercomputing 2025 (SC25) paper on comprehensive performance characterization of AMD CDNA3 GPUs.
     <br />
     <a href="https://doi.org/10.5281/zenodo.16945427"><strong>Zenodo Archive »</strong></a>
+    &nbsp;·&nbsp;
+    <a href="https://dl.acm.org/doi/full/10.1145/3712285.3759768"><strong>ACM Paper »</strong></a>
     <br />
     <br />
     <a href="https://github.com/hibagus/SC25_AMD_CDNA3_Artifact">View Repository</a>
@@ -27,12 +29,61 @@
   </p>
 </p>
 
+<!-- ACM ARTIFACT BADGES -->
+<p align="center">
+  <img src="images/artifacts_available_v1_1.png" alt="Artifact Available v1.1" height="100">
+  &nbsp;&nbsp;
+  <img src="images/artifacts_evaluated_functional_v1_1.png" alt="Artifact Evaluated/Functional v1.1" height="100">
+</p>
+
+---
+
+<!-- PAPER INFORMATION -->
+## Paper
+
+**Title:** Characterizing Performance, Power, and Energy of AMD CDNA3 GPU Family
+
+**Authors:** Bagus Hanindhito and Bhavesh Patel
+*(Dell Technologies, Round Rock, Texas, USA)*
+
+**Venue:** The International Conference for High Performance Computing, Networking, Storage and Analysis (SC '25), November 16–21, 2025, St. Louis, MO, USA
+
+**DOI:** [https://doi.org/10.1145/3712285.3759768](https://dl.acm.org/doi/full/10.1145/3712285.3759768)
+
+### Abstract
+
+> While historically used for graphics applications, Graphics Processing Units (GPUs) have become the most prominent hardware for accelerating parallel workloads, including HPC and AI/ML. As the demand for GPUs skyrockets, AMD released the CDNA3 architecture to accelerate HPC and generative AI. This paper serves as a comprehensive third-party evaluation of the AMD CDNA3 GPU, specifically the MI300X and MI325X, by characterizing their performance, power, and energy efficiency using microbenchmark and real-world applications.
+>
+> First, we develop a microbenchmark to investigate the computing capability of the Compute Unit and measure device-wide scaling. Secondly, we measure both on-chip and off-chip memory access latency and bandwidth, and communication link bandwidth between devices. Thirdly, we subject both GPUs to real-world applications. Although MI325X gives the highest performance, the best energy efficiency is often obtained by capping the MI325X at the same power level as MI300X, with the higher HBM3E bandwidth solely contributing to performance improvements.
+
+### CCS Concepts
+
+- **General and reference** → Measurement; Performance; Experimentation; Evaluation
+- **Computer systems organization** → Parallel architectures
+- **Computing methodologies** → Natural language generation; Computer algebra systems; Graphics processors
+
+### Keywords
+
+Graphics Processing Unit, Performance Characterization, Power and Energy Measurement, High Performance Computing, Large Language Models Serving, Microbenchmark
+
+### ACM Reference Format
+
+```
+Bagus Hanindhito and Bhavesh Patel. 2025. Characterizing Performance,
+Power, and Energy of AMD CDNA3 GPU Family. In The International
+Conference for High Performance Computing, Networking, Storage and
+Analysis (SC '25), November 16–21, 2025, St Louis, MO, USA.
+ACM, New York, NY, USA, 15 pages.
+https://doi.org/10.1145/3712285.3759768
+```
+
 ---
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
+    <li><a href="#paper">Paper</a></li>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#repository-structure">Repository Structure</a></li>
     <li><a href="#prerequisites">Prerequisites</a></li>
