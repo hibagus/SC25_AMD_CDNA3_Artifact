@@ -68,14 +68,7 @@ Graphics Processing Unit, Performance Characterization, Power and Energy Measure
 
 ### ACM Reference Format
 
-```
-Bagus Hanindhito and Bhavesh Patel. 2025. Characterizing Performance,
-Power, and Energy of AMD CDNA3 GPU Family. In The International
-Conference for High Performance Computing, Networking, Storage and
-Analysis (SC '25), November 16–21, 2025, St Louis, MO, USA.
-ACM, New York, NY, USA, 15 pages.
-https://doi.org/10.1145/3712285.3759768
-```
+Bagus Hanindhito and Bhavesh Patel. 2025. Characterizing Performance, Power, and Energy of AMD CDNA3 GPU Family. In The International Conference for High Performance Computing, Networking, Storage and Analysis (SC '25), November 16–21, 2025, St Louis, MO, USA. ACM, New York, NY, USA, 15 pages. https://doi.org/10.1145/3712285.3759768
 
 ---
 
@@ -385,6 +378,17 @@ Execution logs are stored in the same directory as the batch scripts. GPU monito
 **Estimated runtime:** ~1000 min (all source/destination device combinations).
 
 > **Note:** System topology affects results. Use the same hardware configuration as described in the paper for comparable numbers.
+
+</details>
+
+<details>
+<summary><strong>Output data</strong></summary>
+
+Since the bidirectional bandwidth is computed directly by summing the two directional values (all interfaces are full-duplex), no Excel spreadsheet is provided. The raw execution logs in the batch script directory contain the per-direction bandwidth numbers used to populate Table 3 in the paper.
+
+| Directory | Contents |
+|---|---|
+| `data/6_Communication_Interface/` | Raw execution logs → Table 3 |
 
 </details>
 
@@ -703,7 +707,7 @@ The `data/` directory contains pre-collected experimental results as Excel (`.xl
 | `data/4_1_Vector_Performance/` | A1 | Figure 2, Figure 3, Table 2 |
 | `data/4_2_Matrix_Performance/` | A2 | Figure 4, Figure 5, Table 2 |
 | `data/5_Memory/` | A3 | Figure 6, Figure 7 |
-| *(communication interface data)* | A4 | Table 3 |
+| `data/6_Communication_Interface/` | A4 | Table 3 |
 | `data/7_2_GEMM/` | A5 | Figure 8 |
 | `data/7_2_GEMV/` | A6 | Figure 9 |
 | `data/7_3_High_Performance_LINPACK/` | A7 | Figure 10, Figure 11 |
