@@ -144,6 +144,7 @@ SC25_AMD_CDNA3_Artifact/
     ├── 4_1_Vector_Performance/            # Excel spreadsheets for A1 (Figures 2, 3; Table 2)
     ├── 4_2_Matrix_Performance/            # Excel spreadsheets for A2 (Figures 4, 5; Table 2)
     ├── 5_Memory/                          # Excel spreadsheet for A3 (Figures 6, 7)
+    ├── 6_Communication_Interface/         # Execution logs for A4 (Table 3)
     ├── 7_2_GEMM/                          # Excel spreadsheet for A5 (Figure 8)
     ├── 7_2_GEMV/                          # Excel spreadsheet for A6 (Figure 9)
     ├── 7_3_High_Performance_LINPACK/      # Excel spreadsheet for A7 (Figures 10, 11)
@@ -704,16 +705,16 @@ The `data/` directory contains pre-collected experimental results as Excel (`.xl
 
 | Directory | Artifact | Paper Elements |
 |---|---|---|
-| `data/4_1_Vector_Performance/` | A1 | Figure 2, Figure 3, Table 2 |
-| `data/4_2_Matrix_Performance/` | A2 | Figure 4, Figure 5, Table 2 |
-| `data/5_Memory/` | A3 | Figure 6, Figure 7 |
-| `data/6_Communication_Interface/` | A4 | Table 3 |
-| `data/7_2_GEMM/` | A5 | Figure 8 |
-| `data/7_2_GEMV/` | A6 | Figure 9 |
-| `data/7_3_High_Performance_LINPACK/` | A7 | Figure 10, Figure 11 |
-| `data/7_4_High_Performance_CG/` | A8 | Figure 12, Figure 13 |
-| `data/7_5_GROMACS_Molecular_Dynamics_Simulation/` | A9 | Figure 14, Figure 15, Figure 16 |
-| `data/7_6_Large_Language_Model_LLM_Inference/` | A10 | Figure 17, Figure 18 |
+| [`data/4_1_Vector_Performance/`](https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/tree/master/data/4_1_Vector_Performance) | A1 | Figure 2, Figure 3, Table 2 |
+| [`data/4_2_Matrix_Performance/`](https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/tree/master/data/4_2_Matrix_Performance) | A2 | Figure 4, Figure 5, Table 2 |
+| [`data/5_Memory/`](https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/tree/master/data/5_Memory) | A3 | Figure 6, Figure 7 |
+| [`data/6_Communication_Interface/`](https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/tree/master/data/6_Communication_Interface) | A4 | Table 3 |
+| [`data/7_2_GEMM/`](https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/tree/master/data/7_2_GEMM) | A5 | Figure 8 |
+| [`data/7_2_GEMV/`](https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/tree/master/data/7_2_GEMV) | A6 | Figure 9 |
+| [`data/7_3_High_Performance_LINPACK/`](https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/tree/master/data/7_3_High_Performance_LINPACK) | A7 | Figure 10, Figure 11 |
+| [`data/7_4_High_Performance_CG/`](https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/tree/master/data/7_4_High_Performance_CG) | A8 | Figure 12, Figure 13 |
+| [`data/7_5_GROMACS_Molecular_Dynamics_Simulation/`](https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/tree/master/data/7_5_GROMACS_Molecular_Dynamics_Simulation) | A9 | Figure 14, Figure 15, Figure 16 |
+| [`data/7_6_Large_Language_Model_LLM_Inference/`](https://github.com/hibagus/SC25_AMD_CDNA3_Artifact/tree/master/data/7_6_Large_Language_Model_LLM_Inference) | A10 | Figure 17, Figure 18 |
 
 ---
 
